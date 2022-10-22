@@ -1,0 +1,149 @@
+
+
+
+
+**三、类**
+
+```
+-- 定义基类 Human, 拥有两个属性 name、age
+local Human = {name = "空", age = 0}
+
+-- 定义 hh = Human， 两个值为相通的
+local hh = Human 
+
+Human.age = 10
+print(Human.age)  --> 10
+print(hh.age)     --> 10
+
+hh.age = 20
+print(Human.age)  --> 20
+print(hh.age)     --> 20
+
+-- 这样就不是面向对象的类对象了
+
+-- 下面使用 `setmetatable` 定义类对象
+
+local Man = {}
+-- 指定 Human 的子类 Man
+(1)
+Human.__index = Human
+setmetatable(Man, Human)
+(2)
+setmetatable(Man, {__index = Human})
+注意：上方(1) 和 (2) 两种不同的写法，结果相同
+如果改写为如下写法，则不能实现继承
+(1)
+setmetatable(Man, Human)
+(2)
+setmetatable(Man, Human)
+
+Human.age = 20
+Man.age = 10
+
+print(Human.age)   --> 20
+print(Man.age)     --> 10
+
+-- 这样 Human 和 Man 的值就不会相通了
+Man.sex = 'M'
+
+print(Man.sex)     --> M
+print(Human.sex)   --> nil  -- Human 中找不到 sex 的值
+
+-- 下面看调用 Man.age 的原理
+-- `Man` 中并没有定义 `age ` 属性， 当 Man 访问 age 的时候，首先在 Man 中找，在 Man 中找不到 age 的时候， Man 就会隐含的调用
+
+ `getmetatable(Man).__index.age` 
+ 
+ 这样就获取到 age 的值了。（前提是必须使用方法 **setmetatable** 指定）
+ 
+
+-- 同理可以定义 N 个 Human 对象
+
+-- 定义 Human:Age 方法
+function Human:Age()
+{
+    return self.age
+}
+
+-- 设置 Man.age
+Man.age = 10
+-- 调用 Human 定义的方法 Age()
+local age = Man:Age()
+
+print("age : "..age)    --> age  : 10 
+
+
+-- 再定义一个 对象 Woman 
+
+local Woman = {}
+setmetatable(Woman, {__index = Human})
+
+Woman.age = 20
+
+local age = Woman:Age()
+
+print("age :"..age)   --> age : 20
+
+
+---------------------------------------------------
+-- 每次都调用 setmetatable 方法很不方便，下面封装一个实例化对象的方法 Human:New(o)
+
+
+function Human:New(o)
+
+    o = o or {}     -- 如果 o 为空， 则创建一个空 {}
+
+    setmetatable(o, self)
+
+    self.__index = self
+
+    return o
+end
+
+-- 创建对象如下
+
+local Boy = Human:New()
+
+Boy.age = 5
+print("Boy age :"..Boy.age)    --> Boy age : 5
+
+-- 直到现在 Man、Woman、Boy 都仅仅是 Human 的实例对象，而不是Human 的子类
+
+-- 下面看看如何 实现继承
+-- 利用上面定义好的 Human:New(o) 函数
+
+-- 定义特殊人的 类
+local SpecialHuman = Human:New()
+
+-- SpecialHuman  依然为 Human 的一个实例
+
+-- 定义 超人的类 （supperMan ）继承于 Human
+
+local supperMan = SpecialHuman:New()  
+
+-- 现在 supperMan 为 Human 的一个子类而非对象实例
+
+-- SpecialHuman 从 Human 继承了 New， 就像继承其他方法一样，不过这次 New 在执行时，
+它的 self 参数标示为 SpecialHuman， 因此， supperMan 的元表为 SpecialHuman ， 
+SpecialHuman 中字段 __index 的值也是 SpecialHuman 。 supperMan 继承自 SpecialHuman
+
+-- 当执行 supperMan.age 时： 在 supperMan 中找不到 age 字段， 就会查找 SpecialHuman， 
+如果仍然找不到 age 字段， 就查找 Human ,最终会在那里找到 age 字段的定义。
+
+-- 下面在 SpecialHuman 中重写 Human:Age() 方法
+
+function SpecialHuman:Age()
+    print("name  : "..self.name)
+    print("age   : "..self.age)
+end
+
+-- supperMan 调用 Age()方法，实质上是调用 SpecialHuman:Age() 
+
+supperMan.name = "Jack"
+supperMan.age = 25
+
+supperMan:Age()    
+--> name   : Jack
+--> age    : 25
+
+```
