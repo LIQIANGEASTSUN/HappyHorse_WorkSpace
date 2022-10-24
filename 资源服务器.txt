@@ -1,0 +1,6 @@
+
+
+http://10.0.252.10:9010/login?redirect=%2Ffiles%2F
+
+
+Í¨ÓÃÄ¬ÈÏÃÜÂë£ºadmin/admin
