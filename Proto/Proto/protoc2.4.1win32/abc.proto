@@ -1,0 +1,10 @@
+
+
+syntax = "proto2";
+message ABC{
+
+   optional string name = 1;
+   
+   optional string message_name = 2;
+
+};

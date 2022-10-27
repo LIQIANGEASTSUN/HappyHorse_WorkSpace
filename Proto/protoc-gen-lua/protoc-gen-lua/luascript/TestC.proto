@@ -1,0 +1,20 @@
+import "TestA.proto";
+import "TestB.proto";
+
+package Google;
+
+message TestC
+{
+	required TestA	testa  = 1;	
+	required TestB testb = 2; 
+}
+
+message TestD
+{
+	required uint32	dddd  = 1;	
+}
+
+message TestE
+{
+	required TestD testd  = 1;	
+}

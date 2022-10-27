@@ -1,0 +1,9 @@
+package Google;
+
+message TestA
+{
+	required uint32 id   = 1;	
+	optional uint32 name   = 2;
+	required string year    = 3;
+	optional uint32 nettype   = 4;	
+}

@@ -1,0 +1,1 @@
+@python H:\Proto\protoc-gen-lua\protoc-gen-lua\plugin
