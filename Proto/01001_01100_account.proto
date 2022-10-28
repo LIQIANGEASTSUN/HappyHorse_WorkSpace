@@ -1,0 +1,30 @@
+// -----------------------------------------
+// account
+//
+
+// -----------------------------------------
+// 结构体
+//
+
+
+// -----------------------------------------
+// 客户端请求：登录请求
+message LoginRequest {
+  option (msgid) = 1001;
+  required string channelId = 1;    // 渠道id
+  required string userIdentity = 2; // 用户标识，SDKUserId或用户名
+  required string token = 3;        // token
+  required string deviceId = 4;     // 设备id
+  required string version = 5;      // 客户端版本号
+}
+
+// 服务器返回：登录请求返回结果
+message LoginResponse {
+  option (msgid) = 1002;
+  required int32 resultCode = 1; // 0=成功
+}
+
+// 客户端请求：登出
+message LogoutRequest {
+	option (msgid) = 1003;
+}
