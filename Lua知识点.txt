@@ -1,7 +1,4 @@
 
-string.pack 讲解
-https://blog.csdn.net/beyond706/article/details/105949783
-https://www.runoob.com/manual/lua53doc/manual.html#6.4.2
 
 
     local buffer, status, partial = self.socket:receive("*a")

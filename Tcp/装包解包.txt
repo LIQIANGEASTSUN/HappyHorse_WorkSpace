@@ -1,0 +1,34 @@
+
+
+require "Protocol.Message.TestA_pb"
+
+
+
+    local msg = TestA_pb.TestA()
+
+    msg.id = 5
+    msg.name = 20
+    msg.year = "2022-10-27"
+    msg.nettype = 10
+
+    local protobufData = msg:SerializeToString()
+    
+	-- 装包格式，
+    local format = ">i4i4c"
+    format = format..string.len(protobufData)
+	-- 这个装包格式能存放多少个字节的数据
+    local packLen = string.packsize(format)
+
+    local str1 = string.pack(format, 100, 20, protobufData)
+
+    local len, msgId, proData, pos = string.unpack(format, str1, 1)
+
+    local msg2 = TestA_pb.TestA()
+    msg2:ParseFromString(proData)
+
+    local id = msg2.id;
+    local name = msg2.name
+    local year = msg2.year
+    local nettype = msg2.nettype
+
+    local a = 0
