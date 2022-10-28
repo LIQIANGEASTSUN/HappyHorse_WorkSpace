@@ -1,8 +1,0 @@
-package Google;
-
-message TestB
-{
-	required uint32 aa   = 1;	
-	optional uint32 bb   = 2;
-	required string cc    = 3;	
-}
