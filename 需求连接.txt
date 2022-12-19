@@ -11,5 +11,26 @@ https://docs.qq.com/doc/DWUdFUEVhVlVZaGh6
 https://docs.qq.com/sheet/DWUFwTXRpQ3B5WUZP?tab=BB08J2
 
 
+<<<<<<< HEAD
 Bug、优化
 https://docs.qq.com/sheet/DWXp4RE13U1h5TUZm?tab=6fcwc7
+=======
+障碍玩法
+https://docs.qq.com/sheet/DT3JIUGxRTURqc2FG?tab=BB08J2
+参考视频
+https://www.bilibili.com/video/BV1qY411L7A1/?spm_id_from=333.788
+
+挂机建筑
+https://docs.qq.com/doc/DWWd4TmdCdVpjQkxS
+
+
+宠物在家园随机行走AI，到挂机建筑
+
+宠物界面
+
+回家园，人放在一个位置，播放动画 config表 roleHomeAni
+
+
+
+
+>>>>>>> d78f26adf8622280904abeaa10970d12a6c9b965
