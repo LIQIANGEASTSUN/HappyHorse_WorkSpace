@@ -1,0 +1,10 @@
+return{["101"]={["sn"]=101,["countType"]=1,["countMod"]=0,["requirement"]="角色等级达到{level}级"},
+["102"]={["sn"]=102,["countType"]=1,["countMod"]=0,["requirement"]="拥有{type}类型宠物{num}个"},
+["103"]={["sn"]=103,["countType"]=1,["countMod"]=0,["requirement"]="{num}个宠物达到{level}级"},
+["104"]={["sn"]=104,["countType"]=0,["countMod"]=2,["requirement"]="拥有{petName}宠物"},
+["105"]={["sn"]=105,["countType"]=1,["countMod"]=0,["requirement"]="生产{itemName}{num}个"},
+["106"]={["sn"]=106,["countType"]=1,["countMod"]=0,["requirement"]="使用装饰工厂{num}次"},
+["107"]={["sn"]=107,["countType"]=1,["countMod"]=0,["requirement"]="扩建{num}次"},
+["108"]={["sn"]=108,["countType"]=1,["countMod"]=0,["requirement"]="使用回收站获得{num}金币"},
+["109"]={["sn"]=109,["countType"]=1,["countMod"]=0,["requirement"]="获得{itemName}{num}个"},
+["110"]={["sn"]=110,["countType"]=0,["countMod"]=2,["requirement"]="发现{factoryName}"}}

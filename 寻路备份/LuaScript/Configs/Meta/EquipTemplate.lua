@@ -1,0 +1,12 @@
+return{["710101"]={["sn"]=710101,["model"]="",["type"]=1,["subType"]=1,["level"]=1,["attribute"]={{1,5},{2,1}},["levelUpCost"]={{2,50}}},
+["710102"]={["sn"]=710102,["model"]="",["type"]=1,["subType"]=1,["level"]=2,["attribute"]={{1,5.5},{2,1.1}},["levelUpCost"]={{2,100}}},
+["710103"]={["sn"]=710103,["model"]="",["type"]=1,["subType"]=1,["level"]=3,["attribute"]={{1,6},{2,1.2}},["levelUpCost"]={{2,150}}},
+["710104"]={["sn"]=710104,["model"]="",["type"]=1,["subType"]=1,["level"]=4,["attribute"]={{1,6.5},{2,1.3}},["levelUpCost"]={{2,200}}},
+["710105"]={["sn"]=710105,["model"]="",["type"]=1,["subType"]=1,["level"]=5,["attribute"]={{1,7},{2,1.4}},["levelUpCost"]={{2,250}}},
+["710106"]={["sn"]=710106,["model"]="",["type"]=1,["subType"]=1,["level"]=6,["attribute"]={{1,7.5},{2,1.5}},["levelUpCost"]={}},
+["710201"]={["sn"]=710201,["model"]="",["type"]=1,["subType"]=2,["level"]=1,["attribute"]={{1,5},{2,1}},["levelUpCost"]={{2,50}}},
+["710202"]={["sn"]=710202,["model"]="",["type"]=1,["subType"]=2,["level"]=2,["attribute"]={{1,5.5},{2,1.1}},["levelUpCost"]={{2,100}}},
+["710203"]={["sn"]=710203,["model"]="",["type"]=1,["subType"]=2,["level"]=3,["attribute"]={{1,6},{2,1.2}},["levelUpCost"]={{2,150}}},
+["710204"]={["sn"]=710204,["model"]="",["type"]=1,["subType"]=2,["level"]=4,["attribute"]={{1,6.5},{2,1.3}},["levelUpCost"]={{2,200}}},
+["710205"]={["sn"]=710205,["model"]="",["type"]=1,["subType"]=2,["level"]=5,["attribute"]={{1,7},{2,1.4}},["levelUpCost"]={{2,250}}},
+["710206"]={["sn"]=710206,["model"]="",["type"]=1,["subType"]=2,["level"]=6,["attribute"]={{1,7.5},{2,1.5}},["levelUpCost"]={}}}

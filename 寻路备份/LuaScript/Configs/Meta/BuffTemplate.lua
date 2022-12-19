@@ -1,0 +1,4 @@
+return{["1"]={["sn"]=1,["camp"]=3,["range"]=0.0,["buffType"]=5,["buffValue"]={2,1.5},["triggerCondition"]=2,["dotValue"]={1},["removeType"]=1,["removeValue"]=-1,["advantage"]=1,["priority"]=1,["layer"]=1,["level"]=1,["effect"]=""},
+["2"]={["sn"]=2,["camp"]=3,["range"]=0.0,["buffType"]=5,["buffValue"]={3,1.5},["triggerCondition"]=2,["dotValue"]={1},["removeType"]=1,["removeValue"]=-1,["advantage"]=1,["priority"]=1,["layer"]=1,["level"]=1,["effect"]=""},
+["3"]={["sn"]=3,["camp"]=3,["range"]=0.0,["buffType"]=5,["buffValue"]={1,1.5},["triggerCondition"]=2,["dotValue"]={1},["removeType"]=1,["removeValue"]=-1,["advantage"]=1,["priority"]=1,["layer"]=1,["level"]=1,["effect"]=""},
+["9"]={["sn"]=9,["camp"]=2,["range"]=3,["buffType"]=2,["buffValue"]={0.3},["triggerCondition"]=1,["dotValue"]={1,1.1},["removeType"]=1,["removeValue"]=-1,["advantage"]=1,["priority"]=1,["layer"]=1,["level"]=1,["effect"]="E_petHpRecovery"}}

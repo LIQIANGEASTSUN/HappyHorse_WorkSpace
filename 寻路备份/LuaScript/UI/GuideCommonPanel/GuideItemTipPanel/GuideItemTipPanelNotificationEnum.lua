@@ -1,0 +1,4 @@
+GuideItemTipPanelNotificationEnum =
+{
+    Close = "GuideItemTipPanelNotificationEnum.Close"
+}

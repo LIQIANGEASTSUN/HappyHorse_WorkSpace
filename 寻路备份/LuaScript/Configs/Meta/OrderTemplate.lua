@@ -1,0 +1,9 @@
+return{["20101"]={["sn"]=20101,["orderLevel"]={1},["totalValueTime"]=30,["threeItem"]={{1000,1},{0,0.8},{0,0.7}}},
+["20102"]={["sn"]=20102,["orderLevel"]={1,2},["totalValueTime"]=50,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["20103"]={["sn"]=20103,["orderLevel"]={1,2},["totalValueTime"]=70,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["20104"]={["sn"]=20104,["orderLevel"]={1,2},["totalValueTime"]=90,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["20105"]={["sn"]=20105,["orderLevel"]={1,2},["totalValueTime"]=120,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["30101"]={["sn"]=30101,["orderLevel"]={1},["totalValueTime"]=30,["threeItem"]={{1000,1},{0,0.8},{0,0.7}}},
+["30102"]={["sn"]=30102,["orderLevel"]={1,2},["totalValueTime"]=50,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["30103"]={["sn"]=30103,["orderLevel"]={1,2},["totalValueTime"]=70,["threeItem"]={{200,1},{400,0.8},{400,0.7}}},
+["30104"]={["sn"]=30104,["orderLevel"]={1,2},["totalValueTime"]=90,["threeItem"]={{200,1},{400,0.8},{400,0.7}}}}

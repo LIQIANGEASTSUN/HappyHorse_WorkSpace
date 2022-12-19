@@ -1,0 +1,3 @@
+AdsSimpleRewardPanelNotificationEnum =
+{
+}

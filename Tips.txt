@@ -1,0 +1,14 @@
+
+
+≥°æ∞÷–
+AppServices.SceneTextTip:Show
+
+UI …œ
+AppServices.UITextTip:Show(str)
+
+
+G_ITEM_ICONS
+
+G_PET_SPRITE
+
+PetAtlasInfo
