@@ -1,0 +1,25 @@
+<?php
+return array(
+1=>["ID"=>1,"EnName"=>"IsSurvial","CnName"=>"存活","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+2=>["ID"=>2,"EnName"=>"OnBorn","CnName"=>"出生","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+3=>["ID"=>3,"EnName"=>"OnClick","CnName"=>"操作/点击","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+4=>["ID"=>4,"EnName"=>"OnDrag","CnName"=>"操作/拖拽","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+5=>["ID"=>5,"EnName"=>"OnDrop","CnName"=>"操作/拖拽放下","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+21=>["ID"=>21,"EnName"=>"Sleep","CnName"=>"睡觉/睡觉","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+6=>["ID"=>6,"EnName"=>"IsSleep","CnName"=>"睡觉/是否在睡觉","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+7=>["ID"=>7,"EnName"=>"HasEnergy","CnName"=>"是否有体力","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+8=>["ID"=>8,"EnName"=>"HP","CnName"=>"血量","Type"=>0,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+9=>["ID"=>9,"EnName"=>"CanCollect","CnName"=>"采集/有采集功能","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+10=>["ID"=>10,"EnName"=>"Collect","CnName"=>"采集/采集","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+11=>["ID"=>11,"EnName"=>"CollectComplete","CnName"=>"采集/采集完成","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+12=>["ID"=>12,"EnName"=>"NeedCollect","CnName"=>"采集/有采集需求了","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+13=>["ID"=>13,"EnName"=>"CanAttack","CnName"=>"攻击/有攻击功能","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+14=>["ID"=>14,"EnName"=>"Attack","CnName"=>"攻击/攻击","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+15=>["ID"=>15,"EnName"=>"NeedAttack","CnName"=>"攻击/有攻击需求了","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+16=>["ID"=>16,"EnName"=>"CanBuild","CnName"=>"建造/有建造功能","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+17=>["ID"=>17,"EnName"=>"Build","CnName"=>"建造/建造","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+18=>["ID"=>18,"EnName"=>"NeedBuild","CnName"=>"建造/有建造需求了","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+19=>["ID"=>19,"EnName"=>"EmptyCell","CnName"=>"有空格","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+20=>["ID"=>20,"EnName"=>"Idle","CnName"=>"闲置","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0],
+);
+?>

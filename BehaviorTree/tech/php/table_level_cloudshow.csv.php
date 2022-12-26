@@ -1,0 +1,6 @@
+<?php
+return array(
+1=>["Number"=>1,"Explain"=>"云上的图","ShowLevel"=>9999,"ShowCondition"=>0,"ShowConditionPara1"=>-1,"CloseCondition"=>1,"CloseConditionPara1"=>109,"CoordinateX"=>-14.4,"CoordinateY"=>-11.1,"Wide"=>784.8,"High"=>816.8,"Resource"=>"sc_obj_dungeonentrance_level02","UnlockResource"=>"","ShowType"=>1,"ClickResult"=>1,"ClickResultPara0"=>"UIHeroicInstanceEntranceDetailsView","ClickResultPara1"=>"","ClickResultPara2"=>"","Drift"=>1,"Effect"=>"","EffectX"=>-14.4,"EffectY"=>-11.1,"EffectZoom"=>0.8,"PhysicalX"=>0.8,"PhysicalY"=>-2.97,"PhysicalSwitch"=>0,"PopulationX"=>1.51,"PopulationY"=>-1.321,"PopulationSwitch"=>1],
+2=>["Number"=>2,"Explain"=>"副本入口","ShowLevel"=>9999,"ShowCondition"=>1,"ShowConditionPara1"=>109,"CloseCondition"=>-1,"CloseConditionPara1"=>-1,"CoordinateX"=>-14.4,"CoordinateY"=>-11.1,"Wide"=>784.8,"High"=>816.8,"Resource"=>"sc_obj_dungeonentrance_level01","UnlockResource"=>"fx_dungeonentrance_star1","ShowType"=>1,"ClickResult"=>2,"ClickResultPara0"=>"3","ClickResultPara1"=>"13","ClickResultPara2"=>"9998","Drift"=>1,"Effect"=>"fx_dungeonentrance_level01","EffectX"=>-14.4,"EffectY"=>-11.1,"EffectZoom"=>0.8,"PhysicalX"=>0.8,"PhysicalY"=>-2.97,"PhysicalSwitch"=>1,"PopulationX"=>1.51,"PopulationY"=>-1.321,"PopulationSwitch"=>0],
+);
+?>

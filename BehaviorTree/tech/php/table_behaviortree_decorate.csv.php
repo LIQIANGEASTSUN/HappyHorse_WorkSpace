@@ -1,0 +1,19 @@
+<?php
+return array(
+1=>["ID"=>1,"EnName"=>"DoFunction","CnName"=>"功能/执行功能","Type"=>3,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+2=>["ID"=>2,"EnName"=>"IsClick","CnName"=>"操作手势/点击","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+3=>["ID"=>3,"EnName"=>"IsDoubleClick","CnName"=>"操作手势/双击","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+4=>["ID"=>4,"EnName"=>"IsLongPress","CnName"=>"操作手势/长按","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+5=>["ID"=>5,"EnName"=>"DoubleClickSpriteID","CnName"=>"双击物品SpriteID","Type"=>2,"FloatValue"=>0,"IntValue"=>-1,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+6=>["ID"=>6,"EnName"=>"Speak","CnName"=>"说话","Type"=>10,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+7=>["ID"=>7,"EnName"=>"MoveToPathPoint","CnName"=>"移动到路点","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+8=>["ID"=>8,"EnName"=>"PlayAnimation","CnName"=>"播放动画","Type"=>10,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+9=>["ID"=>9,"EnName"=>"AnimationTime","CnName"=>"播放动画时间","Type"=>0,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+10=>["ID"=>10,"EnName"=>"ScheduleMinID","CnName"=>"进度/区间最小值ID","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+11=>["ID"=>11,"EnName"=>"ScheduleMaxID","CnName"=>"进度/区间最大值ID","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+12=>["ID"=>12,"EnName"=>"TaskID","CnName"=>"任务ID","Type"=>10,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+13=>["ID"=>13,"EnName"=>"WaitTimeMin","CnName"=>"等待时间下限","Type"=>0,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+14=>["ID"=>14,"EnName"=>"WaitTimeMax","CnName"=>"等待时间上限","Type"=>0,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+15=>["ID"=>15,"EnName"=>"Rotation","CnName"=>"旋转朝向","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"LongValue"=>"0","BoolValue"=>0,"StringValue"=>""],
+);
+?>

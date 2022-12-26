@@ -1,0 +1,19 @@
+<?php
+return array(
+101=>["ID"=>101,"MatchElo"=>"西部牛仔","KDACoe"=>1,"MapCoe"=>1.5],
+102=>["ID"=>102,"MatchElo"=>"重装机甲","KDACoe"=>1,"MapCoe"=>1.5],
+103=>["ID"=>103,"MatchElo"=>"海盗","KDACoe"=>1,"MapCoe"=>1.5],
+104=>["ID"=>104,"MatchElo"=>"宠物驾驶机甲","KDACoe"=>1,"MapCoe"=>1.5],
+105=>["ID"=>105,"MatchElo"=>"美国大兵","KDACoe"=>1,"MapCoe"=>1.5],
+106=>["ID"=>106,"MatchElo"=>"外星人","KDACoe"=>1,"MapCoe"=>1.8],
+107=>["ID"=>107,"MatchElo"=>"小女孩","KDACoe"=>1,"MapCoe"=>1.5],
+108=>["ID"=>108,"MatchElo"=>"恐龙","KDACoe"=>1,"MapCoe"=>1.2],
+109=>["ID"=>109,"MatchElo"=>"亚马逊战士","KDACoe"=>1,"MapCoe"=>1.5],
+110=>["ID"=>110,"MatchElo"=>"女法师","KDACoe"=>1,"MapCoe"=>1.5],
+111=>["ID"=>111,"MatchElo"=>"奥丁","KDACoe"=>1,"MapCoe"=>1.2],
+112=>["ID"=>112,"MatchElo"=>"死神","KDACoe"=>1.2,"MapCoe"=>1.2],
+113=>["ID"=>113,"MatchElo"=>"堆叠小怪","KDACoe"=>1.2,"MapCoe"=>1.5],
+114=>["ID"=>114,"MatchElo"=>"植物","KDACoe"=>1.2,"MapCoe"=>1.8],
+115=>["ID"=>115,"MatchElo"=>"忍者","KDACoe"=>1.2,"MapCoe"=>1.5],
+);
+?>

@@ -1,0 +1,21 @@
+<?php
+return array(
+1=>["ID"=>1,"OutpostID"=>1,"PlanID"=>101,"TaskID1"=>91011,"TaskID2"=>91012,"TaskID3"=>91013,"Storyline"=>"1"],
+2=>["ID"=>2,"OutpostID"=>1,"PlanID"=>102,"TaskID1"=>91021,"TaskID2"=>91022,"TaskID3"=>91023,"Storyline"=>"2"],
+3=>["ID"=>3,"OutpostID"=>1,"PlanID"=>103,"TaskID1"=>91031,"TaskID2"=>91032,"TaskID3"=>91033,"Storyline"=>"3"],
+4=>["ID"=>4,"OutpostID"=>1,"PlanID"=>104,"TaskID1"=>91041,"TaskID2"=>91042,"TaskID3"=>91043,"Storyline"=>"4"],
+5=>["ID"=>5,"OutpostID"=>1,"PlanID"=>105,"TaskID1"=>91051,"TaskID2"=>91052,"TaskID3"=>91053,"Storyline"=>"5"],
+6=>["ID"=>6,"OutpostID"=>1,"PlanID"=>106,"TaskID1"=>91061,"TaskID2"=>91062,"TaskID3"=>91063,"Storyline"=>"6"],
+7=>["ID"=>7,"OutpostID"=>1,"PlanID"=>107,"TaskID1"=>91071,"TaskID2"=>91072,"TaskID3"=>91073,"Storyline"=>"7"],
+8=>["ID"=>8,"OutpostID"=>1,"PlanID"=>108,"TaskID1"=>91081,"TaskID2"=>91082,"TaskID3"=>91083,"Storyline"=>"8"],
+9=>["ID"=>9,"OutpostID"=>1,"PlanID"=>109,"TaskID1"=>-1,"TaskID2"=>-1,"TaskID3"=>-1,"Storyline"=>"9"],
+10=>["ID"=>10,"OutpostID"=>2,"PlanID"=>201,"TaskID1"=>92011,"TaskID2"=>92012,"TaskID3"=>92013,"Storyline"=>"1"],
+11=>["ID"=>11,"OutpostID"=>2,"PlanID"=>202,"TaskID1"=>92021,"TaskID2"=>92022,"TaskID3"=>92023,"Storyline"=>"2"],
+12=>["ID"=>12,"OutpostID"=>2,"PlanID"=>203,"TaskID1"=>92031,"TaskID2"=>92032,"TaskID3"=>92033,"Storyline"=>"3"],
+13=>["ID"=>13,"OutpostID"=>2,"PlanID"=>204,"TaskID1"=>92041,"TaskID2"=>92042,"TaskID3"=>92043,"Storyline"=>"4"],
+14=>["ID"=>14,"OutpostID"=>2,"PlanID"=>205,"TaskID1"=>92051,"TaskID2"=>92052,"TaskID3"=>92053,"Storyline"=>"5"],
+15=>["ID"=>15,"OutpostID"=>2,"PlanID"=>206,"TaskID1"=>92061,"TaskID2"=>92062,"TaskID3"=>92063,"Storyline"=>"6"],
+16=>["ID"=>16,"OutpostID"=>2,"PlanID"=>207,"TaskID1"=>92071,"TaskID2"=>92072,"TaskID3"=>92073,"Storyline"=>"7"],
+17=>["ID"=>17,"OutpostID"=>2,"PlanID"=>208,"TaskID1"=>-1,"TaskID2"=>-1,"TaskID3"=>-1,"Storyline"=>"8"],
+);
+?>

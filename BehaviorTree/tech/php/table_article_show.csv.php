@@ -1,0 +1,27 @@
+<?php
+return array(
+1=>["ArticleSourceType"=>1,"Remarks"=>"购买、任务领取、UI宝箱领取","IsMove"=>0,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+2=>["ArticleSourceType"=>2,"Remarks"=>"下雨产出","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+4=>["ArticleSourceType"=>4,"Remarks"=>"建造、升级","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+8=>["ArticleSourceType"=>8,"Remarks"=>"合成产出","IsMove"=>0,"IsShake"=>0,"IsZoomInOut"=>1,"IsZoomIn"=>0,"OriginScale"=>0],
+16=>["ArticleSourceType"=>16,"Remarks"=>"打开宝箱","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+32=>["ArticleSourceType"=>32,"Remarks"=>"打开泡泡","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+34=>["ArticleSourceType"=>34,"Remarks"=>"打开气球泡泡","IsMove"=>1,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+64=>["ArticleSourceType"=>64,"Remarks"=>"打开漂浮物","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+128=>["ArticleSourceType"=>128,"Remarks"=>"道具随时间产出在周围","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+256=>["ArticleSourceType"=>256,"Remarks"=>"道具随时间死亡产出","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+512=>["ArticleSourceType"=>512,"Remarks"=>"道具点击功能产出位置“标准”","IsMove"=>1,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+1024=>["ArticleSourceType"=>1024,"Remarks"=>"采集、偷取后运输放置位置、丢弃","IsMove"=>1,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>1,"OriginScale"=>0.8],
+2048=>["ArticleSourceType"=>2048,"Remarks"=>"道具、生物、被击杀后掉落","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+4096=>["ArticleSourceType"=>4096,"Remarks"=>"挂载道具“身上”的道具点击放下","IsMove"=>1,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+8192=>["ArticleSourceType"=>8192,"Remarks"=>"关卡奖励","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+16384=>["ArticleSourceType"=>16384,"Remarks"=>"采集掉落","IsMove"=>0,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+32768=>["ArticleSourceType"=>32768,"Remarks"=>"召唤","IsMove"=>0,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+65536=>["ArticleSourceType"=>65536,"Remarks"=>"替换位置","IsMove"=>0,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+131072=>["ArticleSourceType"=>131072,"Remarks"=>"天气雨浇出来的","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+33554432=>["ArticleSourceType"=>33554432,"Remarks"=>"【新玩法】非绑定建造产出建筑","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+67108864=>["ArticleSourceType"=>67108864,"Remarks"=>"【新玩法】从HUD中收取","IsMove"=>1,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>1,"OriginScale"=>0],
+268435456=>["ArticleSourceType"=>268435456,"Remarks"=>"【新玩法】砍伐产出的物品","IsMove"=>0,"IsShake"=>1,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+536870912=>["ArticleSourceType"=>536870912,"Remarks"=>"【新玩法】道具出生掉落使用","IsMove"=>1,"IsShake"=>0,"IsZoomInOut"=>0,"IsZoomIn"=>0,"OriginScale"=>0],
+);
+?>

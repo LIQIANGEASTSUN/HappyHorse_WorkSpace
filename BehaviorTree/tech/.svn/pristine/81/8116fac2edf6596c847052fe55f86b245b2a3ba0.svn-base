@@ -1,0 +1,20 @@
+<?php
+return array(
+0=>["KillNumCon"=>0,"KillScore"=>0,"DeadScore"=>0],
+1=>["KillNumCon"=>1,"KillScore"=>0,"DeadScore"=>0],
+2=>["KillNumCon"=>2,"KillScore"=>1,"DeadScore"=>1],
+3=>["KillNumCon"=>3,"KillScore"=>2,"DeadScore"=>2],
+4=>["KillNumCon"=>4,"KillScore"=>3,"DeadScore"=>3],
+5=>["KillNumCon"=>5,"KillScore"=>4,"DeadScore"=>4],
+6=>["KillNumCon"=>6,"KillScore"=>5,"DeadScore"=>5],
+7=>["KillNumCon"=>7,"KillScore"=>6,"DeadScore"=>6],
+8=>["KillNumCon"=>8,"KillScore"=>7,"DeadScore"=>7],
+9=>["KillNumCon"=>9,"KillScore"=>8,"DeadScore"=>8],
+10=>["KillNumCon"=>10,"KillScore"=>9,"DeadScore"=>9],
+11=>["KillNumCon"=>11,"KillScore"=>10,"DeadScore"=>10],
+12=>["KillNumCon"=>12,"KillScore"=>10,"DeadScore"=>10],
+13=>["KillNumCon"=>13,"KillScore"=>10,"DeadScore"=>10],
+14=>["KillNumCon"=>14,"KillScore"=>10,"DeadScore"=>10],
+15=>["KillNumCon"=>15,"KillScore"=>10,"DeadScore"=>10],
+);
+?>

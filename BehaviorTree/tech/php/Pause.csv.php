@@ -1,0 +1,24 @@
+<?php
+return array(
+1=>["ID"=>1,"Name"=>"世界地图界面","UIAddress"=>"UIWorldMapView"],
+2=>["ID"=>2,"Name"=>"关卡通关条件+哨站通关条件","UIAddress"=>"UILevelconditionAndOutpostTaskView"],
+3=>["ID"=>3,"Name"=>"设置界面","UIAddress"=>"UISettingView"],
+4=>["ID"=>4,"Name"=>"图鉴界面","UIAddress"=>"UIPropsView"],
+5=>["ID"=>5,"Name"=>"图鉴子界面1","UIAddress"=>"UIPropsDataView"],
+6=>["ID"=>6,"Name"=>"通用奖励界面","UIAddress"=>"UIRewardForRepeatedView"],
+7=>["ID"=>7,"Name"=>"挑战关卡开始界面","UIAddress"=>"UITimeLevelBeginView"],
+8=>["ID"=>8,"Name"=>"返回界面重置确认界面","UIAddress"=>"UIPureTextPopUpView"],
+9=>["ID"=>9,"Name"=>"挑战关卡退出界面1","UIAddress"=>"UITimeLevelStumpedView"],
+10=>["ID"=>10,"Name"=>"道具升级界面","UIAddress"=>"UIUpGradePopUpView"],
+11=>["ID"=>11,"Name"=>"主界面全屏界面【世界地图背景】","UIAddress"=>"UIPlacePopUpView"],
+12=>["ID"=>12,"Name"=>"迷雾界面","UIAddress"=>"UIPopulationPopUpView"],
+13=>["ID"=>13,"Name"=>"查看人口界面","UIAddress"=>"UIDetailBarPopulationPopUpView"],
+14=>["ID"=>14,"Name"=>"家园信息界面","UIAddress"=>"UIPersonalInfoView"],
+15=>["ID"=>15,"Name"=>"资源信息界面【金币原石】","UIAddress"=>"UICoinPopUpView"],
+16=>["ID"=>16,"Name"=>"工人合成界面","UIAddress"=>"UIPopulationView"],
+17=>["ID"=>17,"Name"=>"商店界面","UIAddress"=>"UIShopView"],
+18=>["ID"=>18,"Name"=>"退出关卡界面","UIAddress"=>"UIExitLevelView"],
+19=>["ID"=>19,"Name"=>"UI宝箱界面","UIAddress"=>"UIEpitaphView"],
+20=>["ID"=>20,"Name"=>"世界地图界面","UIAddress"=>"UIWorldMapView"],
+);
+?>

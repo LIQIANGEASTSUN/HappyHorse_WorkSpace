@@ -1,0 +1,24 @@
+<?php
+return array(
+101=>["ID"=>101,"EventGroupId"=>1,"EventGroupName"=>"龙屋满槽，指引返回哨站","EventDesc"=>"指引小船按钮","CompleteType"=>2],
+102=>["ID"=>102,"EventGroupId"=>1,"EventGroupName"=>"","EventDesc"=>"指引哨站区域","CompleteType"=>2],
+103=>["ID"=>103,"EventGroupId"=>1,"EventGroupName"=>"","EventDesc"=>"指引挑战按钮","CompleteType"=>2],
+201=>["ID"=>201,"EventGroupId"=>2,"EventGroupName"=>"触发新手礼包","EventDesc"=>"指引新手礼包图标","CompleteType"=>2],
+301=>["ID"=>301,"EventGroupId"=>3,"EventGroupName"=>"指引返回家园","EventDesc"=>"指引世界地图按钮","CompleteType"=>2],
+302=>["ID"=>302,"EventGroupId"=>3,"EventGroupName"=>"","EventDesc"=>"指引小船按钮","CompleteType"=>2],
+401=>["ID"=>401,"EventGroupId"=>4,"EventGroupName"=>"指引体力","EventDesc"=>"指引体力图标","CompleteType"=>2],
+501=>["ID"=>501,"EventGroupId"=>5,"EventGroupName"=>"指引商店（金币满）","EventDesc"=>"指引商店图标","CompleteType"=>2],
+601=>["ID"=>601,"EventGroupId"=>6,"EventGroupName"=>"指引商店（原石满）","EventDesc"=>"指引商店图标","CompleteType"=>2],
+701=>["ID"=>701,"EventGroupId"=>7,"EventGroupName"=>"指引每日任务","EventDesc"=>"指引每日任务图标","CompleteType"=>2],
+801=>["ID"=>801,"EventGroupId"=>8,"EventGroupName"=>"宝箱打开按钮软指引","EventDesc"=>"宝箱打开按钮","CompleteType"=>2],
+901=>["ID"=>901,"EventGroupId"=>9,"EventGroupName"=>"图鉴按钮","EventDesc"=>"指引图鉴按钮","CompleteType"=>2],
+1001=>["ID"=>1001,"EventGroupId"=>10,"EventGroupName"=>"商店免费按钮","EventDesc"=>"指引商店免费按钮","CompleteType"=>2],
+1011=>["ID"=>1011,"EventGroupId"=>11,"EventGroupName"=>"商店积分免费宝箱","EventDesc"=>"指引商店积分免费按钮","CompleteType"=>2],
+1012=>["ID"=>1012,"EventGroupId"=>12,"EventGroupName"=>"指引体力商店免费","EventDesc"=>"指引体力商店免费按钮","CompleteType"=>2],
+1013=>["ID"=>1013,"EventGroupId"=>13,"EventGroupName"=>"指引转盘开始按钮","EventDesc"=>"指引转盘开始按钮","CompleteType"=>2],
+1014=>["ID"=>1014,"EventGroupId"=>14,"EventGroupName"=>"指引进度条","EventDesc"=>"指引进度条","CompleteType"=>2],
+1015=>["ID"=>1015,"EventGroupId"=>15,"EventGroupName"=>"指引免费礼包按钮","EventDesc"=>"指引免费礼包按钮","CompleteType"=>2],
+1016=>["ID"=>1016,"EventGroupId"=>16,"EventGroupName"=>"第二家园商店免费宝箱","EventDesc"=>"指引免费宝箱按钮","CompleteType"=>2],
+1017=>["ID"=>1017,"EventGroupId"=>17,"EventGroupName"=>"商店蛋糕树种子免费按钮","EventDesc"=>"指引免费蛋糕树按钮","CompleteType"=>2],
+);
+?>

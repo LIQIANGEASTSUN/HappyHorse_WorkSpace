@@ -1,0 +1,11 @@
+<?php
+return array(
+1001=>["ID"=>1001,"Notes"=>"匹配人数不足，结算赛局","Chinese"=>"人数不足，本局解散","English"=>""],
+1002=>["ID"=>1002,"Notes"=>"队长取消了匹配","Chinese"=>"队长取消了匹配","English"=>""],
+1003=>["ID"=>1003,"Notes"=>"开局失败（连接战斗服失败）","Chinese"=>"开局失败","English"=>""],
+40001=>["ID"=>40001,"Notes"=>"结算胜利用","Chinese"=>"胜利","English"=>"Victory"],
+40002=>["ID"=>40002,"Notes"=>"结算平局用","Chinese"=>"平局","English"=>"Dogfall"],
+40003=>["ID"=>40003,"Notes"=>"结算输了用","Chinese"=>"失败","English"=>"Fail"],
+40004=>["ID"=>40004,"Notes"=>"结算特殊情况使用","Chinese"=>"当局比赛有效喷涂面积值未达到标准值，无数据结算。","English"=>"The effective spraying area value of the competition did not reach the standard value"],
+);
+?>

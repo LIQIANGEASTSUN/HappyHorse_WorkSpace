@@ -1,0 +1,19 @@
+<?php
+return array(
+1=>["NeedEnergy"=>1,"Time"=>3600,"Diamond"=>8],
+2=>["NeedEnergy"=>2,"Time"=>3320,"Diamond"=>16],
+3=>["NeedEnergy"=>3,"Time"=>3040,"Diamond"=>24],
+4=>["NeedEnergy"=>4,"Time"=>2760,"Diamond"=>32],
+5=>["NeedEnergy"=>5,"Time"=>2480,"Diamond"=>40],
+6=>["NeedEnergy"=>6,"Time"=>2200,"Diamond"=>48],
+7=>["NeedEnergy"=>7,"Time"=>1920,"Diamond"=>56],
+8=>["NeedEnergy"=>8,"Time"=>1640,"Diamond"=>64],
+9=>["NeedEnergy"=>9,"Time"=>1360,"Diamond"=>72],
+10=>["NeedEnergy"=>10,"Time"=>1080,"Diamond"=>80],
+11=>["NeedEnergy"=>11,"Time"=>800,"Diamond"=>88],
+12=>["NeedEnergy"=>12,"Time"=>520,"Diamond"=>96],
+13=>["NeedEnergy"=>13,"Time"=>240,"Diamond"=>104],
+14=>["NeedEnergy"=>14,"Time"=>240,"Diamond"=>112],
+15=>["NeedEnergy"=>15,"Time"=>240,"Diamond"=>120],
+);
+?>

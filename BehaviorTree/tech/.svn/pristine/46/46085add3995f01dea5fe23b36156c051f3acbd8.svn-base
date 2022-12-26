@@ -1,0 +1,3538 @@
+﻿#ifndef __TABLE_CONFIG_H
+#define __TABLE_CONFIG_H
+#include "BaseConfigEx.h"
+struct ArticleT : ConfigBaseT
+{
+	virtual ~ArticleT()
+	{
+	}
+	ArticleT()
+	{
+		FileName = "Article.csv";
+		_kf =
+		{
+			{"ArticleId",{INT_FD, &ArticleId}},
+			{"Name",{TSTR_FD, &Name}},
+			{"Image",{TSTR_FD, &Image}},
+			{"Annotation",{TSTR_FD, &Annotation}},
+			{"Descript",{TSTR_FD, &Descript}},
+			{"ArticleLevel",{INT_FD, &ArticleLevel}},
+			{"EnableMove",{INT_FD, &EnableMove}},
+			{"HomePrice",{INT_FD, &HomePrice}},
+			{"LevelPrice",{INT_FD, &LevelPrice}},
+			{"EnableMerge",{INT_FD, &EnableMerge}},
+			{"ShowType",{INT_FD, &ShowType}},
+			{"StealLimit",{INT_FD, &StealLimit}},
+			{"SizeWidth",{INT_FD, &SizeWidth}},
+			{"SizeHeight",{INT_FD, &SizeHeight}},
+			{"Score",{INT_FD, &Score}},
+			{"ArticleType",{INT_FD, &ArticleType}},
+			{"ArticleFunction",{INT_FD, &ArticleFunction}},
+			{"AiConfig",{TSTR_FD, &AiConfig}},
+			{"Guide",{INT_FD, &Guide}},
+			{"SurvivalTimeMin",{FLOAT_FD, &SurvivalTimeMin}},
+			{"SurvivalTimeMax",{FLOAT_FD, &SurvivalTimeMax}},
+			{"SurvivalDropProbability",{FLOAT_FD, &SurvivalDropProbability}},
+			{"SurvivalTimeDropId",{INT_FD, &SurvivalTimeDropId}},
+			{"LevelAppear",{INT_FD, &LevelAppear}},
+			{"AwardType",{INT_FD, &AwardType}},
+			{"Award",{INT_FD, &Award}},
+			{"BuildId",{INT_FD, &BuildId}},
+			{"BuildDragonCount",{INT_FD, &BuildDragonCount}},
+			{"BuildTime",{FLOAT_FD, &BuildTime}},
+			{"BuildImmediatelyPrice",{INT_FD, &BuildImmediatelyPrice}},
+			{"GoldUpperLimit",{INT_FD, &GoldUpperLimit}},
+			{"OreUpperLimit",{INT_FD, &OreUpperLimit}},
+			{"ResetTime",{INT_FD, &ResetTime}},
+			{"UnLockSleepPrice",{INT_FD, &UnLockSleepPrice}},
+			{"UnLockWaitSleepPrice",{INT_FD, &UnLockWaitSleepPrice}},
+			{"CostType",{INT_FD, &CostType}},
+			{"Cost",{INT_FD, &Cost}},
+			{"UpgradeID",{INT_FD, &UpgradeID}},
+			{"UpgradeDropId",{INT_FD, &UpgradeDropId}},
+			{"UpgradeType",{TSTR_FD, &UpgradeType}},
+			{"TreasureDropId1",{INT_FD, &TreasureDropId1}},
+			{"TreasureUnLockCostType1",{INT_FD, &TreasureUnLockCostType1}},
+			{"TreasureUnLockCost1",{INT_FD, &TreasureUnLockCost1}},
+			{"TreasureDropId2",{INT_FD, &TreasureDropId2}},
+			{"TreasureUnLockCostType2",{INT_FD, &TreasureUnLockCostType2}},
+			{"TreasureUnLockCost2",{INT_FD, &TreasureUnLockCost2}},
+			{"TreasureDropId3",{INT_FD, &TreasureDropId3}},
+			{"TreasureUnLockCostType3",{INT_FD, &TreasureUnLockCostType3}},
+			{"TreasureUnLockCost3",{INT_FD, &TreasureUnLockCost3}},
+			{"TreasureDropId4",{INT_FD, &TreasureDropId4}},
+			{"TreasureUnLockCostType4",{INT_FD, &TreasureUnLockCostType4}},
+			{"TreasureUnLockCost4",{INT_FD, &TreasureUnLockCost4}},
+			{"TreasureDropId5",{INT_FD, &TreasureDropId5}},
+			{"TreasureUnLockCostType5",{INT_FD, &TreasureUnLockCostType5}},
+			{"TreasureUnLockCost5",{INT_FD, &TreasureUnLockCost5}},
+			{"ClickDropProbability1",{FLOAT_FD, &ClickDropProbability1}},
+			{"ClickDropId1",{INT_FD, &ClickDropId1}},
+			{"ClickProductCD1",{FLOAT_FD, &ClickProductCD1}},
+			{"ClickMin1",{INT_FD, &ClickMin1}},
+			{"ClickMax1",{INT_FD, &ClickMax1}},
+			{"ClickDieType1",{INT_FD, &ClickDieType1}},
+			{"ClickLimitDestroy1",{INT_FD, &ClickLimitDestroy1}},
+			{"ClickDeadDropProbability1",{FLOAT_FD, &ClickDeadDropProbability1}},
+			{"ClickDeadDrop1",{INT_FD, &ClickDeadDrop1}},
+			{"ClickDropProbability2",{FLOAT_FD, &ClickDropProbability2}},
+			{"ClickDropId2",{INT_FD, &ClickDropId2}},
+			{"ClickProductCD2",{FLOAT_FD, &ClickProductCD2}},
+			{"ClickMin2",{INT_FD, &ClickMin2}},
+			{"ClickMax2",{INT_FD, &ClickMax2}},
+			{"ClickDieType2",{INT_FD, &ClickDieType2}},
+			{"ClickLimitDestroy2",{INT_FD, &ClickLimitDestroy2}},
+			{"ClickDeadDropProbability2",{FLOAT_FD, &ClickDeadDropProbability2}},
+			{"ClickDeadDrop2",{INT_FD, &ClickDeadDrop2}},
+			{"TimeDropProbability1",{FLOAT_FD, &TimeDropProbability1}},
+			{"TimeDropId1",{INT_FD, &TimeDropId1}},
+			{"TimeDropPlaceType1",{INT_FD, &TimeDropPlaceType1}},
+			{"TimeMin1",{FLOAT_FD, &TimeMin1}},
+			{"TimeMax1",{FLOAT_FD, &TimeMax1}},
+			{"TimeAvalid1",{FLOAT_FD, &TimeAvalid1}},
+			{"TimeCD1",{FLOAT_FD, &TimeCD1}},
+			{"TimeBodyLimit1",{INT_FD, &TimeBodyLimit1}},
+			{"TimeTotalLimit1",{INT_FD, &TimeTotalLimit1}},
+			{"TimeDieCount1",{INT_FD, &TimeDieCount1}},
+			{"TimeShow1",{INT_FD, &TimeShow1}},
+			{"TimeDropProbability2",{FLOAT_FD, &TimeDropProbability2}},
+			{"TimeDropId2",{INT_FD, &TimeDropId2}},
+			{"TimeDropPlaceType2",{INT_FD, &TimeDropPlaceType2}},
+			{"TimeMin2",{FLOAT_FD, &TimeMin2}},
+			{"TimeMax2",{FLOAT_FD, &TimeMax2}},
+			{"TimeAvalid2",{FLOAT_FD, &TimeAvalid2}},
+			{"TimeCD2",{FLOAT_FD, &TimeCD2}},
+			{"TimeBodyLimit2",{INT_FD, &TimeBodyLimit2}},
+			{"TimeTotalLimit2",{INT_FD, &TimeTotalLimit2}},
+			{"TimeDieCount2",{INT_FD, &TimeDieCount2}},
+			{"TimeShow2",{INT_FD, &TimeShow2}},
+			{"CollectProbability",{FLOAT_FD, &CollectProbability}},
+			{"CollectDropId",{INT_FD, &CollectDropId}},
+			{"CollectTime",{FLOAT_FD, &CollectTime}},
+			{"CollectRecoverMin",{FLOAT_FD, &CollectRecoverMin}},
+			{"CollectRecoverMax",{FLOAT_FD, &CollectRecoverMax}},
+			{"CollectDragonCount",{INT_FD, &CollectDragonCount}},
+			{"CollectTimesMin",{INT_FD, &CollectTimesMin}},
+			{"CollectTimesMax",{INT_FD, &CollectTimesMax}},
+			{"CollectEndType",{INT_FD, &CollectEndType}},
+			{"CollectType",{INT_FD, &CollectType}},
+			{"CollectLessen",{INT_FD, &CollectLessen}},
+			{"AttackDamage",{INT_FD, &AttackDamage}},
+			{"AttackUpperLimit",{INT_FD, &AttackUpperLimit}},
+			{"AttackDropProbability",{FLOAT_FD, &AttackDropProbability}},
+			{"AttackDropId",{INT_FD, &AttackDropId}},
+			{"CallDragonCount",{INT_FD, &CallDragonCount}},
+			{"ClickUnLockCell",{INT_FD, &ClickUnLockCell}},
+			{"ClickUnLockCellDelay",{FLOAT_FD, &ClickUnLockCellDelay}},
+			{"BatteryDistanceMin",{INT_FD, &BatteryDistanceMin}},
+			{"BatteryDistanceMax",{INT_FD, &BatteryDistanceMax}},
+			{"BatteryRange",{INT_FD, &BatteryRange}},
+			{"BatteryTime",{FLOAT_FD, &BatteryTime}},
+			{"BatteryHealing",{INT_FD, &BatteryHealing}},
+			{"BatteryVeer",{INT_FD, &BatteryVeer}},
+			{"BatteryShellImage",{TSTR_FD, &BatteryShellImage}},
+			{"BatteryHitImage",{TSTR_FD, &BatteryHitImage}},
+			{"BatterySendSound",{TSTR_FD, &BatterySendSound}},
+			{"TimeDropEffect1Location",{INT_FD, &TimeDropEffect1Location}},
+			{"TimeDropEffect1",{TSTR_FD, &TimeDropEffect1}},
+			{"TimeDropEffect2",{INT_FD, &TimeDropEffect2}},
+			{"TimeDropEffect2Location",{TSTR_FD, &TimeDropEffect2Location}},
+			{"TimeDropEffect3Location",{INT_FD, &TimeDropEffect3Location}},
+			{"TimeDropEffect3",{TSTR_FD, &TimeDropEffect3}},
+			{"ClickEffectLocation",{INT_FD, &ClickEffectLocation}},
+			{"ClickEffect",{TSTR_FD, &ClickEffect}},
+			{"ClickTureEffectLocation",{INT_FD, &ClickTureEffectLocation}},
+			{"ClickTureEffect",{TSTR_FD, &ClickTureEffect}},
+			{"BuildEffectLocation",{INT_FD, &BuildEffectLocation}},
+			{"BuildEffect",{TSTR_FD, &BuildEffect}},
+			{"BuildAffirmEffectLocation",{INT_FD, &BuildAffirmEffectLocation}},
+			{"BuildAffirmEffect",{TSTR_FD, &BuildAffirmEffect}},
+			{"CollectEffectLocation",{INT_FD, &CollectEffectLocation}},
+			{"CollectEffect",{TSTR_FD, &CollectEffect}},
+			{"CollectAffirmEffectLocation",{INT_FD, &CollectAffirmEffectLocation}},
+			{"CollectAffirmEffect",{TSTR_FD, &CollectAffirmEffect}},
+			{"CollectSound",{TSTR_FD, &CollectSound}},
+			{"BornEffectLocation",{INT_FD, &BornEffectLocation}},
+			{"BornEffect",{TSTR_FD, &BornEffect}},
+			{"DeadKillEffectLocation",{INT_FD, &DeadKillEffectLocation}},
+			{"DeadKillEffect",{TSTR_FD, &DeadKillEffect}},
+			{"DeadTimeEffectLocation",{INT_FD, &DeadTimeEffectLocation}},
+			{"DeadTimeEffect",{TSTR_FD, &DeadTimeEffect}},
+			{"SellEffectLocation",{INT_FD, &SellEffectLocation}},
+			{"SellEffect",{TSTR_FD, &SellEffect}},
+			{"DestroyEffectLocation",{INT_FD, &DestroyEffectLocation}},
+			{"DestroyEffect",{TSTR_FD, &DestroyEffect}},
+			{"Location",{INT_FD, &Location}},
+			{"BoxUnlockEffect",{TSTR_FD, &BoxUnlockEffect}},
+			{"BoxOpenEffectLocation",{INT_FD, &BoxOpenEffectLocation}},
+			{"BoxOpenEffect",{TSTR_FD, &BoxOpenEffect}},
+			{"BoxUnlockEffectLocation",{INT_FD, &BoxUnlockEffectLocation}},
+			{"BoxWaitUnlockEffect",{TSTR_FD, &BoxWaitUnlockEffect}},
+			{"BoxUnlockImageLocation",{INT_FD, &BoxUnlockImageLocation}},
+			{"BoxUnlockImage",{TSTR_FD, &BoxUnlockImage}},
+			{"StandbyEffectLocation",{INT_FD, &StandbyEffectLocation}},
+			{"StandbyEffect",{TSTR_FD, &StandbyEffect}},
+			{"SoundClick",{TSTR_FD, &SoundClick}},
+			{"CrossEffectLocation",{INT_FD, &CrossEffectLocation}},
+			{"CrossEffect",{TSTR_FD, &CrossEffect}},
+			{"UpEffectLocation",{INT_FD, &UpEffectLocation}},
+			{"UpEffect",{TSTR_FD, &UpEffect}},
+			{"SelectSound",{TSTR_FD, &SelectSound}},
+			{"UnlockchestSound",{TSTR_FD, &UnlockchestSound}},
+			{"OpenchestSound",{TSTR_FD, &OpenchestSound}},
+			{"DeleteSound",{TSTR_FD, &DeleteSound}},
+			{"DestorySound",{TSTR_FD, &DestorySound}},
+			{"ActcofSound",{TSTR_FD, &ActcofSound}},
+			{"PutdownSound",{TSTR_FD, &PutdownSound}},
+			{"AppearSound",{TSTR_FD, &AppearSound}},
+			{"BuildingSound",{TSTR_FD, &BuildingSound}},
+			{"ProducingSound1",{TSTR_FD, &ProducingSound1}},
+			{"ProducingSound2",{TSTR_FD, &ProducingSound2}},
+			{"RewardquaSound",{TSTR_FD, &RewardquaSound}}
+		};
+	}
+	virtual ArticleT* create()
+	{
+		return new ArticleT();
+	}
+	enum
+	{
+	};
+	INT32 ArticleId = 0;            //道具ID
+	TStr Name = "";				//名称
+	TStr Image = "";				//图片
+	TStr Annotation = "";				//备注
+	TStr Descript = "";				//描述
+	INT32 ArticleLevel = 0;				//【基础属性】
+等级
+	INT32 EnableMove = 0;				//【基础属性】
+是否可移动
+	INT32 HomePrice = 0;				//【基础属性】
+出售价格
+	INT32 LevelPrice = 0;				//【基础属性】
+出售价格
+	INT32 EnableMerge = 0;				//【基础属性】
+是否可合成
+	INT32 ShowType = 0;				//【基础属性】
+显示方法
+	INT32 StealLimit = 0;				//【基础属性】
+是否可被偷取
+	INT32 SizeWidth = 0;				//【尺寸】
+长
+	INT32 SizeHeight = 0;				//【尺寸】
+宽
+	INT32 Score = 0;				//【合成】
+积分值
+	INT32 ArticleType = 0;				//道具类型
+	INT32 ArticleFunction = 0;				//道具功能
+	TStr AiConfig = "";				//AI
+	INT32 Guide = 0;				//指引脚本
+	float SurvivalTimeMin = 0.0f;				//【基础属性】
+生存时间Min
+	float SurvivalTimeMax = 0.0f;				//【基础属性】
+生存时间Max
+	float SurvivalDropProbability = 0.0f;				//【时间消失】
+掉落几率
+	INT32 SurvivalTimeDropId = 0;				//【时间消失】
+掉落ID
+	INT32 LevelAppear = 0;				//【关卡属性】
+是否允许被关卡结算选中
+	INT32 AwardType = 0;				//【关卡属性】
+关卡付费
+奖励价格
+	INT32 Award = 0;				//【关卡属性】
+关卡付费
+奖励价格
+	INT32 BuildId = 0;				//【建造】
+后道具ID
+	INT32 BuildDragonCount = 0;				//【建造】
+同时龙数
+	float BuildTime = 0.0f;				//【建造】
+建造时间
+	INT32 BuildImmediatelyPrice = 0;				//【建造】
+秒建造时间所需钻石
+	INT32 GoldUpperLimit = 0;				//【金币屋】
+金币上限
+	INT32 OreUpperLimit = 0;				//【矿石屋】
+矿石上限
+	INT32 ResetTime = 0;				//【龙屋】
+休息时间
+	INT32 UnLockSleepPrice = 0;				//【龙屋】
+正在休息龙
+1钻石对应时间
+	INT32 UnLockWaitSleepPrice = 0;				//【龙屋】
+等待休息龙
+1钻石对应时间
+	INT32 CostType = 0;				//【寺庙】
+消耗类型
+	INT32 Cost = 0;				//【寺庙】
+消耗值
+	INT32 UpgradeID = 0;				//【寺庙】
+升级后道具ID
+	INT32 UpgradeDropId = 0;				//【寺庙】
+升级奖励掉落ID
+	TStr UpgradeType = "";				//【寺庙】
+升级表现
+	INT32 TreasureDropId1 = 0;				//【宝箱1】
+掉落ID
+	INT32 TreasureUnLockCostType1 = 0;				//【宝箱1】
+解锁消耗类型
+	INT32 TreasureUnLockCost1 = 0;				//【宝箱1】
+消耗值
+	INT32 TreasureDropId2 = 0;				//【宝箱2】
+掉落ID
+	INT32 TreasureUnLockCostType2 = 0;				//【宝箱2】
+解锁消耗类型
+	INT32 TreasureUnLockCost2 = 0;				//【宝箱2】
+消耗值
+	INT32 TreasureDropId3 = 0;				//【宝箱3】
+掉落ID
+	INT32 TreasureUnLockCostType3 = 0;				//【宝箱3】
+解锁消耗类型
+	INT32 TreasureUnLockCost3 = 0;				//【宝箱3】
+消耗值
+	INT32 TreasureDropId4 = 0;				//【宝箱4】
+掉落ID
+	INT32 TreasureUnLockCostType4 = 0;				//【宝箱4】
+解锁消耗类型
+	INT32 TreasureUnLockCost4 = 0;				//【宝箱4】
+消耗值
+	INT32 TreasureDropId5 = 0;				//【宝箱5】
+掉落ID
+	INT32 TreasureUnLockCostType5 = 0;				//【宝箱5】
+解锁消耗类型
+	INT32 TreasureUnLockCost5 = 0;				//【宝箱5】
+消耗值
+	float ClickDropProbability1 = 0.0f;				//【点击1】
+掉落几率
+	INT32 ClickDropId1 = 0;				//【点击1】
+掉落id
+	float ClickProductCD1 = 0.0f;				//【点击1】
+产出cd
+	INT32 ClickMin1 = 0;				//【点击1】
+次数Min
+	INT32 ClickMax1 = 0;				//【点击1】
+次数Max
+	INT32 ClickDieType1 = 0;				//【点击1】
+消亡类型
+	INT32 ClickLimitDestroy1 = 0;				//【点击1】
+达到次数
+后消亡
+	float ClickDeadDropProbability1 = 0.0f;				//【点击1】
+达到次数
+后消亡时掉落几率
+	INT32 ClickDeadDrop1 = 0;				//【点击1】
+达到次数
+后消亡时掉落ID
+	float ClickDropProbability2 = 0.0f;				//【点击2】
+掉落几率
+	INT32 ClickDropId2 = 0;				//【点击2】
+掉落id
+	float ClickProductCD2 = 0.0f;				//【点击2】
+产出cd
+	INT32 ClickMin2 = 0;				//【点击2】
+次数Min
+	INT32 ClickMax2 = 0;				//【点击2】
+次数Max
+	INT32 ClickDieType2 = 0;				//【点击2】
+消亡类型
+	INT32 ClickLimitDestroy2 = 0;				//【点击2】
+达到次数
+是否消亡
+	float ClickDeadDropProbability2 = 0.0f;				//【点击2】
+达到次数
+后消亡时掉落几率
+	INT32 ClickDeadDrop2 = 0;				//【点击2】
+达到次数
+后消亡时掉落
+	float TimeDropProbability1 = 0.0f;				//【时间1】
+掉落几率
+	INT32 TimeDropId1 = 0;				//【时间1】
+掉落id
+	INT32 TimeDropPlaceType1 = 0;				//【时间1】
+产出类型
+	float TimeMin1 = 0.0f;				//【时间1】
+产出时间Min
+	float TimeMax1 = 0.0f;				//【时间1】
+产出时间Max
+	float TimeAvalid1 = 0.0f;				//【时间1】
+产出有效总时间
+	float TimeCD1 = 0.0f;				//【时间1】
+产出CD时间
+	INT32 TimeBodyLimit1 = 0;				//【时间1】
+身上上限
+	INT32 TimeTotalLimit1 = 0;				//【时间1】
+内部上限
+	INT32 TimeDieCount1 = 0;				//【时间1】
+消亡次数
+	INT32 TimeShow1 = 0;				//显示
+	float TimeDropProbability2 = 0.0f;				//【时间2】
+掉落几率
+	INT32 TimeDropId2 = 0;				//【时间2】
+掉落id
+	INT32 TimeDropPlaceType2 = 0;				//【时间2】
+产出类型
+	float TimeMin2 = 0.0f;				//【时间2】
+产出时间Min
+	float TimeMax2 = 0.0f;				//【时间2】
+产出时间Max
+	float TimeAvalid2 = 0.0f;				//【时间2】
+产出有效总时间
+	float TimeCD2 = 0.0f;				//【时间2】
+产出CD时间
+	INT32 TimeBodyLimit2 = 0;				//【时间2】
+身上上限
+	INT32 TimeTotalLimit2 = 0;				//【时间2】
+内部上限
+	INT32 TimeDieCount2 = 0;				//【时间2】
+消亡次数
+	INT32 TimeShow2 = 0;				//【时间2】
+显示
+	float CollectProbability = 0.0f;				//【采集】
+掉落几率
+	INT32 CollectDropId = 0;				//【采集】
+掉落id
+	float CollectTime = 0.0f;				//【采集】
+采集时间
+	float CollectRecoverMin = 0.0f;				//【采集】
+恢复时间Min
+	float CollectRecoverMax = 0.0f;				//【采集】
+恢复时间Max
+	INT32 CollectDragonCount = 0;				//【采集】
+同时龙数量
+	INT32 CollectTimesMin = 0;				//【采集】
+次数Min
+	INT32 CollectTimesMax = 0;				//【采集】
+次数Max
+	INT32 CollectEndType = 0;				//【采集】
+次数到时处理
+	INT32 CollectType = 0;				//【采集】
+显示方式
+	INT32 CollectLessen = 0;				//【采集】
+缩小类型
+	INT32 AttackDamage = 0;				//【击杀】
+血量
+	INT32 AttackUpperLimit = 0;				//【击杀】
+受击个数上限
+	float AttackDropProbability = 0.0f;				//【击杀】
+掉落几率
+	INT32 AttackDropId = 0;				//【击杀】
+掉落id
+	INT32 CallDragonCount = 0;				//【巨龙之门】
+召唤数量
+	INT32 ClickUnLockCell = 0;				//【点击直接解锁地块】
+ 数量
+	float ClickUnLockCellDelay = 0.0f;				//【点击直接解锁地块】
+ 延迟时间
+	INT32 BatteryDistanceMin = 0;				//【炮塔】
+攻击圈数Min
+	INT32 BatteryDistanceMax = 0;				//【炮塔】
+攻击圈数Max
+	INT32 BatteryRange = 0;				//【炮塔】
+溅射范围
+	float BatteryTime = 0.0f;				//【炮塔】
+攻击频率
+	INT32 BatteryHealing = 0;				//【炮塔】
+给予治愈值
+	INT32 BatteryVeer = 0;				//【炮塔】
+是否转向
+	TStr BatteryShellImage = "";				//【炮塔】
+子弹资源
+	TStr BatteryHitImage = "";				//【炮塔】
+命中特效
+	TStr BatterySendSound = "";				//【炮塔】
+开炮声音
+	INT32 TimeDropEffect1Location = 0;				//【时间】
+产出在身上时，播放位置
+	TStr TimeDropEffect1 = "";				//【时间】
+产出在身上时
+	INT32 TimeDropEffect2 = 0;				//【时间】
+产出在周围时
+播放位置
+	TStr TimeDropEffect2Location = "";				//【时间】
+产出在周围时
+	INT32 TimeDropEffect3Location = 0;				//【时间】
+产出在内部时
+播放位置
+	TStr TimeDropEffect3 = "";				//【时间】
+产出在内部时
+	INT32 ClickEffectLocation = 0;				//【点击】
+有点击功能单机时
+播放位置
+	TStr ClickEffect = "";				//【点击】
+有点击功能单机时
+	INT32 ClickTureEffectLocation = 0;				//【点击】
+成功触发点击掉落时
+播放位置
+	TStr ClickTureEffect = "";				//【点击】
+成功触发点击掉落时
+	INT32 BuildEffectLocation = 0;				//【建造】
+建造中特效
+播放位置
+	TStr BuildEffect = "";				//【建造】
+建造中特效
+	INT32 BuildAffirmEffectLocation = 0;				//【建造】
+建造确认特效
+播放位置
+	TStr BuildAffirmEffect = "";				//【建造】
+建造确认特效
+	INT32 CollectEffectLocation = 0;				//【采集】
+采集中特效
+播放位置
+	TStr CollectEffect = "";				//【采集】
+采集中特效
+	INT32 CollectAffirmEffectLocation = 0;				//【采集】
+确认采集特效
+播放位置
+	TStr CollectAffirmEffect = "";				//【采集】
+确认采集特效
+	TStr CollectSound = "";				//【采集】
+采集中音效
+	INT32 BornEffectLocation = 0;				//道具出生
+播放位置
+	TStr BornEffect = "";				//道具出生
+	INT32 DeadKillEffectLocation = 0;				//道具被击杀
+播放位置
+	TStr DeadKillEffect = "";				//道具被击杀
+	INT32 DeadTimeEffectLocation = 0;				//道具时间死亡
+播放位置
+	TStr DeadTimeEffect = "";				//道具时间死亡
+	INT32 SellEffectLocation = 0;				//道具出售
+播放位置
+	TStr SellEffect = "";				//道具出售
+	INT32 DestroyEffectLocation = 0;				//道具销毁
+播放位置
+	TStr DestroyEffect = "";				//道具销毁
+	INT32 Location = 0;				//宝箱解锁
+播放位置
+	TStr BoxUnlockEffect = "";				//宝箱解锁
+	INT32 BoxOpenEffectLocation = 0;				//宝箱打开
+播放位置
+	TStr BoxOpenEffect = "";				//宝箱打开
+	INT32 BoxUnlockEffectLocation = 0;				//宝箱待解锁特效
+播放位置
+	TStr BoxWaitUnlockEffect = "";				//宝箱待解锁特效
+	INT32 BoxUnlockImageLocation = 0;				//宝箱待解锁特效
+播放位置
+	TStr BoxUnlockImage = "";				//宝箱待解锁图片
+	INT32 StandbyEffectLocation = 0;				//待机特效
+播放位置
+	TStr StandbyEffect = "";				//待机特效
+	TStr SoundClick = "";				//点击音效
+	INT32 CrossEffectLocation = 0;				//十字解锁
+使用特效
+播放位置
+	TStr CrossEffect = "";				//十字解锁
+使用特效
+	INT32 UpEffectLocation = 0;				//升级
+使用特效
+播放位置
+	TStr UpEffect = "";				//升级
+使用特效
+	TStr SelectSound = "";				//选中音效
+	TStr UnlockchestSound = "";				//【宝箱】
+解锁音效
+	TStr OpenchestSound = "";				//【宝箱】
+打开音效
+	TStr DeleteSound = "";				//【道具】
+删除音效
+	TStr DestorySound = "";				//【道具】
+删除音效
+	TStr ActcofSound = "";				//【行为】
+行为确认音效
+	TStr PutdownSound = "";				//【采集】
+采集后放置音效
+	TStr AppearSound = "";				//【道具】
+道具出现音效
+	TStr BuildingSound = "";				//【建筑】
+建筑建造音效
+	TStr ProducingSound1 = "";				//【道具】
+道具时间产出音效1
+	TStr ProducingSound2 = "";				//【道具】
+道具时间产出音效2
+	TStr RewardquaSound = "";				//【道具】
+奖励品质音效
+};
+CreateCsvClass(Article);
+
+struct ArticleScalingT : ConfigBaseT
+{
+	virtual ~ArticleScalingT()
+	{
+	}
+	ArticleScalingT()
+	{
+		FileName = "ArticleScaling.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"UILevelView",{FLOAT_FD, &UILevelView}},
+			{"UIShopView",{FLOAT_FD, &UIShopView}},
+			{"UIPropsDataView",{FLOAT_FD, &UIPropsDataView}},
+			{"UIRewardView",{FLOAT_FD, &UIRewardView}},
+			{"UILevelMsgView1",{FLOAT_FD, &UILevelMsgView1}},
+			{"UILevelMsgView2",{FLOAT_FD, &UILevelMsgView2}},
+			{"UITimeLevelMsgView",{FLOAT_FD, &UITimeLevelMsgView}},
+			{"UIEpitaphView",{FLOAT_FD, &UIEpitaphView}},
+			{"UITaskPopUpView",{FLOAT_FD, &UITaskPopUpView}},
+			{"UIOutpostTaskPopupView",{FLOAT_FD, &UIOutpostTaskPopupView}},
+			{"UILevelConditionView",{FLOAT_FD, &UILevelConditionView}}
+		};
+	}
+	virtual ArticleScalingT* create()
+	{
+		return new ArticleScalingT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //articleID
+	float UILevelView = 0.0f;				//缩放比例
+	float UIShopView = 0.0f;				//缩放比例
+	float UIPropsDataView = 0.0f;				//缩放比例
+	float UIRewardView = 0.0f;				//缩放比例
+	float UILevelMsgView1 = 0.0f;				//缩放比例
+	float UILevelMsgView2 = 0.0f;				//缩放比例
+	float UITimeLevelMsgView = 0.0f;				//缩放比例
+	float UIEpitaphView = 0.0f;				//缩放比例
+	float UITaskPopUpView = 0.0f;				//缩放比例
+	float UIOutpostTaskPopupView = 0.0f;				//缩放比例
+	float UILevelConditionView = 0.0f;				//缩放比例
+};
+CreateCsvClass(ArticleScaling);
+
+struct Article_CollectT : ConfigBaseT
+{
+	virtual ~Article_CollectT()
+	{
+	}
+	Article_CollectT()
+	{
+		FileName = "Article_Collect.csv";
+		_kf =
+		{
+			{"CollectType",{INT_FD, &CollectType}},
+			{"time1",{FLOAT_FD, &time1}},
+			{"time2",{FLOAT_FD, &time2}},
+			{"time3",{FLOAT_FD, &time3}},
+			{"time4",{FLOAT_FD, &time4}},
+			{"time5",{FLOAT_FD, &time5}},
+			{"time6",{FLOAT_FD, &time6}},
+			{"time7",{FLOAT_FD, &time7}},
+			{"time8",{FLOAT_FD, &time8}},
+			{"time9",{FLOAT_FD, &time9}},
+			{"time10",{FLOAT_FD, &time10}},
+			{"time11",{FLOAT_FD, &time11}},
+			{"time12",{FLOAT_FD, &time12}},
+			{"time13",{FLOAT_FD, &time13}},
+			{"time14",{FLOAT_FD, &time14}},
+			{"time15",{FLOAT_FD, &time15}},
+			{"time16",{FLOAT_FD, &time16}},
+			{"time17",{FLOAT_FD, &time17}},
+			{"time18",{FLOAT_FD, &time18}},
+			{"time19",{FLOAT_FD, &time19}},
+			{"time20",{FLOAT_FD, &time20}},
+			{"time21",{FLOAT_FD, &time21}},
+			{"time22",{FLOAT_FD, &time22}},
+			{"time23",{FLOAT_FD, &time23}},
+			{"time24",{FLOAT_FD, &time24}},
+			{"time25",{FLOAT_FD, &time25}},
+			{"time26",{FLOAT_FD, &time26}},
+			{"time27",{FLOAT_FD, &time27}},
+			{"time28",{FLOAT_FD, &time28}},
+			{"time29",{FLOAT_FD, &time29}},
+			{"time30",{FLOAT_FD, &time30}}
+		};
+	}
+	virtual Article_CollectT* create()
+	{
+		return new Article_CollectT();
+	}
+	enum
+	{
+	};
+	INT32 CollectType = 0;            //类型ID
+	float time1 = 0.0f;				//次数1
+	float time2 = 0.0f;				//次数2
+	float time3 = 0.0f;				//次数3
+	float time4 = 0.0f;				//次数4
+	float time5 = 0.0f;				//次数5
+	float time6 = 0.0f;				//次数6
+	float time7 = 0.0f;				//次数7
+	float time8 = 0.0f;				//次数8
+	float time9 = 0.0f;				//次数9
+	float time10 = 0.0f;				//次数10
+	float time11 = 0.0f;				//次数11
+	float time12 = 0.0f;				//次数12
+	float time13 = 0.0f;				//次数13
+	float time14 = 0.0f;				//次数14
+	float time15 = 0.0f;				//次数15
+	float time16 = 0.0f;				//次数16
+	float time17 = 0.0f;				//次数17
+	float time18 = 0.0f;				//次数18
+	float time19 = 0.0f;				//次数19
+	float time20 = 0.0f;				//次数20
+	float time21 = 0.0f;				//次数21
+	float time22 = 0.0f;				//次数22
+	float time23 = 0.0f;				//次数23
+	float time24 = 0.0f;				//次数24
+	float time25 = 0.0f;				//次数25
+	float time26 = 0.0f;				//次数26
+	float time27 = 0.0f;				//次数27
+	float time28 = 0.0f;				//次数28
+	float time29 = 0.0f;				//次数29
+	float time30 = 0.0f;				//次数30
+};
+CreateCsvClass(Article_Collect);
+
+struct BehaviorTreeArticleT : ConfigBaseT
+{
+	virtual ~BehaviorTreeArticleT()
+	{
+	}
+	BehaviorTreeArticleT()
+	{
+		FileName = "BehaviorTreeArticle.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"EnName",{TSTR_FD, &EnName}},
+			{"CnName",{TSTR_FD, &CnName}},
+			{"Type",{INT_FD, &Type}},
+			{"FloatValue",{FLOAT_FD, &FloatValue}},
+			{"IntValue",{INT_FD, &IntValue}},
+			{"BoolValue",{INT_FD, &BoolValue}},
+			{"StringValue",{TSTR_FD, &StringValue}}
+		};
+	}
+	virtual BehaviorTreeArticleT* create()
+	{
+		return new BehaviorTreeArticleT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //技能ID
+	TStr EnName = "";				//英文名称
+	TStr CnName = "";				//中文说明文字
+	INT32 Type = 0;				//类型
+	float FloatValue = 0.0f;				//float值
+	INT32 IntValue = 0;				//int值
+	INT32 BoolValue = 0;				//bool值
+	TStr StringValue = "";				//str值
+};
+CreateCsvClass(BehaviorTreeArticle);
+
+struct BehaviorTreeGeneralT : ConfigBaseT
+{
+	virtual ~BehaviorTreeGeneralT()
+	{
+	}
+	BehaviorTreeGeneralT()
+	{
+		FileName = "BehaviorTreeGeneral.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"EnName",{TSTR_FD, &EnName}},
+			{"CnName",{TSTR_FD, &CnName}},
+			{"Type",{INT_FD, &Type}},
+			{"FloatValue",{FLOAT_FD, &FloatValue}},
+			{"IntValue",{INT_FD, &IntValue}},
+			{"BoolValue",{INT_FD, &BoolValue}},
+			{"StringValue",{TSTR_FD, &StringValue}}
+		};
+	}
+	virtual BehaviorTreeGeneralT* create()
+	{
+		return new BehaviorTreeGeneralT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	TStr EnName = "";				//英文名
+	TStr CnName = "";				//中文名
+	INT32 Type = 0;				//类型
+	float FloatValue = 0.0f;				//float值
+	INT32 IntValue = 0;				//int值
+	INT32 BoolValue = 0;				//bool值
+	TStr StringValue = "";				//str值
+};
+CreateCsvClass(BehaviorTreeGeneral);
+
+struct BorderT : ConfigBaseT
+{
+	virtual ~BorderT()
+	{
+	}
+	BorderT()
+	{
+		FileName = "Border.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Comment",{TSTR_FD, &Comment}},
+			{"Res",{TSTR_FD, &Res}}
+		};
+	}
+	virtual BorderT* create()
+	{
+		return new BorderT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	TStr Comment = "";				//描述
+	TStr Res = "";				//底框资源名称
+};
+CreateCsvClass(Border);
+
+struct BubbleT : ConfigBaseT
+{
+	virtual ~BubbleT()
+	{
+	}
+	BubbleT()
+	{
+		FileName = "Bubble.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"NameImageLocation",{INT_FD, &NameImageLocation}},
+			{"NameImage",{TSTR_FD, &NameImage}},
+			{"StandbyImage",{TSTR_FD, &StandbyImage}},
+			{"PreviewLocation",{INT_FD, &PreviewLocation}},
+			{"StandbyEffectLocation",{INT_FD, &StandbyEffectLocation}},
+			{"StandbyEffect",{TSTR_FD, &StandbyEffect}},
+			{"BirthEffectLocation",{INT_FD, &BirthEffectLocation}},
+			{"BirthEffect",{TSTR_FD, &BirthEffect}},
+			{"ImageOpenEffectLocation",{INT_FD, &ImageOpenEffectLocation}},
+			{"ImageOpenEffect",{TSTR_FD, &ImageOpenEffect}},
+			{"NameText",{TSTR_FD, &NameText}},
+			{"Describe",{TSTR_FD, &Describe}},
+			{"OpenSound",{TSTR_FD, &OpenSound}},
+			{"Remark",{TSTR_FD, &Remark}}
+		};
+	}
+	virtual BubbleT* create()
+	{
+		return new BubbleT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //泡泡ID
+	INT32 NameImageLocation = 0;				//文字图片
+播放位置
+	TStr NameImage = "";				//文字图片
+	TStr StandbyImage = "";				//待机资源图片
+	INT32 PreviewLocation = 0;				//预览挂点
+	INT32 StandbyEffectLocation = 0;				//待机特效
+播放位置
+	TStr StandbyEffect = "";				//待机特效
+	INT32 BirthEffectLocation = 0;				//出现时特效
+播放位置
+	TStr BirthEffect = "";				//出现时特效
+	INT32 ImageOpenEffectLocation = 0;				//打开资源特效
+播放位置
+	TStr ImageOpenEffect = "";				//打开资源特效
+	TStr NameText = "";				//名称
+	TStr Describe = "";				//描述
+	TStr OpenSound = "";				//打开气泡音效
+	TStr Remark = "";				//备注
+};
+CreateCsvClass(Bubble);
+
+struct Bubble_bigT : ConfigBaseT
+{
+	virtual ~Bubble_bigT()
+	{
+	}
+	Bubble_bigT()
+	{
+		FileName = "Bubble_big.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"UnLcokType",{INT_FD, &UnLcokType}},
+			{"Level",{INT_FD, &Level}},
+			{"UnLockPrice",{INT_FD, &UnLockPrice}},
+			{"UnLockTime",{INT_FD, &UnLockTime}},
+			{"Image",{TSTR_FD, &Image}},
+			{"StandbyEffectLocation",{INT_FD, &StandbyEffectLocation}},
+			{"StandbyEffect",{TSTR_FD, &StandbyEffect}},
+			{"UnLockEffectLocation",{INT_FD, &UnLockEffectLocation}},
+			{"UnLockEffect",{TSTR_FD, &UnLockEffect}},
+			{"OpenEffectLocation",{INT_FD, &OpenEffectLocation}},
+			{"OpenEffect",{TSTR_FD, &OpenEffect}},
+			{"LockLocation",{INT_FD, &LockLocation}},
+			{"LockImage",{TSTR_FD, &LockImage}},
+			{"JarbornSound",{TSTR_FD, &JarbornSound}},
+			{"JarpanelSound",{TSTR_FD, &JarpanelSound}},
+			{"JaropenSound1",{TSTR_FD, &JaropenSound1}},
+			{"JaropenSound2",{TSTR_FD, &JaropenSound2}}
+		};
+	}
+	virtual Bubble_bigT* create()
+	{
+		return new Bubble_bigT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //大泡泡ID
+	INT32 UnLcokType = 0;				//大泡泡
+解锁类型
+	INT32 Level = 0;				//等级
+	INT32 UnLockPrice = 0;				//大泡泡
+解锁值
+	INT32 UnLockTime = 0;				//倒计时时间
+	TStr Image = "";				//图片资源
+	INT32 StandbyEffectLocation = 0;				//特效播放位置
+	TStr StandbyEffect = "";				//待机特效
+	INT32 UnLockEffectLocation = 0;				//特效播放位置
+	TStr UnLockEffect = "";				//解锁特效
+	INT32 OpenEffectLocation = 0;				//特效播放位置
+	TStr OpenEffect = "";				//打开特效
+	INT32 LockLocation = 0;				//挂载位置
+	TStr LockImage = "";				//锁图片
+	TStr JarbornSound = "";				//生成维罐音效
+	TStr JarpanelSound = "";				//打开维罐音效
+	TStr JaropenSound1 = "";				//二次确认音效
+	TStr JaropenSound2 = "";				//最终确认音效
+};
+CreateCsvClass(Bubble_big);
+
+struct Combo_showT : ConfigBaseT
+{
+	virtual ~Combo_showT()
+	{
+	}
+	Combo_showT()
+	{
+		FileName = "Combo_show.csv";
+		_kf =
+		{
+			{"Continuous",{INT_FD, &Continuous}},
+			{"ContinuousImage",{TSTR_FD, &ContinuousImage}},
+			{"ContinuousScore",{FLOAT_FD, &ContinuousScore}}
+		};
+	}
+	virtual Combo_showT* create()
+	{
+		return new Combo_showT();
+	}
+	enum
+	{
+	};
+	INT32 Continuous = 0;            //连击次数
+	TStr ContinuousImage = "";				//连击图片
+	float ContinuousScore = 0.0f;				//连击积分系数
+};
+CreateCsvClass(Combo_show);
+
+struct CommonT : ConfigBaseT
+{
+	virtual ~CommonT()
+	{
+	}
+	CommonT()
+	{
+		FileName = "Common.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Name",{TSTR_FD, &Name}},
+			{"Parameter",{TSTR_FD, &Parameter}}
+		};
+	}
+	virtual CommonT* create()
+	{
+		return new CommonT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //id
+	TStr Name = "";				//名称
+	TStr Parameter = "";				//参数值
+};
+CreateCsvClass(Common);
+
+struct CreatureT : ConfigBaseT
+{
+	virtual ~CreatureT()
+	{
+	}
+	CreatureT()
+	{
+		FileName = "Creature.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Name",{TSTR_FD, &Name}},
+			{"UiImage",{TSTR_FD, &UiImage}},
+			{"Res",{TSTR_FD, &Res}},
+			{"Des",{TSTR_FD, &Des}},
+			{"Comment",{TSTR_FD, &Comment}},
+			{"HomePrice",{INT_FD, &HomePrice}},
+			{"LevelPrice",{INT_FD, &LevelPrice}},
+			{"CreatureType",{INT_FD, &CreatureType}},
+			{"CreatureLevel",{INT_FD, &CreatureLevel}},
+			{"MaxMarking",{INT_FD, &MaxMarking}},
+			{"FunctionType",{INT_FD, &FunctionType}},
+			{"AIConfig",{TSTR_FD, &AIConfig}},
+			{"ActivityCDMin",{INT_FD, &ActivityCDMin}},
+			{"ActivityCDMax",{INT_FD, &ActivityCDMax}},
+			{"CanMerge",{INT_FD, &CanMerge}},
+			{"MoveType",{INT_FD, &MoveType}},
+			{"Population",{INT_FD, &Population}},
+			{"Hp",{FLOAT_FD, &Hp}},
+			{"DeadDrop",{INT_FD, &DeadDrop}},
+			{"SP",{INT_FD, &SP}},
+			{"WalkSpeed",{FLOAT_FD, &WalkSpeed}},
+			{"RunSpeed",{FLOAT_FD, &RunSpeed}},
+			{"CollectSpeed",{FLOAT_FD, &CollectSpeed}},
+			{"BuildSpeed",{FLOAT_FD, &BuildSpeed}},
+			{"AtkSpeed",{FLOAT_FD, &AtkSpeed}},
+			{"Atk",{FLOAT_FD, &Atk}},
+			{"AtkEffect",{TSTR_FD, &AtkEffect}},
+			{"AtkDis",{FLOAT_FD, &AtkDis}},
+			{"AtkRange",{FLOAT_FD, &AtkRange}},
+			{"ActTestingTime",{FLOAT_FD, &ActTestingTime}},
+			{"PatSpTimeMin",{FLOAT_FD, &PatSpTimeMin}},
+			{"PatSpTimeMax",{FLOAT_FD, &PatSpTimeMax}},
+			{"PolluteWeight",{INT_FD, &PolluteWeight}},
+			{"PolluteRange",{INT_FD, &PolluteRange}},
+			{"PolluteTime",{FLOAT_FD, &PolluteTime}},
+			{"PolluteValue",{INT_FD, &PolluteValue}},
+			{"MergeTime",{FLOAT_FD, &MergeTime}},
+			{"BornPointValue",{FLOAT_FD, &BornPointValue}},
+			{"BornTime",{INT_FD, &BornTime}},
+			{"MergeCD",{INT_FD, &MergeCD}},
+			{"MergeRate",{FLOAT_FD, &MergeRate}},
+			{"StealWeight",{INT_FD, &StealWeight}},
+			{"StealRange",{INT_FD, &StealRange}},
+			{"Steal",{FLOAT_FD, &Steal}},
+			{"LevelAppear",{INT_FD, &LevelAppear}},
+			{"AwardType",{INT_FD, &AwardType}},
+			{"Award",{INT_FD, &Award}},
+			{"Score",{INT_FD, &Score}},
+			{"CarriageLocation",{INT_FD, &CarriageLocation}},
+			{"BornTextOdds",{FLOAT_FD, &BornTextOdds}},
+			{"BornText1",{TSTR_FD, &BornText1}},
+			{"BornText2",{TSTR_FD, &BornText2}},
+			{"BornText3",{TSTR_FD, &BornText3}},
+			{"ClickTextOdds",{FLOAT_FD, &ClickTextOdds}},
+			{"ClickText1",{TSTR_FD, &ClickText1}},
+			{"ClickText2",{TSTR_FD, &ClickText2}},
+			{"ClickText3",{TSTR_FD, &ClickText3}},
+			{"BuildMoveTextOdds",{FLOAT_FD, &BuildMoveTextOdds}},
+			{"BuildMoveText1",{TSTR_FD, &BuildMoveText1}},
+			{"BuildMoveText2",{TSTR_FD, &BuildMoveText2}},
+			{"BuildMoveText3",{TSTR_FD, &BuildMoveText3}},
+			{"BuildTextOdds",{FLOAT_FD, &BuildTextOdds}},
+			{"BuildText1",{TSTR_FD, &BuildText1}},
+			{"BuildText2",{TSTR_FD, &BuildText2}},
+			{"BuildText3",{TSTR_FD, &BuildText3}},
+			{"CollectMoveTextOdds",{FLOAT_FD, &CollectMoveTextOdds}},
+			{"CollectMoveText1",{TSTR_FD, &CollectMoveText1}},
+			{"CollectMoveText2",{TSTR_FD, &CollectMoveText2}},
+			{"CollectMoveText3",{TSTR_FD, &CollectMoveText3}},
+			{"CollectTextOdds",{FLOAT_FD, &CollectTextOdds}},
+			{"CollectText1",{TSTR_FD, &CollectText1}},
+			{"CollectText2",{TSTR_FD, &CollectText2}},
+			{"CollectText3",{TSTR_FD, &CollectText3}},
+			{"NoSpaceTextOdds",{FLOAT_FD, &NoSpaceTextOdds}},
+			{"NoSpaceText1",{TSTR_FD, &NoSpaceText1}},
+			{"NoSpaceText2",{TSTR_FD, &NoSpaceText2}},
+			{"NoSpaceText3",{TSTR_FD, &NoSpaceText3}},
+			{"SleepTextOdds",{FLOAT_FD, &SleepTextOdds}},
+			{"SleepText1",{TSTR_FD, &SleepText1}},
+			{"SleepText2",{TSTR_FD, &SleepText2}},
+			{"SleepText3",{TSTR_FD, &SleepText3}},
+			{"SleepOverTextOdds",{FLOAT_FD, &SleepOverTextOdds}},
+			{"SleepOverText1",{TSTR_FD, &SleepOverText1}},
+			{"SleepOverText2",{TSTR_FD, &SleepOverText2}},
+			{"SleepOverText3",{TSTR_FD, &SleepOverText3}},
+			{"StrollTextOdds",{FLOAT_FD, &StrollTextOdds}},
+			{"StrollTextMin",{FLOAT_FD, &StrollTextMin}},
+			{"StrollTextMax",{FLOAT_FD, &StrollTextMax}},
+			{"StrollText1",{TSTR_FD, &StrollText1}},
+			{"StrollText2",{TSTR_FD, &StrollText2}},
+			{"StrollText3",{TSTR_FD, &StrollText3}},
+			{"StandbyTextOdds",{FLOAT_FD, &StandbyTextOdds}},
+			{"StandbyText1",{TSTR_FD, &StandbyText1}},
+			{"StandbyText2",{TSTR_FD, &StandbyText2}},
+			{"StandbyText3",{TSTR_FD, &StandbyText3}},
+			{"AttackMoveTextOdds",{FLOAT_FD, &AttackMoveTextOdds}},
+			{"AttackMoveText1",{TSTR_FD, &AttackMoveText1}},
+			{"AttackMoveText2",{TSTR_FD, &AttackMoveText2}},
+			{"AttackMoveText3",{TSTR_FD, &AttackMoveText3}},
+			{"AttackTextOdds",{FLOAT_FD, &AttackTextOdds}},
+			{"AttackText1",{TSTR_FD, &AttackText1}},
+			{"AttackText2",{TSTR_FD, &AttackText2}},
+			{"AttackText3",{TSTR_FD, &AttackText3}},
+			{"PolluteBobyEffectLocation",{INT_FD, &PolluteBobyEffectLocation}},
+			{"PolluteBobyEffect",{TSTR_FD, &PolluteBobyEffect}},
+			{"PolluteLandEffect",{TSTR_FD, &PolluteLandEffect}},
+			{"StealBobyEffectLocation",{INT_FD, &StealBobyEffectLocation}},
+			{"StealBobyEffect",{TSTR_FD, &StealBobyEffect}},
+			{"StealLandEffect",{TSTR_FD, &StealLandEffect}},
+			{"SufferEffectLocation",{INT_FD, &SufferEffectLocation}},
+			{"SufferEffect",{TSTR_FD, &SufferEffect}},
+			{"BirthEffectLocation",{INT_FD, &BirthEffectLocation}},
+			{"BirthEffect",{TSTR_FD, &BirthEffect}},
+			{"TrackEffectLocation",{INT_FD, &TrackEffectLocation}},
+			{"TrackEffect",{TSTR_FD, &TrackEffect}},
+			{"AttackSound",{TSTR_FD, &AttackSound}},
+			{"UnderattackSound",{TSTR_FD, &UnderattackSound}},
+			{"StartpoSound",{TSTR_FD, &StartpoSound}},
+			{"PollutingSound",{TSTR_FD, &PollutingSound}},
+			{"StartstSound",{TSTR_FD, &StartstSound}},
+			{"StealingSound",{TSTR_FD, &StealingSound}},
+			{"BornSound",{TSTR_FD, &BornSound}},
+			{"RewardquaSound",{TSTR_FD, &RewardquaSound}},
+			{"CallSound",{TSTR_FD, &CallSound}},
+			{"ReturnSound",{TSTR_FD, &ReturnSound}}
+		};
+	}
+	virtual CreatureT* create()
+	{
+		return new CreatureT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //id
+	TStr Name = "";				//名称
+	TStr UiImage = "";				//UI图标
+	TStr Res = "";				//资源
+	TStr Des = "";				//描述
+	TStr Comment = "";				//备注
+	INT32 HomePrice = 0;				//【基础属性】
+家园中
+售卖或销毁
+	INT32 LevelPrice = 0;				//【基础属性】
+关卡中
+售卖或销毁
+	INT32 CreatureType = 0;				//【基础属性】
+类别
+	INT32 CreatureLevel = 0;				//【基础属性】
+等级
+	INT32 MaxMarking = 0;				//【基础属性】
+最高等级标识
+	INT32 FunctionType = 0;				//【AI】
+行为功能
+	TStr AIConfig = "";				//【AI】
+AI配置
+	INT32 ActivityCDMin = 0;				//怪物活动CD
+	INT32 ActivityCDMax = 0;				//怪物活动CD
+	INT32 CanMerge = 0;				//能否合成
+	INT32 MoveType = 0;				//移动方式
+	INT32 Population = 0;				//人口
+	float Hp = 0.0f;				//血量
+	INT32 DeadDrop = 0;				//死亡掉落
+	INT32 SP = 0;				//行动力值
+	float WalkSpeed = 0.0f;				//走速度
+	float RunSpeed = 0.0f;				//跑速度
+	float CollectSpeed = 0.0f;				//采集速度修正
+	float BuildSpeed = 0.0f;				//建筑速度修正
+	float AtkSpeed = 0.0f;				//攻速
+	float Atk = 0.0f;				//攻击力
+	TStr AtkEffect = "";				//攻击特效
+	float AtkDis = 0.0f;				//攻击距离
+	float AtkRange = 0.0f;				//攻击范围
+	float ActTestingTime = 0.0f;				//检测时间
+	float PatSpTimeMin = 0.0f;				//巡逻走时间min
+	float PatSpTimeMax = 0.0f;				//巡逻走时间max
+	INT32 PolluteWeight = 0;				//污染权重
+	INT32 PolluteRange = 0;				//污染范围
+	float PolluteTime = 0.0f;				//污染时间
+	INT32 PolluteValue = 0;				//污染值
+	float MergeTime = 0.0f;				//等待
+合并时间
+	float BornPointValue = 0.0f;				//出生停留点
+	INT32 BornTime = 0;				//出生
+等待时间
+	INT32 MergeCD = 0;				//合成CD
+	float MergeRate = 0.0f;				//触发概率
+	INT32 StealWeight = 0;				//【偷取】
+偷取权重
+	INT32 StealRange = 0;				//【偷取】
+偷取范围
+	float Steal = 0.0f;				//【偷取】
+偷取时间
+	INT32 LevelAppear = 0;				//【关卡属性】
+是否允许被关卡结算选中
+	INT32 AwardType = 0;				//【关卡属性】
+关卡付费
+奖励价格
+	INT32 Award = 0;				//【关卡属性】
+关卡付费
+奖励价格
+	INT32 Score = 0;				//【合成】
+积分值
+	INT32 CarriageLocation = 0;				//运输的挂点
+	float BornTextOdds = 0.0f;				//出生文字
+几率
+	TStr BornText1 = "";				//出生文字1
+	TStr BornText2 = "";				//出生文字2
+	TStr BornText3 = "";				//出生文字3
+	float ClickTextOdds = 0.0f;				//点击反馈
+文字几率
+	TStr ClickText1 = "";				//点击反馈
+文字1
+	TStr ClickText2 = "";				//点击反馈
+文字2
+	TStr ClickText3 = "";				//点击反馈
+文字3
+	float BuildMoveTextOdds = 0.0f;				//建筑移动
+文字几率
+	TStr BuildMoveText1 = "";				//建筑移动
+文字1
+	TStr BuildMoveText2 = "";				//建筑移动
+文字2
+	TStr BuildMoveText3 = "";				//建筑移动
+文字3
+	float BuildTextOdds = 0.0f;				//建筑读条
+文字几率
+	TStr BuildText1 = "";				//建筑读条
+文字1
+	TStr BuildText2 = "";				//建筑读条
+文字2
+	TStr BuildText3 = "";				//建筑读条
+文字3
+	float CollectMoveTextOdds = 0.0f;				//采集移动
+文字几率
+	TStr CollectMoveText1 = "";				//采集移动
+文字1
+	TStr CollectMoveText2 = "";				//采集移动
+文字2
+	TStr CollectMoveText3 = "";				//采集移动
+文字3
+	float CollectTextOdds = 0.0f;				//采集读条
+文字几率
+	TStr CollectText1 = "";				//采集读条
+文字1
+	TStr CollectText2 = "";				//采集读条
+文字2
+	TStr CollectText3 = "";				//采集读条
+文字3
+	float NoSpaceTextOdds = 0.0f;				//无空地警报
+文字几率
+	TStr NoSpaceText1 = "";				//无空地警报
+文字1
+	TStr NoSpaceText2 = "";				//无空地警报
+文字2
+	TStr NoSpaceText3 = "";				//无空地警报
+文字3
+	float SleepTextOdds = 0.0f;				//去睡觉过程
+文字几率
+	TStr SleepText1 = "";				//去睡觉过程
+文字1
+	TStr SleepText2 = "";				//去睡觉过程
+文字2
+	TStr SleepText3 = "";				//去睡觉过程
+文字3
+	float SleepOverTextOdds = 0.0f;				//休息完成
+文字几率
+	TStr SleepOverText1 = "";				//休息完成
+文字1
+	TStr SleepOverText2 = "";				//休息完成
+文字2
+	TStr SleepOverText3 = "";				//休息完成
+文字3
+	float StrollTextOdds = 0.0f;				//溜达过程
+文字几率
+	float StrollTextMin = 0.0f;				//溜达过程
+文字CDMin
+	float StrollTextMax = 0.0f;				//溜达过程
+文字CDMax
+	TStr StrollText1 = "";				//溜达过程
+文字1
+	TStr StrollText2 = "";				//溜达过程
+文字2
+	TStr StrollText3 = "";				//溜达过程
+文字3
+	float StandbyTextOdds = 0.0f;				//待机
+文字几率
+	TStr StandbyText1 = "";				//待机
+文字1
+	TStr StandbyText2 = "";				//待机
+文字2
+	TStr StandbyText3 = "";				//待机
+文字3
+	float AttackMoveTextOdds = 0.0f;				//向攻击移动过程
+文字几率
+	TStr AttackMoveText1 = "";				//向攻击移动过程
+文字1
+	TStr AttackMoveText2 = "";				//向攻击移动过程
+文字2
+	TStr AttackMoveText3 = "";				//向攻击移动过程
+文字3
+	float AttackTextOdds = 0.0f;				//攻击过程
+文字几率
+	TStr AttackText1 = "";				//攻击过程
+文字1
+	TStr AttackText2 = "";				//攻击过程
+文字2
+	TStr AttackText3 = "";				//攻击过程
+文字3
+	INT32 PolluteBobyEffectLocation = 0;				//污染身上
+特效
+播放位置
+	TStr PolluteBobyEffect = "";				//污染身上
+特效
+	TStr PolluteLandEffect = "";				//污染地上
+特效
+	INT32 StealBobyEffectLocation = 0;				//偷取身上
+特效
+播放位置
+	TStr StealBobyEffect = "";				//偷取身上
+特效
+	TStr StealLandEffect = "";				//偷取地上
+特效
+	INT32 SufferEffectLocation = 0;				//受击特效
+播放位置
+	TStr SufferEffect = "";				//受击特效
+	INT32 BirthEffectLocation = 0;				//出生特效
+播放位置
+	TStr BirthEffect = "";				//出生特效
+	INT32 TrackEffectLocation = 0;				//弹道特效
+播放位置
+	TStr TrackEffect = "";				//弹道特效
+	TStr AttackSound = "";				//【生物】
+攻击音效
+	TStr UnderattackSound = "";				//【生物】
+攻击后的受击音效
+	TStr StartpoSound = "";				//【怪物】
+开始污染音效
+	TStr PollutingSound = "";				//【怪物】
+污染土地音效
+	TStr StartstSound = "";				//【怪物】
+开始偷取音效
+	TStr StealingSound = "";				//【怪物】
+偷取音效
+	TStr BornSound = "";				//【怪物】
+出生音效
+	TStr RewardquaSound = "";				//【生物】
+奖励品质音效
+	TStr CallSound = "";				//【生物】
+传送门召唤音效
+	TStr ReturnSound = "";				//【生物】
+返回音效
+};
+CreateCsvClass(Creature);
+
+struct Creature_VitalityT : ConfigBaseT
+{
+	virtual ~Creature_VitalityT()
+	{
+	}
+	Creature_VitalityT()
+	{
+		FileName = "Creature_Vitality.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"PopulationMin",{INT_FD, &PopulationMin}},
+			{"PopulationMax",{INT_FD, &PopulationMax}},
+			{"DiamondVitality",{INT_FD, &DiamondVitality}},
+			{"FreeVitality",{INT_FD, &FreeVitality}}
+		};
+	}
+	virtual Creature_VitalityT* create()
+	{
+		return new Creature_VitalityT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //类型ID
+	INT32 PopulationMin = 0;				//人口下限
+	INT32 PopulationMax = 0;				//人口上限
+	INT32 DiamondVitality = 0;				//付费额外行动力
+	INT32 FreeVitality = 0;				//免费额外行动力
+};
+CreateCsvClass(Creature_Vitality);
+
+struct DropT : ConfigBaseT
+{
+	virtual ~DropT()
+	{
+	}
+	DropT()
+	{
+		FileName = "Drop.csv";
+		_kf =
+		{
+			{"Id",{INT_FD, &Id}},
+			{"DropId",{INT_FD, &DropId}},
+			{"Respositories",{INT_FD, &Respositories}},
+			{"Probability",{FLOAT_FD, &Probability}},
+			{"RandomMin",{INT_FD, &RandomMin}},
+			{"RandomMax",{INT_FD, &RandomMax}},
+			{"ExcludeRepeat",{INT_FD, &ExcludeRepeat}},
+			{"Priority",{INT_FD, &Priority}},
+			{"ItemType",{INT_FD, &ItemType}},
+			{"ArticleId",{INT_FD, &ArticleId}},
+			{"ProductMin",{INT_FD, &ProductMin}},
+			{"ProductMax",{INT_FD, &ProductMax}},
+			{"ArticleState",{INT_FD, &ArticleState}},
+			{"PlaceType",{INT_FD, &PlaceType}},
+			{"TweenType",{INT_FD, &TweenType}},
+			{"BubbleId",{INT_FD, &BubbleId}},
+			{"BubbleBigId",{FLOAT_FD, &BubbleBigId}}
+		};
+	}
+	virtual DropT* create()
+	{
+		return new DropT();
+	}
+	enum
+	{
+	};
+	INT32 Id = 0;            //序号
+	INT32 DropId = 0;				//掉落ID
+	INT32 Respositories = 0;				//子库
+序号 
+	float Probability = 0.0f;				//几率
+	INT32 RandomMin = 0;				//随机次数
+Min
+	INT32 RandomMax = 0;				//随机次数
+Max
+	INT32 ExcludeRepeat = 0;				//是否排重
+	INT32 Priority = 0;				//权值
+	INT32 ItemType = 0;				//产出类型
+	INT32 ArticleId = 0;				//道具id
+怪物ID
+	INT32 ProductMin = 0;				//MIN值
+	INT32 ProductMax = 0;				//MAX值
+	INT32 ArticleState = 0;				//道具状态
+	INT32 PlaceType = 0;				//掉落
+位置规则
+	INT32 TweenType = 0;				//显示
+	INT32 BubbleId = 0;				//泡泡ID
+	float BubbleBigId = 0.0f;				//大泡泡ID
+};
+CreateCsvClass(Drop);
+
+struct Drop_changeT : ConfigBaseT
+{
+	virtual ~Drop_changeT()
+	{
+	}
+	Drop_changeT()
+	{
+		FileName = "Drop_change.csv";
+		_kf =
+		{
+			{"DropID",{INT_FD, &DropID}},
+			{"Level9999",{INT_FD, &Level9999}},
+			{"Level100",{INT_FD, &Level100}},
+			{"Level101",{INT_FD, &Level101}},
+			{"Level102",{INT_FD, &Level102}},
+			{"Level103",{INT_FD, &Level103}},
+			{"Level104",{INT_FD, &Level104}},
+			{"Level105",{INT_FD, &Level105}},
+			{"Level106",{INT_FD, &Level106}},
+			{"Level107",{INT_FD, &Level107}},
+			{"Level651",{INT_FD, &Level651}},
+			{"Level501",{INT_FD, &Level501}},
+			{"Level109",{INT_FD, &Level109}},
+			{"Level110",{INT_FD, &Level110}},
+			{"Level111",{INT_FD, &Level111}},
+			{"Level112",{INT_FD, &Level112}},
+			{"Level499",{INT_FD, &Level499}},
+			{"Level114",{INT_FD, &Level114}},
+			{"Level652",{INT_FD, &Level652}},
+			{"Level502",{INT_FD, &Level502}},
+			{"Level115",{INT_FD, &Level115}},
+			{"Level116",{INT_FD, &Level116}},
+			{"Level117",{INT_FD, &Level117}},
+			{"Level653",{INT_FD, &Level653}},
+			{"Level503",{INT_FD, &Level503}},
+			{"Level119",{INT_FD, &Level119}},
+			{"Level118",{INT_FD, &Level118}},
+			{"Level654",{INT_FD, &Level654}},
+			{"Level504",{INT_FD, &Level504}},
+			{"Level120",{INT_FD, &Level120}},
+			{"Level121",{INT_FD, &Level121}},
+			{"Level122",{INT_FD, &Level122}},
+			{"Level123",{INT_FD, &Level123}},
+			{"Level124",{INT_FD, &Level124}},
+			{"Level801",{INT_FD, &Level801}},
+			{"Level125",{INT_FD, &Level125}},
+			{"Level655",{INT_FD, &Level655}},
+			{"Level505",{INT_FD, &Level505}},
+			{"Level126",{INT_FD, &Level126}},
+			{"Level128",{INT_FD, &Level128}},
+			{"Level127",{INT_FD, &Level127}},
+			{"Level129",{INT_FD, &Level129}},
+			{"Level130",{INT_FD, &Level130}},
+			{"Level133",{INT_FD, &Level133}},
+			{"Level134",{INT_FD, &Level134}},
+			{"Level131",{INT_FD, &Level131}},
+			{"Level656",{INT_FD, &Level656}},
+			{"Level506",{INT_FD, &Level506}},
+			{"Level132",{INT_FD, &Level132}},
+			{"Level135",{INT_FD, &Level135}},
+			{"Level657",{INT_FD, &Level657}},
+			{"Level507",{INT_FD, &Level507}},
+			{"Level136",{INT_FD, &Level136}},
+			{"Level802",{INT_FD, &Level802}},
+			{"Level137",{INT_FD, &Level137}},
+			{"Level138",{INT_FD, &Level138}},
+			{"Level658",{INT_FD, &Level658}},
+			{"Level508",{INT_FD, &Level508}},
+			{"Level139",{INT_FD, &Level139}},
+			{"Level140",{INT_FD, &Level140}},
+			{"Level141",{INT_FD, &Level141}},
+			{"Level142",{INT_FD, &Level142}},
+			{"Level143",{INT_FD, &Level143}},
+			{"Level144",{INT_FD, &Level144}},
+			{"Level145",{INT_FD, &Level145}},
+			{"Level146",{INT_FD, &Level146}},
+			{"Level147",{INT_FD, &Level147}},
+			{"Level659",{INT_FD, &Level659}},
+			{"Level509",{INT_FD, &Level509}},
+			{"Level148",{INT_FD, &Level148}},
+			{"Level149",{INT_FD, &Level149}},
+			{"Level150",{INT_FD, &Level150}},
+			{"Level151",{INT_FD, &Level151}},
+			{"Level152",{INT_FD, &Level152}},
+			{"Level153",{INT_FD, &Level153}},
+			{"Level660",{INT_FD, &Level660}},
+			{"Level510",{INT_FD, &Level510}},
+			{"Level154",{INT_FD, &Level154}},
+			{"Level155",{INT_FD, &Level155}},
+			{"Level156",{INT_FD, &Level156}},
+			{"Level661",{INT_FD, &Level661}},
+			{"Level511",{INT_FD, &Level511}},
+			{"Level157",{INT_FD, &Level157}},
+			{"Level158",{INT_FD, &Level158}},
+			{"Level159",{INT_FD, &Level159}},
+			{"Level803",{INT_FD, &Level803}},
+			{"Level160",{INT_FD, &Level160}},
+			{"Level161",{INT_FD, &Level161}},
+			{"Level662",{INT_FD, &Level662}},
+			{"Level512",{INT_FD, &Level512}},
+			{"Level162",{INT_FD, &Level162}},
+			{"Level163",{INT_FD, &Level163}},
+			{"Level164",{INT_FD, &Level164}},
+			{"Level663",{INT_FD, &Level663}},
+			{"Level513",{INT_FD, &Level513}},
+			{"Level165",{INT_FD, &Level165}},
+			{"Level166",{INT_FD, &Level166}},
+			{"Level167",{INT_FD, &Level167}},
+			{"Level168",{INT_FD, &Level168}},
+			{"Level804",{INT_FD, &Level804}},
+			{"Level169",{INT_FD, &Level169}},
+			{"Level170",{INT_FD, &Level170}},
+			{"Level171",{INT_FD, &Level171}},
+			{"Level172",{INT_FD, &Level172}},
+			{"Level173",{INT_FD, &Level173}},
+			{"Level664",{INT_FD, &Level664}},
+			{"Level514",{INT_FD, &Level514}},
+			{"Level174",{INT_FD, &Level174}},
+			{"Level805",{INT_FD, &Level805}},
+			{"Level175",{INT_FD, &Level175}},
+			{"Level176",{INT_FD, &Level176}},
+			{"Level177",{INT_FD, &Level177}},
+			{"Level178",{INT_FD, &Level178}},
+			{"Level179",{INT_FD, &Level179}},
+			{"Level180",{INT_FD, &Level180}},
+			{"Level665",{INT_FD, &Level665}},
+			{"Level515",{INT_FD, &Level515}},
+			{"Level181",{INT_FD, &Level181}},
+			{"Level182",{INT_FD, &Level182}},
+			{"Level183",{INT_FD, &Level183}},
+			{"Level184",{INT_FD, &Level184}},
+			{"Level185",{INT_FD, &Level185}},
+			{"Level186",{INT_FD, &Level186}},
+			{"Level806",{INT_FD, &Level806}},
+			{"Level187",{INT_FD, &Level187}},
+			{"Level666",{INT_FD, &Level666}},
+			{"Level516",{INT_FD, &Level516}},
+			{"Level807",{INT_FD, &Level807}},
+			{"Level188",{INT_FD, &Level188}},
+			{"Level189",{INT_FD, &Level189}},
+			{"Level190",{INT_FD, &Level190}},
+			{"Level191",{INT_FD, &Level191}},
+			{"Level192",{INT_FD, &Level192}},
+			{"Level193",{INT_FD, &Level193}},
+			{"Level194",{INT_FD, &Level194}},
+			{"Level667",{INT_FD, &Level667}},
+			{"Level517",{INT_FD, &Level517}},
+			{"Level195",{INT_FD, &Level195}},
+			{"Level196",{INT_FD, &Level196}},
+			{"Level197",{INT_FD, &Level197}},
+			{"Level498",{INT_FD, &Level498}},
+			{"Level198",{INT_FD, &Level198}},
+			{"Level808",{INT_FD, &Level808}},
+			{"Level199",{INT_FD, &Level199}},
+			{"Level668",{INT_FD, &Level668}},
+			{"Level518",{INT_FD, &Level518}},
+			{"Level200",{INT_FD, &Level200}},
+			{"Level201",{INT_FD, &Level201}},
+			{"Level202",{INT_FD, &Level202}},
+			{"Level809",{INT_FD, &Level809}},
+			{"Level203",{INT_FD, &Level203}},
+			{"Level204",{INT_FD, &Level204}},
+			{"Level205",{INT_FD, &Level205}},
+			{"Level206",{INT_FD, &Level206}},
+			{"Level669",{INT_FD, &Level669}},
+			{"Level519",{INT_FD, &Level519}},
+			{"Level207",{INT_FD, &Level207}},
+			{"Level208",{INT_FD, &Level208}},
+			{"Level209",{INT_FD, &Level209}},
+			{"Level810",{INT_FD, &Level810}},
+			{"Level670",{INT_FD, &Level670}},
+			{"Level520",{INT_FD, &Level520}},
+			{"Level210",{INT_FD, &Level210}},
+			{"Level211",{INT_FD, &Level211}},
+			{"Level212",{INT_FD, &Level212}},
+			{"Level671",{INT_FD, &Level671}},
+			{"Level521",{INT_FD, &Level521}},
+			{"Level213",{INT_FD, &Level213}},
+			{"Level214",{INT_FD, &Level214}},
+			{"Level215",{INT_FD, &Level215}},
+			{"Level216",{INT_FD, &Level216}},
+			{"Level217",{INT_FD, &Level217}},
+			{"Level218",{INT_FD, &Level218}},
+			{"Level672",{INT_FD, &Level672}},
+			{"Level522",{INT_FD, &Level522}},
+			{"Level219",{INT_FD, &Level219}},
+			{"Level220",{INT_FD, &Level220}},
+			{"Level221",{INT_FD, &Level221}},
+			{"Level222",{INT_FD, &Level222}},
+			{"Level223",{INT_FD, &Level223}},
+			{"Level224",{INT_FD, &Level224}},
+			{"Level673",{INT_FD, &Level673}},
+			{"Level523",{INT_FD, &Level523}},
+			{"Level225",{INT_FD, &Level225}}
+		};
+	}
+	virtual Drop_changeT* create()
+	{
+		return new Drop_changeT();
+	}
+	enum
+	{
+	};
+	INT32 DropID = 0;            //掉落id
+	INT32 Level9999 = 0;				//家园
+	INT32 Level100 = 0;				//关卡1
+	INT32 Level101 = 0;				//关卡2
+	INT32 Level102 = 0;				//关卡3
+	INT32 Level103 = 0;				//关卡4
+	INT32 Level104 = 0;				//关卡5
+	INT32 Level105 = 0;				//关卡6
+	INT32 Level106 = 0;				//关卡7
+	INT32 Level107 = 0;				//关卡8
+	INT32 Level651 = 0;				//关卡9
+	INT32 Level501 = 0;				//关卡10
+	INT32 Level109 = 0;				//关卡11
+	INT32 Level110 = 0;				//关卡12
+	INT32 Level111 = 0;				//关卡13
+	INT32 Level112 = 0;				//关卡14
+	INT32 Level499 = 0;				//关卡15
+	INT32 Level114 = 0;				//关卡16
+	INT32 Level652 = 0;				//关卡17
+	INT32 Level502 = 0;				//关卡18
+	INT32 Level115 = 0;				//关卡19
+	INT32 Level116 = 0;				//关卡20
+	INT32 Level117 = 0;				//关卡21
+	INT32 Level653 = 0;				//关卡22
+	INT32 Level503 = 0;				//关卡23
+	INT32 Level119 = 0;				//关卡24
+	INT32 Level118 = 0;				//关卡25
+	INT32 Level654 = 0;				//关卡26
+	INT32 Level504 = 0;				//关卡27
+	INT32 Level120 = 0;				//关卡28
+	INT32 Level121 = 0;				//关卡29
+	INT32 Level122 = 0;				//关卡30
+	INT32 Level123 = 0;				//关卡31
+	INT32 Level124 = 0;				//关卡32
+	INT32 Level801 = 0;				//关卡33
+	INT32 Level125 = 0;				//关卡34
+	INT32 Level655 = 0;				//关卡35
+	INT32 Level505 = 0;				//关卡36
+	INT32 Level126 = 0;				//关卡37
+	INT32 Level128 = 0;				//关卡38
+	INT32 Level127 = 0;				//关卡39
+	INT32 Level129 = 0;				//关卡40
+	INT32 Level130 = 0;				//关卡41
+	INT32 Level133 = 0;				//关卡42
+	INT32 Level134 = 0;				//关卡43
+	INT32 Level131 = 0;				//关卡44
+	INT32 Level656 = 0;				//关卡45
+	INT32 Level506 = 0;				//关卡46
+	INT32 Level132 = 0;				//关卡47
+	INT32 Level135 = 0;				//关卡48
+	INT32 Level657 = 0;				//关卡49
+	INT32 Level507 = 0;				//关卡50
+	INT32 Level136 = 0;				//关卡51
+	INT32 Level802 = 0;				//关卡52
+	INT32 Level137 = 0;				//关卡53
+	INT32 Level138 = 0;				//关卡54
+	INT32 Level658 = 0;				//关卡55
+	INT32 Level508 = 0;				//关卡56
+	INT32 Level139 = 0;				//关卡57
+	INT32 Level140 = 0;				//关卡58
+	INT32 Level141 = 0;				//关卡59
+	INT32 Level142 = 0;				//关卡60
+	INT32 Level143 = 0;				//关卡61
+	INT32 Level144 = 0;				//关卡62
+	INT32 Level145 = 0;				//关卡63
+	INT32 Level146 = 0;				//关卡64
+	INT32 Level147 = 0;				//关卡65
+	INT32 Level659 = 0;				//关卡66
+	INT32 Level509 = 0;				//关卡67
+	INT32 Level148 = 0;				//关卡68
+	INT32 Level149 = 0;				//关卡69
+	INT32 Level150 = 0;				//关卡70
+	INT32 Level151 = 0;				//关卡71
+	INT32 Level152 = 0;				//关卡72
+	INT32 Level153 = 0;				//关卡73
+	INT32 Level660 = 0;				//关卡74
+	INT32 Level510 = 0;				//关卡75
+	INT32 Level154 = 0;				//关卡76
+	INT32 Level155 = 0;				//关卡77
+	INT32 Level156 = 0;				//关卡78
+	INT32 Level661 = 0;				//关卡79
+	INT32 Level511 = 0;				//关卡80
+	INT32 Level157 = 0;				//关卡81
+	INT32 Level158 = 0;				//关卡82
+	INT32 Level159 = 0;				//关卡83
+	INT32 Level803 = 0;				//关卡84
+	INT32 Level160 = 0;				//关卡85
+	INT32 Level161 = 0;				//关卡86
+	INT32 Level662 = 0;				//关卡87
+	INT32 Level512 = 0;				//关卡88
+	INT32 Level162 = 0;				//关卡89
+	INT32 Level163 = 0;				//关卡90
+	INT32 Level164 = 0;				//关卡91
+	INT32 Level663 = 0;				//关卡92
+	INT32 Level513 = 0;				//关卡93
+	INT32 Level165 = 0;				//关卡94
+	INT32 Level166 = 0;				//关卡95
+	INT32 Level167 = 0;				//关卡96
+	INT32 Level168 = 0;				//关卡97
+	INT32 Level804 = 0;				//关卡98
+	INT32 Level169 = 0;				//关卡99
+	INT32 Level170 = 0;				//关卡100
+	INT32 Level171 = 0;				//关卡101
+	INT32 Level172 = 0;				//关卡102
+	INT32 Level173 = 0;				//关卡103
+	INT32 Level664 = 0;				//关卡104
+	INT32 Level514 = 0;				//关卡105
+	INT32 Level174 = 0;				//关卡106
+	INT32 Level805 = 0;				//关卡107
+	INT32 Level175 = 0;				//关卡108
+	INT32 Level176 = 0;				//关卡109
+	INT32 Level177 = 0;				//关卡110
+	INT32 Level178 = 0;				//关卡111
+	INT32 Level179 = 0;				//关卡112
+	INT32 Level180 = 0;				//关卡113
+	INT32 Level665 = 0;				//关卡114
+	INT32 Level515 = 0;				//关卡115
+	INT32 Level181 = 0;				//关卡116
+	INT32 Level182 = 0;				//关卡117
+	INT32 Level183 = 0;				//关卡118
+	INT32 Level184 = 0;				//关卡119
+	INT32 Level185 = 0;				//关卡120
+	INT32 Level186 = 0;				//关卡121
+	INT32 Level806 = 0;				//关卡122
+	INT32 Level187 = 0;				//关卡123
+	INT32 Level666 = 0;				//关卡124
+	INT32 Level516 = 0;				//关卡125
+	INT32 Level807 = 0;				//关卡126
+	INT32 Level188 = 0;				//关卡127
+	INT32 Level189 = 0;				//关卡128
+	INT32 Level190 = 0;				//关卡129
+	INT32 Level191 = 0;				//关卡130
+	INT32 Level192 = 0;				//关卡131
+	INT32 Level193 = 0;				//关卡132
+	INT32 Level194 = 0;				//关卡133
+	INT32 Level667 = 0;				//关卡134
+	INT32 Level517 = 0;				//关卡135
+	INT32 Level195 = 0;				//关卡136
+	INT32 Level196 = 0;				//关卡137
+	INT32 Level197 = 0;				//关卡138
+	INT32 Level498 = 0;				//关卡139
+	INT32 Level198 = 0;				//关卡140
+	INT32 Level808 = 0;				//关卡141
+	INT32 Level199 = 0;				//关卡142
+	INT32 Level668 = 0;				//关卡143
+	INT32 Level518 = 0;				//关卡144
+	INT32 Level200 = 0;				//关卡145
+	INT32 Level201 = 0;				//关卡146
+	INT32 Level202 = 0;				//关卡147
+	INT32 Level809 = 0;				//关卡148
+	INT32 Level203 = 0;				//关卡149
+	INT32 Level204 = 0;				//关卡150
+	INT32 Level205 = 0;				//关卡151
+	INT32 Level206 = 0;				//关卡152
+	INT32 Level669 = 0;				//关卡153
+	INT32 Level519 = 0;				//关卡154
+	INT32 Level207 = 0;				//关卡155
+	INT32 Level208 = 0;				//关卡156
+	INT32 Level209 = 0;				//关卡157
+	INT32 Level810 = 0;				//关卡158
+	INT32 Level670 = 0;				//关卡159
+	INT32 Level520 = 0;				//关卡160
+	INT32 Level210 = 0;				//关卡161
+	INT32 Level211 = 0;				//关卡162
+	INT32 Level212 = 0;				//关卡163
+	INT32 Level671 = 0;				//关卡164
+	INT32 Level521 = 0;				//关卡165
+	INT32 Level213 = 0;				//关卡166
+	INT32 Level214 = 0;				//关卡167
+	INT32 Level215 = 0;				//关卡168
+	INT32 Level216 = 0;				//关卡169
+	INT32 Level217 = 0;				//关卡170
+	INT32 Level218 = 0;				//关卡171
+	INT32 Level672 = 0;				//关卡172
+	INT32 Level522 = 0;				//关卡173
+	INT32 Level219 = 0;				//关卡174
+	INT32 Level220 = 0;				//关卡175
+	INT32 Level221 = 0;				//关卡176
+	INT32 Level222 = 0;				//关卡177
+	INT32 Level223 = 0;				//关卡178
+	INT32 Level224 = 0;				//关卡179
+	INT32 Level673 = 0;				//关卡180
+	INT32 Level523 = 0;				//关卡181
+	INT32 Level225 = 0;				//关卡182
+};
+CreateCsvClass(Drop_change);
+
+struct EncyclopaediaT : ConfigBaseT
+{
+	virtual ~EncyclopaediaT()
+	{
+	}
+	EncyclopaediaT()
+	{
+		FileName = "Encyclopaedia.csv";
+		_kf =
+		{
+			{"ChainGroupID",{INT_FD, &ChainGroupID}},
+			{"SubtabID",{INT_FD, &SubtabID}},
+			{"ChainGroupName",{TSTR_FD, &ChainGroupName}},
+			{"ChainGroupMin",{INT_FD, &ChainGroupMin}},
+			{"ChainGroupMax",{INT_FD, &ChainGroupMax}},
+			{"remark",{TSTR_FD, &remark}}
+		};
+	}
+	virtual EncyclopaediaT* create()
+	{
+		return new EncyclopaediaT();
+	}
+	enum
+	{
+	};
+	INT32 ChainGroupID = 0;            //合成链组ID
+	INT32 SubtabID = 0;				//页签ID
+	TStr ChainGroupName = "";				//名称
+	INT32 ChainGroupMin = 0;				//最小ID
+	INT32 ChainGroupMax = 0;				//最大ID
+	TStr remark = "";				//备注
+};
+CreateCsvClass(Encyclopaedia);
+
+struct HandleT : ConfigBaseT
+{
+	virtual ~HandleT()
+	{
+	}
+	HandleT()
+	{
+		FileName = "Handle.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Name",{TSTR_FD, &Name}},
+			{"Description",{TSTR_FD, &Description}},
+			{"Drag",{INT_FD, &Drag}},
+			{"Upgrade",{INT_FD, &Upgrade}},
+			{"Build",{INT_FD, &Build}},
+			{"Collect",{INT_FD, &Collect}}
+		};
+	}
+	virtual HandleT* create()
+	{
+		return new HandleT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //操作ID
+	TStr Name = "";				//名字
+	TStr Description = "";				//描述
+	INT32 Drag = 0;				//拖拽
+	INT32 Upgrade = 0;				//升级
+	INT32 Build = 0;				//建造
+	INT32 Collect = 0;				//采集
+};
+CreateCsvClass(Handle);
+
+struct Healing_cellT : ConfigBaseT
+{
+	virtual ~Healing_cellT()
+	{
+	}
+	Healing_cellT()
+	{
+		FileName = "Healing_cell.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"ScopeMin",{INT_FD, &ScopeMin}},
+			{"ScopeMax",{INT_FD, &ScopeMax}},
+			{"Index",{INT_FD, &Index}},
+			{"ResName",{TSTR_FD, &ResName}},
+			{"Sound",{TSTR_FD, &Sound}}
+		};
+	}
+	virtual Healing_cellT* create()
+	{
+		return new Healing_cellT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //序号
+	INT32 ScopeMin = 0;				//地块所需治愈值Min
+	INT32 ScopeMax = 0;				//地块所需治愈值Max
+	INT32 Index = 0;				//治愈特效
+播放位置
+	TStr ResName = "";				//治愈特效
+	TStr Sound = "";				//治愈音效
+};
+CreateCsvClass(Healing_cell);
+
+struct Healing_showT : ConfigBaseT
+{
+	virtual ~Healing_showT()
+	{
+	}
+	Healing_showT()
+	{
+		FileName = "Healing_show.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"ScopeMin",{INT_FD, &ScopeMin}},
+			{"ScopeMax",{INT_FD, &ScopeMax}},
+			{"Number",{INT_FD, &Number}},
+			{"ResName",{TSTR_FD, &ResName}},
+			{"Arrive",{TSTR_FD, &Arrive}},
+			{"Enlarge",{FLOAT_FD, &Enlarge}}
+		};
+	}
+	virtual Healing_showT* create()
+	{
+		return new Healing_showT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	INT32 ScopeMin = 0;				//(区间
+	INT32 ScopeMax = 0;				//区间]
+	INT32 Number = 0;				//单位
+	TStr ResName = "";				//飞跃过程特效
+	TStr Arrive = "";				//飞到特效
+	float Enlarge = 0.0f;				//特效缩放比例
+};
+CreateCsvClass(Healing_show);
+
+struct Healing_splitT : ConfigBaseT
+{
+	virtual ~Healing_splitT()
+	{
+	}
+	Healing_splitT()
+	{
+		FileName = "Healing_split.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"ScopeMin",{INT_FD, &ScopeMin}},
+			{"ScopeMax",{INT_FD, &ScopeMax}},
+			{"SplitMin",{INT_FD, &SplitMin}},
+			{"SplitMax",{INT_FD, &SplitMax}}
+		};
+	}
+	virtual Healing_splitT* create()
+	{
+		return new Healing_splitT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	INT32 ScopeMin = 0;				//(区间
+	INT32 ScopeMax = 0;				//区间]
+	INT32 SplitMin = 0;				//随机Min
+	INT32 SplitMax = 0;				//随机Max
+};
+CreateCsvClass(Healing_split);
+
+struct Home_LevelT : ConfigBaseT
+{
+	virtual ~Home_LevelT()
+	{
+	}
+	Home_LevelT()
+	{
+		FileName = "Home_Level.csv";
+		_kf =
+		{
+			{"Home_Level",{INT_FD, &Home_Level}},
+			{"Score",{INT_FD, &Score}}
+		};
+	}
+	virtual Home_LevelT* create()
+	{
+		return new Home_LevelT();
+	}
+	enum
+	{
+	};
+	INT32 Home_Level = 0;            //家园等级
+	INT32 Score = 0;				//积分上限
+};
+CreateCsvClass(Home_Level);
+
+struct LevelT : ConfigBaseT
+{
+	virtual ~LevelT()
+	{
+	}
+	LevelT()
+	{
+		FileName = "Level.csv";
+		_kf =
+		{
+			{"Id",{INT_FD, &Id}},
+			{"Type",{INT_FD, &Type}},
+			{"FlowType",{INT_FD, &FlowType}},
+			{"Name",{TSTR_FD, &Name}},
+			{"Icon",{TSTR_FD, &Icon}},
+			{"Map",{TSTR_FD, &Map}},
+			{"LockedId",{INT_FD, &LockedId}},
+			{"LevelGroup",{INT_FD, &LevelGroup}},
+			{"EnergyExpend",{INT_FD, &EnergyExpend}},
+			{"PreviewReward1Type",{INT_FD, &PreviewReward1Type}},
+			{"PreviewReward1Id",{INT_FD, &PreviewReward1Id}},
+			{"PreviewReward2Type",{INT_FD, &PreviewReward2Type}},
+			{"PreviewReward2Id",{INT_FD, &PreviewReward2Id}},
+			{"PreviewReward3Type",{INT_FD, &PreviewReward3Type}},
+			{"PreviewReward3Id",{INT_FD, &PreviewReward3Id}},
+			{"RepetitiveReward1Type",{INT_FD, &RepetitiveReward1Type}},
+			{"RepetitiveReward1Id",{INT_FD, &RepetitiveReward1Id}},
+			{"RepetitiveReward2Type",{INT_FD, &RepetitiveReward2Type}},
+			{"RepetitiveReward2Id",{INT_FD, &RepetitiveReward2Id}},
+			{"RepetitiveReward3Type",{INT_FD, &RepetitiveReward3Type}},
+			{"RepetitiveReward3Id",{INT_FD, &RepetitiveReward3Id}},
+			{"Task1Id",{INT_FD, &Task1Id}},
+			{"Task2Id",{INT_FD, &Task2Id}},
+			{"Task3Id",{INT_FD, &Task3Id}},
+			{"CompletedConditionType",{INT_FD, &CompletedConditionType}},
+			{"CompletedConditionId",{INT_FD, &CompletedConditionId}},
+			{"CompletedConditionNum",{INT_FD, &CompletedConditionNum}},
+			{"CompletedConditionTitle",{TSTR_FD, &CompletedConditionTitle}},
+			{"CompletedConditionDescribe",{TSTR_FD, &CompletedConditionDescribe}},
+			{"LimitingTime1",{INT_FD, &LimitingTime1}},
+			{"TimeBoughtType1",{INT_FD, &TimeBoughtType1}},
+			{"LimitingTime2",{INT_FD, &LimitingTime2}},
+			{"TimeBoughtType2",{INT_FD, &TimeBoughtType2}},
+			{"LimitingTime3",{INT_FD, &LimitingTime3}},
+			{"TimeBoughtType3",{INT_FD, &TimeBoughtType3}},
+			{"ReplacedNeedValue",{INT_FD, &ReplacedNeedValue}},
+			{"ReplacedId",{INT_FD, &ReplacedId}},
+			{"RepetitiveRewardWhetherNeedRecordReplaced",{INT_FD, &RepetitiveRewardWhetherNeedRecordReplaced}},
+			{"StarType",{INT_FD, &StarType}},
+			{"StarParameter1",{INT_FD, &StarParameter1}},
+			{"StarParameter2",{INT_FD, &StarParameter2}},
+			{"StarParameter3",{INT_FD, &StarParameter3}},
+			{"ShopSwitch",{INT_FD, &ShopSwitch}},
+			{"ShopGrpupId",{INT_FD, &ShopGrpupId}},
+			{"BoxType",{INT_FD, &BoxType}},
+			{"ZeroStarFreeAward",{INT_FD, &ZeroStarFreeAward}},
+			{"OneStarFreeAward",{INT_FD, &OneStarFreeAward}},
+			{"OneStarExtraPrice",{INT_FD, &OneStarExtraPrice}},
+			{"TwoStarFreeAward",{INT_FD, &TwoStarFreeAward}},
+			{"TwoStarExtraPrice",{INT_FD, &TwoStarExtraPrice}},
+			{"ThreeStarFreeAward",{INT_FD, &ThreeStarFreeAward}},
+			{"ThreeStarExtraPrice",{INT_FD, &ThreeStarExtraPrice}},
+			{"Appear1Id",{INT_FD, &Appear1Id}},
+			{"Appear1Value",{INT_FD, &Appear1Value}},
+			{"Appear2Id",{INT_FD, &Appear2Id}},
+			{"Appear2Value",{INT_FD, &Appear2Value}},
+			{"Appear3Id",{INT_FD, &Appear3Id}},
+			{"Appear3Value",{INT_FD, &Appear3Value}},
+			{"SettledPaidAwardId",{INT_FD, &SettledPaidAwardId}},
+			{"PaidAwardSceneNumMin",{INT_FD, &PaidAwardSceneNumMin}},
+			{"PaidAwardSceneNumMax",{INT_FD, &PaidAwardSceneNumMax}},
+			{"ExtraPaidAwardPossibility",{FLOAT_FD, &ExtraPaidAwardPossibility}},
+			{"ExtraPaidAwardId",{INT_FD, &ExtraPaidAwardId}},
+			{"StartTime",{INT_FD, &StartTime}},
+			{"EndTime",{INT_FD, &EndTime}},
+			{"ExtractionId",{INT_FD, &ExtractionId}},
+			{"AutoFreeId",{INT_FD, &AutoFreeId}},
+			{"CostType",{INT_FD, &CostType}},
+			{"Backgroundmusic",{TSTR_FD, &Backgroundmusic}},
+			{"IntoSound",{TSTR_FD, &IntoSound}},
+			{"LeftSound",{TSTR_FD, &LeftSound}},
+			{"SuccessSound",{TSTR_FD, &SuccessSound}},
+			{"FailedSound",{TSTR_FD, &FailedSound}},
+			{"RedoSound",{TSTR_FD, &RedoSound}},
+			{"NewlevelSound",{TSTR_FD, &NewlevelSound}},
+			{"HiddenlevelSound",{TSTR_FD, &HiddenlevelSound}},
+			{"Calculus",{INT_FD, &Calculus}}
+		};
+	}
+	virtual LevelT* create()
+	{
+		return new LevelT();
+	}
+	enum
+	{
+	};
+	INT32 Id = 0;            //关卡id
+	INT32 Type = 0;				//关卡类型
+	INT32 FlowType = 0;				//流程类型
+	TStr Name = "";				//关卡名称
+	TStr Icon = "";				//关卡图标
+	TStr Map = "";				//调用地图
+	INT32 LockedId = 0;				//前置关卡
+	INT32 LevelGroup = 0;				//后置关卡组
+	INT32 EnergyExpend = 0;				//体力消耗
+	INT32 PreviewReward1Type = 0;				//预览奖励1类型
+	INT32 PreviewReward1Id = 0;				//预览奖励1ID
+	INT32 PreviewReward2Type = 0;				//预览奖励2类型
+	INT32 PreviewReward2Id = 0;				//预览奖励2ID
+	INT32 PreviewReward3Type = 0;				//预览奖励3类型
+	INT32 PreviewReward3Id = 0;				//预览奖励3ID
+	INT32 RepetitiveReward1Type = 0;				//重复通关奖励1类型
+	INT32 RepetitiveReward1Id = 0;				//重复通关奖励1ID
+	INT32 RepetitiveReward2Type = 0;				//重复通关奖励2类型
+	INT32 RepetitiveReward2Id = 0;				//重复通关奖励2ID
+	INT32 RepetitiveReward3Type = 0;				//重复通关奖励3类型
+	INT32 RepetitiveReward3Id = 0;				//重复通关奖励3ID
+	INT32 Task1Id = 0;				//任务1ID
+	INT32 Task2Id = 0;				//任务2ID
+	INT32 Task3Id = 0;				//任务3ID
+	INT32 CompletedConditionType = 0;				//过关条件类型
+	INT32 CompletedConditionId = 0;				//过关条件ID
+	INT32 CompletedConditionNum = 0;				//过关条件数量
+	TStr CompletedConditionTitle = "";				//过关条件题头
+	TStr CompletedConditionDescribe = "";				//过关条件说明
+	INT32 LimitingTime1 = 0;				//时间限制1
+	INT32 TimeBoughtType1 = 0;				//时间购买类型1
+	INT32 LimitingTime2 = 0;				//时间限制2
+	INT32 TimeBoughtType2 = 0;				//时间购买类型2
+	INT32 LimitingTime3 = 0;				//时间限制3
+	INT32 TimeBoughtType3 = 0;				//时间购买类型3
+	INT32 ReplacedNeedValue = 0;				//关卡替换需通关次数
+	INT32 ReplacedId = 0;				//关卡替换ID
+	INT32 RepetitiveRewardWhetherNeedRecordReplaced = 0;				//重复通关奖励是否记录替换前关卡
+	INT32 StarType = 0;				//关卡星级判定类型
+	INT32 StarParameter1 = 0;				//星级判定
+参数1
+	INT32 StarParameter2 = 0;				//星级判定
+参数2
+	INT32 StarParameter3 = 0;				//星级判定
+参数3
+	INT32 ShopSwitch = 0;				//关卡商店
+是否开启
+	INT32 ShopGrpupId = 0;				//关卡商店
+商品组ID
+	INT32 BoxType = 0;				//宝箱奖励类型
+	INT32 ZeroStarFreeAward = 0;				//零星免费奖励
+	INT32 OneStarFreeAward = 0;				//一星免费奖励
+	INT32 OneStarExtraPrice = 0;				//一星额外付费奖励价格
+	INT32 TwoStarFreeAward = 0;				//二星免费奖励
+	INT32 TwoStarExtraPrice = 0;				//二星额外付费奖励价格
+	INT32 ThreeStarFreeAward = 0;				//三星免费奖励
+	INT32 ThreeStarExtraPrice = 0;				//三星额外付费奖励价格
+	INT32 Appear1Id = 0;				//关卡结算时冒出
+物品1掉落ID
+	INT32 Appear1Value = 0;				//关卡结算时冒出
+物品1掉落权值
+	INT32 Appear2Id = 0;				//关卡结算时冒出
+物品2掉落ID
+	INT32 Appear2Value = 0;				//关卡结算时冒出
+物品2掉落权值
+	INT32 Appear3Id = 0;				//关卡结算时冒出
+物品3掉落ID
+	INT32 Appear3Value = 0;				//关卡结算时冒出
+物品3掉落权值
+	INT32 SettledPaidAwardId = 0;				//固定付费奖励掉落ID
+	INT32 PaidAwardSceneNumMin = 0;				//付费奖励场上道具
+随机数量MIN
+	INT32 PaidAwardSceneNumMax = 0;				//付费奖励场上道具
+随机数量MAX
+	float ExtraPaidAwardPossibility = 0.0f;				//额外付费奖励
+概率
+	INT32 ExtraPaidAwardId = 0;				//额外付费奖励
+掉落ID
+	INT32 StartTime = 0;				//开启时间
+	INT32 EndTime = 0;				//关闭时间
+	INT32 ExtractionId = 0;				//抽取掉落库
+	INT32 AutoFreeId = 0;				//自动免费
+掉落ID
+	INT32 CostType = 0;				//龙干活消耗值
+	TStr Backgroundmusic = "";				//背景音乐
+	TStr IntoSound = "";				//进入自己营地音效
+	TStr LeftSound = "";				//离开营地音效
+	TStr SuccessSound = "";				//关卡成功音效
+	TStr FailedSound = "";				//关卡失败音效
+	TStr RedoSound = "";				//关卡重来音效
+	TStr NewlevelSound = "";				//新关卡开启音效
+	TStr HiddenlevelSound = "";				//隐藏关卡发现音效
+	INT32 Calculus = 0;				//是否演算
+};
+CreateCsvClass(Level);
+
+struct Level_boxT : ConfigBaseT
+{
+	virtual ~Level_boxT()
+	{
+	}
+	Level_boxT()
+	{
+		FileName = "Level_box.csv";
+		_kf =
+		{
+			{"Id",{INT_FD, &Id}},
+			{"BoxType",{INT_FD, &BoxType}},
+			{"JudgeValue",{INT_FD, &JudgeValue}},
+			{"Box1Id",{INT_FD, &Box1Id}},
+			{"Box1Value",{INT_FD, &Box1Value}},
+			{"Box1Time",{INT_FD, &Box1Time}},
+			{"Box1Cost",{INT_FD, &Box1Cost}},
+			{"Box2Id",{INT_FD, &Box2Id}},
+			{"Box2Value",{INT_FD, &Box2Value}},
+			{"Box2Time",{INT_FD, &Box2Time}},
+			{"Box2Cost",{INT_FD, &Box2Cost}},
+			{"GetSound",{TSTR_FD, &GetSound}},
+			{"UnlockSound",{TSTR_FD, &UnlockSound}}
+		};
+	}
+	virtual Level_boxT* create()
+	{
+		return new Level_boxT();
+	}
+	enum
+	{
+	};
+	INT32 Id = 0;            //序号
+	INT32 BoxType = 0;				//宝箱类型
+	INT32 JudgeValue = 0;				//判定数值
+	INT32 Box1Id = 0;				//宝箱1
+id
+	INT32 Box1Value = 0;				//宝箱1
+权值
+	INT32 Box1Time = 0;				//宝箱1
+解锁时间
+	INT32 Box1Cost = 0;				//宝箱1解锁花费
+	INT32 Box2Id = 0;				//宝箱2
+id
+	INT32 Box2Value = 0;				//宝箱2
+权值
+	INT32 Box2Time = 0;				//宝箱2
+解锁时间
+	INT32 Box2Cost = 0;				//宝箱2解锁花费
+	TStr GetSound = "";				//宝箱飞入音效
+	TStr UnlockSound = "";				//宝箱解锁音效
+};
+CreateCsvClass(Level_box);
+
+struct Level_energyT : ConfigBaseT
+{
+	virtual ~Level_energyT()
+	{
+	}
+	Level_energyT()
+	{
+		FileName = "Level_energy.csv";
+		_kf =
+		{
+			{"NeedEnergy",{INT_FD, &NeedEnergy}},
+			{"Time",{INT_FD, &Time}},
+			{"Diamond",{INT_FD, &Diamond}}
+		};
+	}
+	virtual Level_energyT* create()
+	{
+		return new Level_energyT();
+	}
+	enum
+	{
+	};
+	INT32 NeedEnergy = 0;            //所需体力值
+	INT32 Time = 0;				//恢复时间
+	INT32 Diamond = 0;				//所需钻石
+};
+CreateCsvClass(Level_energy);
+
+struct Level_eventT : ConfigBaseT
+{
+	virtual ~Level_eventT()
+	{
+	}
+	Level_eventT()
+	{
+		FileName = "Level_event.csv";
+		_kf =
+		{
+			{"EventType",{INT_FD, &EventType}},
+			{"ShowType",{INT_FD, &ShowType}},
+			{"EventImage",{TSTR_FD, &EventImage}},
+			{"Remark",{TSTR_FD, &Remark}},
+			{"EventEffectLocation",{INT_FD, &EventEffectLocation}},
+			{"EventEffect",{TSTR_FD, &EventEffect}},
+			{"EventName",{TSTR_FD, &EventName}},
+			{"EventDescribe",{TSTR_FD, &EventDescribe}},
+			{"EventClickSound",{TSTR_FD, &EventClickSound}}
+		};
+	}
+	virtual Level_eventT* create()
+	{
+		return new Level_eventT();
+	}
+	enum
+	{
+	};
+	INT32 EventType = 0;            //类型ID
+	INT32 ShowType = 0;				//表现方式
+	TStr EventImage = "";				//美术资源
+	TStr Remark = "";				//备注
+	INT32 EventEffectLocation = 0;				//点击播放特效
+位置
+	TStr EventEffect = "";				//点击播放特效
+	TStr EventName = "";				//名称
+	TStr EventDescribe = "";				//描述
+	TStr EventClickSound = "";				//点击音效
+};
+CreateCsvClass(Level_event);
+
+struct Level_formT : ConfigBaseT
+{
+	virtual ~Level_formT()
+	{
+	}
+	Level_formT()
+	{
+		FileName = "Level_form.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"FormID",{INT_FD, &FormID}},
+			{"LevelID",{INT_FD, &LevelID}}
+		};
+	}
+	virtual Level_formT* create()
+	{
+		return new Level_formT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //序号
+	INT32 FormID = 0;				//关卡组ID
+	INT32 LevelID = 0;				//关卡ID
+};
+CreateCsvClass(Level_form);
+
+struct Level_GroupT : ConfigBaseT
+{
+	virtual ~Level_GroupT()
+	{
+	}
+	Level_GroupT()
+	{
+		FileName = "Level_Group.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"GroupLeveID",{INT_FD, &GroupLeveID}},
+			{"GroupID",{INT_FD, &GroupID}},
+			{"Unlock1",{INT_FD, &Unlock1}},
+			{"UnlockNum1",{INT_FD, &UnlockNum1}},
+			{"Unlock2",{INT_FD, &Unlock2}},
+			{"UnlockNum2",{FLOAT_FD, &UnlockNum2}},
+			{"CenterX",{FLOAT_FD, &CenterX}},
+			{"CenterY",{FLOAT_FD, &CenterY}},
+			{"GroupImage",{TSTR_FD, &GroupImage}},
+			{"GroupDescribe",{TSTR_FD, &GroupDescribe}},
+			{"UnlockSound",{TSTR_FD, &UnlockSound}}
+		};
+	}
+	virtual Level_GroupT* create()
+	{
+		return new Level_GroupT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //序号
+	INT32 GroupLeveID = 0;				//所属关卡ID
+	INT32 GroupID = 0;				//组ID
+	INT32 Unlock1 = 0;				//解锁条件1
+	INT32 UnlockNum1 = 0;				//数值1
+	INT32 Unlock2 = 0;				//解锁条件2
+	float UnlockNum2 = 0.0f;				//数值
+	float CenterX = 0.0f;				//中心点X坐标
+	float CenterY = 0.0f;				//中心点Y坐标
+	TStr GroupImage = "";				//对应图片
+	TStr GroupDescribe = "";				//描述文字
+	TStr UnlockSound = "";				//解锁音效
+};
+CreateCsvClass(Level_Group);
+
+struct Level_timebugT : ConfigBaseT
+{
+	virtual ~Level_timebugT()
+	{
+	}
+	Level_timebugT()
+	{
+		FileName = "Level_timebug.csv";
+		_kf =
+		{
+			{"Number",{INT_FD, &Number}},
+			{"Type",{INT_FD, &Type}},
+			{"Buytime",{INT_FD, &Buytime}},
+			{"Diamond",{INT_FD, &Diamond}},
+			{"Addtime",{INT_FD, &Addtime}}
+		};
+	}
+	virtual Level_timebugT* create()
+	{
+		return new Level_timebugT();
+	}
+	enum
+	{
+	};
+	INT32 Number = 0;            //流水号
+	INT32 Type = 0;				//类型
+	INT32 Buytime = 0;				//购买次数
+	INT32 Diamond = 0;				//钻石数
+	INT32 Addtime = 0;				//购买增加时间
+};
+CreateCsvClass(Level_timebug);
+
+struct MergeT : ConfigBaseT
+{
+	virtual ~MergeT()
+	{
+	}
+	MergeT()
+	{
+		FileName = "Merge.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Comment",{TSTR_FD, &Comment}},
+			{"Type",{INT_FD, &Type}},
+			{"TEMP",{INT_FD, &TEMP}},
+			{"ChainGroupID",{INT_FD, &ChainGroupID}},
+			{"ChainNumber",{INT_FD, &ChainNumber}},
+			{"OutputStandardID",{INT_FD, &OutputStandardID}},
+			{"OutputStandardCountMin",{INT_FD, &OutputStandardCountMin}},
+			{"OutputStandardCountMax",{INT_FD, &OutputStandardCountMax}},
+			{"ReturnID",{INT_FD, &ReturnID}},
+			{"WeatherRain",{INT_FD, &WeatherRain}},
+			{"SkipLevelRate",{FLOAT_FD, &SkipLevelRate}},
+			{"AdditionalRate_1",{FLOAT_FD, &AdditionalRate_1}},
+			{"AdditionalID_1",{INT_FD, &AdditionalID_1}},
+			{"AdditionalRate_2",{FLOAT_FD, &AdditionalRate_2}},
+			{"AdditionalID_2",{INT_FD, &AdditionalID_2}},
+			{"AdditionalRate_3",{FLOAT_FD, &AdditionalRate_3}},
+			{"AdditionalID_3",{INT_FD, &AdditionalID_3}},
+			{"SpecialRate_1",{FLOAT_FD, &SpecialRate_1}},
+			{"SpecialID_1",{INT_FD, &SpecialID_1}},
+			{"SpecialRate_2",{FLOAT_FD, &SpecialRate_2}},
+			{"SpecialID_2",{INT_FD, &SpecialID_2}},
+			{"ComboMergeOutputRate",{FLOAT_FD, &ComboMergeOutputRate}},
+			{"ComboMergeOutputID",{INT_FD, &ComboMergeOutputID}},
+			{"ComboMergeOutputRate2",{FLOAT_FD, &ComboMergeOutputRate2}},
+			{"ComboMergeOutputID2",{INT_FD, &ComboMergeOutputID2}},
+			{"None",{FLOAT_FD, &None}},
+			{"None2",{INT_FD, &None2}},
+			{"SoundMerge",{TSTR_FD, &SoundMerge}},
+			{"UnlockmanualSound",{TSTR_FD, &UnlockmanualSound}},
+			{"MergeEffectLocation",{TSTR_FD, &MergeEffectLocation}},
+			{"MergeEffect",{TSTR_FD, &MergeEffect}}
+		};
+	}
+	virtual MergeT* create()
+	{
+		return new MergeT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //道具ID
+	TStr Comment = "";				//备注
+	INT32 Type = 0;				//类别
+	INT32 TEMP = 0;				//合成位置
+	INT32 ChainGroupID = 0;				//合成
+链组
+	INT32 ChainNumber = 0;				//合成链
+序号
+	INT32 OutputStandardID = 0;				//标准合成产出
+物品ID
+	INT32 OutputStandardCountMin = 0;				//标准合成产出
+数量Min
+	INT32 OutputStandardCountMax = 0;				//标准合成产出
+数量Max
+	INT32 ReturnID = 0;				//多余道具id
+	INT32 WeatherRain = 0;				//额外雨云道具ID
+	float SkipLevelRate = 0.0f;				//跳1级几率
+	float AdditionalRate_1 = 0.0f;				//额外1
+几率
+	INT32 AdditionalID_1 = 0;				//额外1
+掉落ID
+	float AdditionalRate_2 = 0.0f;				//额外2
+几率
+	INT32 AdditionalID_2 = 0;				//额外2
+掉落ID
+	float AdditionalRate_3 = 0.0f;				//额外3
+几率
+	INT32 AdditionalID_3 = 0;				//额外3
+掉落ID
+	float SpecialRate_1 = 0.0f;				//特殊合成1
+几率
+	INT32 SpecialID_1 = 0;				//特殊合成1
+掉落ID
+	float SpecialRate_2 = 0.0f;				//特殊合成2
+几率
+	INT32 SpecialID_2 = 0;				//特殊合成2
+掉落ID
+	float ComboMergeOutputRate = 0.0f;				//连奖励
+几率
+	INT32 ComboMergeOutputID = 0;				//连奖励
+掉落ID
+	float ComboMergeOutputRate2 = 0.0f;				//连奖励2
+几率
+	INT32 ComboMergeOutputID2 = 0;				//连奖励2
+掉落ID
+	float None = 0.0f;				//多数合成奖励
+几率
+	INT32 None2 = 0;				//多数合成奖励
+掉落ID
+	TStr SoundMerge = "";				//合成音效
+	TStr UnlockmanualSound = "";				//【图鉴】
+解锁图鉴音效
+	TStr MergeEffectLocation = "";				//合成特效
+播放位置
+	TStr MergeEffect = "";				//合成特效
+};
+CreateCsvClass(Merge);
+
+struct OutpostT : ConfigBaseT
+{
+	virtual ~OutpostT()
+	{
+	}
+	OutpostT()
+	{
+		FileName = "Outpost.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"OutpostID",{INT_FD, &OutpostID}},
+			{"PlanID",{INT_FD, &PlanID}},
+			{"TaskID1",{INT_FD, &TaskID1}},
+			{"TaskID2",{INT_FD, &TaskID2}},
+			{"TaskID3",{INT_FD, &TaskID3}},
+			{"Storyline",{TSTR_FD, &Storyline}}
+		};
+	}
+	virtual OutpostT* create()
+	{
+		return new OutpostT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //序号
+	INT32 OutpostID = 0;				//哨站ID
+	INT32 PlanID = 0;				//进度序号
+	INT32 TaskID1 = 0;				//任务id
+	INT32 TaskID2 = 0;				//任务2ID
+	INT32 TaskID3 = 0;				//任务3ID
+	TStr Storyline = "";				//脚本ID
+};
+CreateCsvClass(Outpost);
+
+struct Outpost_levelT : ConfigBaseT
+{
+	virtual ~Outpost_levelT()
+	{
+	}
+	Outpost_levelT()
+	{
+		FileName = "Outpost_level.csv";
+		_kf =
+		{
+			{"PlanID",{INT_FD, &PlanID}},
+			{"FormID",{INT_FD, &FormID}}
+		};
+	}
+	virtual Outpost_levelT* create()
+	{
+		return new Outpost_levelT();
+	}
+	enum
+	{
+	};
+	INT32 PlanID = 0;            //前哨ID
+	INT32 FormID = 0;				//对应关卡组ID
+};
+CreateCsvClass(Outpost_level);
+
+struct Outpost_prizeT : ConfigBaseT
+{
+	virtual ~Outpost_prizeT()
+	{
+	}
+	Outpost_prizeT()
+	{
+		FileName = "Outpost_prize.csv";
+		_kf =
+		{
+			{"Number",{INT_FD, &Number}},
+			{"OutpostID",{INT_FD, &OutpostID}},
+			{"StarMin",{INT_FD, &StarMin}},
+			{"StarMax",{INT_FD, &StarMax}},
+			{"ResetTime",{INT_FD, &ResetTime}},
+			{"Award1",{INT_FD, &Award1}},
+			{"Award2",{INT_FD, &Award2}},
+			{"Award3",{INT_FD, &Award3}}
+		};
+	}
+	virtual Outpost_prizeT* create()
+	{
+		return new Outpost_prizeT();
+	}
+	enum
+	{
+	};
+	INT32 Number = 0;            //序号
+	INT32 OutpostID = 0;				//哨站ID
+	INT32 StarMin = 0;				//星数Min
+≥
+	INT32 StarMax = 0;				//星数Max
+≤
+	INT32 ResetTime = 0;				//刷新时间
+单位：秒
+	INT32 Award1 = 0;				//奖励1
+	INT32 Award2 = 0;				//奖励2
+	INT32 Award3 = 0;				//奖励3
+};
+CreateCsvClass(Outpost_prize);
+
+struct ShopT : ConfigBaseT
+{
+	virtual ~ShopT()
+	{
+	}
+	ShopT()
+	{
+		FileName = "Shop.csv";
+		_kf =
+		{
+			{"GoodsID",{INT_FD, &GoodsID}},
+			{"GoodsGroupID",{INT_FD, &GoodsGroupID}},
+			{"GoodsName",{TSTR_FD, &GoodsName}},
+			{"GoodsDesc",{TSTR_FD, &GoodsDesc}},
+			{"Remarks",{TSTR_FD, &Remarks}},
+			{"GoodsType",{INT_FD, &GoodsType}},
+			{"IDOrNumber_GoodsType",{TSTR_FD, &IDOrNumber_GoodsType}},
+			{"GoodsImage",{TSTR_FD, &GoodsImage}},
+			{"DropID_AdditionalGift1",{INT_FD, &DropID_AdditionalGift1}},
+			{"DropID_AdditionalGift2",{INT_FD, &DropID_AdditionalGift2}},
+			{"DropID_AdditionalGift3",{INT_FD, &DropID_AdditionalGift3}},
+			{"TabID",{INT_FD, &TabID}},
+			{"SubFunction",{INT_FD, &SubFunction}},
+			{"OrderedID",{INT_FD, &OrderedID}},
+			{"UnlockConditionType",{INT_FD, &UnlockConditionType}},
+			{"UnlockCondition_SpriteID",{INT_FD, &UnlockCondition_SpriteID}},
+			{"UnlockCondition_Number",{INT_FD, &UnlockCondition_Number}},
+			{"CurrencyType",{INT_FD, &CurrencyType}},
+			{"InitialPrice",{FLOAT_FD, &InitialPrice}},
+			{"PriceCalculationMethodType",{INT_FD, &PriceCalculationMethodType}},
+			{"CeilingPrice",{INT_FD, &CeilingPrice}},
+			{"Increment",{INT_FD, &Increment}},
+			{"LimitedType",{INT_FD, &LimitedType}},
+			{"Days",{INT_FD, &Days}},
+			{"LimitQuantity",{INT_FD, &LimitQuantity}},
+			{"AddedTime",{INT_FD, &AddedTime}},
+			{"ShelfTime",{INT_FD, &ShelfTime}},
+			{"GoodsEffect",{TSTR_FD, &GoodsEffect}},
+			{"UnlockGoodsSound",{TSTR_FD, &UnlockGoodsSound}}
+		};
+	}
+	virtual ShopT* create()
+	{
+		return new ShopT();
+	}
+	enum
+	{
+	};
+	INT32 GoodsID = 0;            //商品id
+	INT32 GoodsGroupID = 0;				//商品组ID
+	TStr GoodsName = "";				//商品名称
+	TStr GoodsDesc = "";				//商品描述
+	TStr Remarks = "";				//备注
+	INT32 GoodsType = 0;				//商品类别
+	TStr IDOrNumber_GoodsType = "";				//道具ID
+龙ID
+钻石数
+	TStr GoodsImage = "";				//道具图片
+	INT32 DropID_AdditionalGift1 = 0;				//额外赠与1
+掉落ID
+	INT32 DropID_AdditionalGift2 = 0;				//额外赠与2
+掉落ID
+	INT32 DropID_AdditionalGift3 = 0;				//额外赠与3
+掉落ID
+	INT32 TabID = 0;				//所属页签
+	INT32 SubFunction = 0;				//所属功能
+	INT32 OrderedID = 0;				//排序id
+	INT32 UnlockConditionType = 0;				//解锁条件
+	INT32 UnlockCondition_SpriteID = 0;				//道具ID
+ 或 龙ID
+	INT32 UnlockCondition_Number = 0;				//解锁数量
+	INT32 CurrencyType = 0;				//价格类型
+	float InitialPrice = 0.0f;				//初始价格
+	INT32 PriceCalculationMethodType = 0;				//价格计算方法
+	INT32 CeilingPrice = 0;				//上限价格
+	INT32 Increment = 0;				//递增幅度
+	INT32 LimitedType = 0;				//限量类型
+	INT32 Days = 0;				//天数
+	INT32 LimitQuantity = 0;				//限量数量
+	INT32 AddedTime = 0;				//上架时间
+	INT32 ShelfTime = 0;				//下架时间
+	TStr GoodsEffect = "";				//背景特效
+	TStr UnlockGoodsSound = "";				//商品解锁音效
+};
+CreateCsvClass(Shop);
+
+struct Shop_indexesT : ConfigBaseT
+{
+	virtual ~Shop_indexesT()
+	{
+	}
+	Shop_indexesT()
+	{
+		FileName = "Shop_indexes.csv";
+		_kf =
+		{
+			{"GoodsGroupID",{INT_FD, &GoodsGroupID}},
+			{"StartGoodsID",{INT_FD, &StartGoodsID}},
+			{"EndGoodsID",{INT_FD, &EndGoodsID}}
+		};
+	}
+	virtual Shop_indexesT* create()
+	{
+		return new Shop_indexesT();
+	}
+	enum
+	{
+	};
+	INT32 GoodsGroupID = 0;            //组ID
+	INT32 StartGoodsID = 0;				//起始商品序号
+	INT32 EndGoodsID = 0;				//结束商品序号
+};
+CreateCsvClass(Shop_indexes);
+
+struct Shop_pageT : ConfigBaseT
+{
+	virtual ~Shop_pageT()
+	{
+	}
+	Shop_pageT()
+	{
+		FileName = "Shop_page.csv";
+		_kf =
+		{
+			{"TabID",{INT_FD, &TabID}},
+			{"TabName",{TSTR_FD, &TabName}},
+			{"DisplayInterface",{INT_FD, &DisplayInterface}},
+			{"RefreshTime",{INT_FD, &RefreshTime}},
+			{"GridNumber",{INT_FD, &GridNumber}},
+			{"MysteryItemNumber",{INT_FD, &MysteryItemNumber}}
+		};
+	}
+	virtual Shop_pageT* create()
+	{
+		return new Shop_pageT();
+	}
+	enum
+	{
+	};
+	INT32 TabID = 0;            //页签ID
+	TStr TabName = "";				//类别名称
+	INT32 DisplayInterface = 0;				//显示位置
+	INT32 RefreshTime = 0;				//刷新时间
+	INT32 GridNumber = 0;				//格子数
+	INT32 MysteryItemNumber = 0;				//神秘物品数量
+};
+CreateCsvClass(Shop_page);
+
+struct Sound_cofT : ConfigBaseT
+{
+	virtual ~Sound_cofT()
+	{
+	}
+	Sound_cofT()
+	{
+		FileName = "Sound_cof.csv";
+		_kf =
+		{
+			{"SoundID",{INT_FD, &SoundID}},
+			{"SoundType",{INT_FD, &SoundType}},
+			{"SoundSource",{TSTR_FD, &SoundSource}},
+			{"Remarks",{TSTR_FD, &Remarks}}
+		};
+	}
+	virtual Sound_cofT* create()
+	{
+		return new Sound_cofT();
+	}
+	enum
+	{
+	};
+	INT32 SoundID = 0;            //音效ID
+	INT32 SoundType = 0;				//音效类型
+1-sound
+2-music
+	TStr SoundSource = "";				//音效资源
+	TStr Remarks = "";				//备注
+};
+CreateCsvClass(Sound_cof);
+
+struct SpriteT : ConfigBaseT
+{
+	virtual ~SpriteT()
+	{
+	}
+	SpriteT()
+	{
+		FileName = "Sprite.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Type",{INT_FD, &Type}},
+			{"ImageType",{INT_FD, &ImageType}},
+			{"Direction",{INT_FD, &Direction}}
+		};
+	}
+	virtual SpriteT* create()
+	{
+		return new SpriteT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	INT32 Type = 0;				//类型
+	INT32 ImageType = 0;				//形象类型
+	INT32 Direction = 0;				//方向规则
+};
+CreateCsvClass(Sprite);
+
+struct StorylineT : ConfigBaseT
+{
+	virtual ~StorylineT()
+	{
+	}
+	StorylineT()
+	{
+		FileName = "Storyline.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"TemplateID",{INT_FD, &TemplateID}},
+			{"Portrait",{TSTR_FD, &Portrait}},
+			{"TextID",{INT_FD, &TextID}}
+		};
+	}
+	virtual StorylineT* create()
+	{
+		return new StorylineT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	INT32 TemplateID = 0;				//使用模板ID
+	TStr Portrait = "";				//半身像资源
+	INT32 TextID = 0;				//使用文字ID
+};
+CreateCsvClass(Storyline);
+
+struct StorytextT : ConfigBaseT
+{
+	virtual ~StorytextT()
+	{
+	}
+	StorytextT()
+	{
+		FileName = "Storytext.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Text",{TSTR_FD, &Text}}
+		};
+	}
+	virtual StorytextT* create()
+	{
+		return new StorytextT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //文字ID
+	TStr Text = "";				//文字内容
+};
+CreateCsvClass(Storytext);
+
+struct TaskT : ConfigBaseT
+{
+	virtual ~TaskT()
+	{
+	}
+	TaskT()
+	{
+		FileName = "Task.csv";
+		_kf =
+		{
+			{"TaskId",{INT_FD, &TaskId}},
+			{"TaskType",{INT_FD, &TaskType}},
+			{"SubTaskType",{INT_FD, &SubTaskType}},
+			{"TaskSw",{INT_FD, &TaskSw}},
+			{"TaskSwPara1",{INT_FD, &TaskSwPara1}},
+			{"TaskSwPara2",{INT_FD, &TaskSwPara2}},
+			{"TaskSwPara3",{INT_FD, &TaskSwPara3}},
+			{"TaskFollow",{INT_FD, &TaskFollow}},
+			{"TaskName",{TSTR_FD, &TaskName}},
+			{"Taskdec",{TSTR_FD, &Taskdec}},
+			{"TaskTips",{TSTR_FD, &TaskTips}},
+			{"TaskAim",{INT_FD, &TaskAim}},
+			{"TaskAimPara1",{INT_FD, &TaskAimPara1}},
+			{"TaskAimPara2",{INT_FD, &TaskAimPara2}},
+			{"TaskAimPara3",{INT_FD, &TaskAimPara3}},
+			{"TaskAimPara4",{INT_FD, &TaskAimPara4}},
+			{"TaskAimPara5",{INT_FD, &TaskAimPara5}},
+			{"TaskAward",{INT_FD, &TaskAward}},
+			{"TaskAwardPara",{INT_FD, &TaskAwardPara}},
+			{"TaskSkipPara1",{INT_FD, &TaskSkipPara1}},
+			{"TaskSkipPara2",{TSTR_FD, &TaskSkipPara2}},
+			{"NewtaskSound",{TSTR_FD, &NewtaskSound}},
+			{"CompleteSound",{TSTR_FD, &CompleteSound}}
+		};
+	}
+	virtual TaskT* create()
+	{
+		return new TaskT();
+	}
+	enum
+	{
+	};
+	INT32 TaskId = 0;            //任务id
+	INT32 TaskType = 0;				//任务所属模块
+	INT32 SubTaskType = 0;				//任务关联位置
+	INT32 TaskSw = 0;				//任务开启条件
+	INT32 TaskSwPara1 = 0;				//开启条件参数1
+	INT32 TaskSwPara2 = 0;				//开启条件参数2
+	INT32 TaskSwPara3 = 0;				//开启条件参数3
+	INT32 TaskFollow = 0;				//后续任务参数
+	TStr TaskName = "";				//任务名称
+	TStr Taskdec = "";				//任务目标
+	TStr TaskTips = "";				//任务描述
+	INT32 TaskAim = 0;				//任务完成条件
+	INT32 TaskAimPara1 = 0;				//任务完成条件配置1
+	INT32 TaskAimPara2 = 0;				//任务完成条件配置2
+	INT32 TaskAimPara3 = 0;				//任务完成条件配置3
+	INT32 TaskAimPara4 = 0;				//任务完成条件配置4
+	INT32 TaskAimPara5 = 0;				//任务完成条件配置5
+	INT32 TaskAward = 0;				//任务奖励
+	INT32 TaskAwardPara = 0;				//奖励发放参数
+	INT32 TaskSkipPara1 = 0;				//钻石跳过参数
+	TStr TaskSkipPara2 = "";				//广告跳过参数
+	TStr NewtaskSound = "";				//任务开启音效
+	TStr CompleteSound = "";				//任务完成音效
+};
+CreateCsvClass(Task);
+
+struct TutorialsT : ConfigBaseT
+{
+	virtual ~TutorialsT()
+	{
+	}
+	TutorialsT()
+	{
+		FileName = "Tutorials.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"ButtonID",{INT_FD, &ButtonID}},
+			{"WaitTime",{FLOAT_FD, &WaitTime}}
+		};
+	}
+	virtual TutorialsT* create()
+	{
+		return new TutorialsT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	INT32 ButtonID = 0;				//按钮路径ID
+	float WaitTime = 0.0f;				//等待时长
+};
+CreateCsvClass(Tutorials);
+
+struct UIButtonIDT : ConfigBaseT
+{
+	virtual ~UIButtonIDT()
+	{
+	}
+	UIButtonIDT()
+	{
+		FileName = "UIButtonID.csv";
+		_kf =
+		{
+			{"ID",{INT_FD, &ID}},
+			{"Path",{TSTR_FD, &Path}},
+			{"Desc",{TSTR_FD, &Desc}}
+		};
+	}
+	virtual UIButtonIDT* create()
+	{
+		return new UIButtonIDT();
+	}
+	enum
+	{
+	};
+	INT32 ID = 0;            //ID
+	TStr Path = "";				//路径
+	TStr Desc = "";				//功能
+};
+CreateCsvClass(UIButtonID);
+
+struct Weather_RainT : ConfigBaseT
+{
+	virtual ~Weather_RainT()
+	{
+	}
+	Weather_RainT()
+	{
+		FileName = "Weather_Rain.csv";
+		_kf =
+		{
+			{"RainID",{INT_FD, &RainID}},
+			{"Case1",{INT_FD, &Case1}},
+			{"Case2",{INT_FD, &Case2}},
+			{"Case3",{INT_FD, &Case3}},
+			{"Case4",{INT_FD, &Case4}},
+			{"Case5",{INT_FD, &Case5}},
+			{"Case6",{INT_FD, &Case6}},
+			{"Case7",{INT_FD, &Case7}},
+			{"Case8",{INT_FD, &Case8}},
+			{"Image",{TSTR_FD, &Image}},
+			{"drop",{INT_FD, &drop}}
+		};
+	}
+	virtual Weather_RainT* create()
+	{
+		return new Weather_RainT();
+	}
+	enum
+	{
+	};
+	INT32 RainID = 0;            //雨云ID
+	INT32 Case1 = 0;				//情况1
+	INT32 Case2 = 0;				//情况2
+	INT32 Case3 = 0;				//情况3
+	INT32 Case4 = 0;				//情况4
+	INT32 Case5 = 0;				//情况5
+	INT32 Case6 = 0;				//情况6
+	INT32 Case7 = 0;				//情况7
+	INT32 Case8 = 0;				//情况8
+	TStr Image = "";				//美术资源
+	INT32 drop = 0;				//掉落信息
+};
+CreateCsvClass(Weather_Rain);
+
+struct Weather_RainCorrectionT : ConfigBaseT
+{
+	virtual ~Weather_RainCorrectionT()
+	{
+	}
+	Weather_RainCorrectionT()
+	{
+		FileName = "Weather_RainCorrection.csv";
+		_kf =
+		{
+			{"RainID",{INT_FD, &RainID}},
+			{"RainFunction",{INT_FD, &RainFunction}},
+			{"Function1",{INT_FD, &Function1}},
+			{"Num1",{FLOAT_FD, &Num1}},
+			{"Function2",{INT_FD, &Function2}},
+			{"Num2",{FLOAT_FD, &Num2}},
+			{"Function4",{INT_FD, &Function4}},
+			{"Num4",{FLOAT_FD, &Num4}},
+			{"Function8",{INT_FD, &Function8}},
+			{"Num8",{FLOAT_FD, &Num8}},
+			{"Function16",{INT_FD, &Function16}},
+			{"Num16",{FLOAT_FD, &Num16}}
+		};
+	}
+	virtual Weather_RainCorrectionT* create()
+	{
+		return new Weather_RainCorrectionT();
+	}
+	enum
+	{
+	};
+	INT32 RainID = 0;            //雨云修正ID
+	INT32 RainFunction = 0;				//修正类别和值
+	INT32 Function1 = 0;				//修正方法1
+	float Num1 = 0.0f;				//修正值1
+	INT32 Function2 = 0;				//修正方法2
+	float Num2 = 0.0f;				//修正值2
+	INT32 Function4 = 0;				//修正方法3
+	float Num4 = 0.0f;				//修正值3
+	INT32 Function8 = 0;				//修正方法4
+	float Num8 = 0.0f;				//修正值4
+	INT32 Function16 = 0;				//修正方法5
+	float Num16 = 0.0f;				//修正值5
+};
+CreateCsvClass(Weather_RainCorrection);
+
+struct Weather_RainruleT : ConfigBaseT
+{
+	virtual ~Weather_RainruleT()
+	{
+	}
+	Weather_RainruleT()
+	{
+		FileName = "Weather_Rainrule.csv";
+		_kf =
+		{
+			{"ArticleID",{INT_FD, &ArticleID}},
+			{"Article101001",{INT_FD, &Article101001}},
+			{"Article101002",{INT_FD, &Article101002}},
+			{"Article101003",{INT_FD, &Article101003}},
+			{"Article101004",{INT_FD, &Article101004}},
+			{"Article101005",{INT_FD, &Article101005}},
+			{"Article101006",{INT_FD, &Article101006}},
+			{"Article101007",{INT_FD, &Article101007}},
+			{"Article101008",{INT_FD, &Article101008}},
+			{"Article101009",{INT_FD, &Article101009}},
+			{"Article101010",{INT_FD, &Article101010}},
+			{"Article101011",{INT_FD, &Article101011}},
+			{"Article101012",{INT_FD, &Article101012}},
+			{"Article101013",{INT_FD, &Article101013}},
+			{"Article101014",{INT_FD, &Article101014}},
+			{"Article101015",{INT_FD, &Article101015}},
+			{"Article101016",{INT_FD, &Article101016}},
+			{"Article101017",{INT_FD, &Article101017}},
+			{"Article101018",{INT_FD, &Article101018}},
+			{"Article101019",{INT_FD, &Article101019}},
+			{"Article101020",{INT_FD, &Article101020}},
+			{"Article101021",{INT_FD, &Article101021}},
+			{"Article101022",{INT_FD, &Article101022}},
+			{"Article101023",{INT_FD, &Article101023}},
+			{"Article101024",{INT_FD, &Article101024}},
+			{"Article101025",{INT_FD, &Article101025}},
+			{"Article101026",{INT_FD, &Article101026}},
+			{"Article101027",{INT_FD, &Article101027}},
+			{"Article101028",{INT_FD, &Article101028}},
+			{"Article101029",{INT_FD, &Article101029}},
+			{"Article101030",{INT_FD, &Article101030}},
+			{"Article101031",{INT_FD, &Article101031}},
+			{"Article101032",{INT_FD, &Article101032}},
+			{"Article101033",{INT_FD, &Article101033}},
+			{"Article101034",{INT_FD, &Article101034}},
+			{"Article101035",{INT_FD, &Article101035}},
+			{"Article101036",{INT_FD, &Article101036}},
+			{"Article101037",{INT_FD, &Article101037}},
+			{"Article101038",{INT_FD, &Article101038}},
+			{"Article101039",{INT_FD, &Article101039}},
+			{"Article101040",{INT_FD, &Article101040}},
+			{"Article101041",{INT_FD, &Article101041}},
+			{"Article101042",{INT_FD, &Article101042}},
+			{"Article101043",{INT_FD, &Article101043}},
+			{"Article101044",{INT_FD, &Article101044}},
+			{"Article101045",{INT_FD, &Article101045}},
+			{"Article101046",{INT_FD, &Article101046}},
+			{"Article101047",{INT_FD, &Article101047}},
+			{"Article101048",{INT_FD, &Article101048}},
+			{"Article101049",{INT_FD, &Article101049}},
+			{"Article101050",{INT_FD, &Article101050}},
+			{"Article101051",{INT_FD, &Article101051}},
+			{"Article101052",{INT_FD, &Article101052}},
+			{"Article101053",{INT_FD, &Article101053}},
+			{"Article101054",{INT_FD, &Article101054}},
+			{"Article101055",{INT_FD, &Article101055}},
+			{"Article101056",{INT_FD, &Article101056}},
+			{"Article101057",{INT_FD, &Article101057}},
+			{"Article101058",{INT_FD, &Article101058}},
+			{"Article101059",{INT_FD, &Article101059}},
+			{"Article101060",{INT_FD, &Article101060}},
+			{"Article101061",{INT_FD, &Article101061}},
+			{"Article101062",{INT_FD, &Article101062}},
+			{"Article101063",{INT_FD, &Article101063}},
+			{"Article101064",{INT_FD, &Article101064}},
+			{"Article101065",{INT_FD, &Article101065}},
+			{"Article101066",{INT_FD, &Article101066}},
+			{"Article101067",{INT_FD, &Article101067}},
+			{"Article101068",{INT_FD, &Article101068}},
+			{"Article101069",{INT_FD, &Article101069}},
+			{"Article101070",{INT_FD, &Article101070}},
+			{"Article101071",{INT_FD, &Article101071}},
+			{"Article101072",{INT_FD, &Article101072}},
+			{"Article101073",{INT_FD, &Article101073}},
+			{"Article101074",{INT_FD, &Article101074}},
+			{"Article101075",{INT_FD, &Article101075}},
+			{"Article101076",{INT_FD, &Article101076}},
+			{"Article101077",{INT_FD, &Article101077}},
+			{"Article101078",{INT_FD, &Article101078}},
+			{"Article101079",{INT_FD, &Article101079}},
+			{"Article101080",{INT_FD, &Article101080}},
+			{"Article101081",{INT_FD, &Article101081}},
+			{"Article101082",{INT_FD, &Article101082}},
+			{"Article101083",{INT_FD, &Article101083}},
+			{"Article101084",{INT_FD, &Article101084}},
+			{"Article101085",{INT_FD, &Article101085}},
+			{"Article101086",{INT_FD, &Article101086}},
+			{"Article101087",{INT_FD, &Article101087}},
+			{"Article101088",{INT_FD, &Article101088}},
+			{"Article101089",{INT_FD, &Article101089}},
+			{"Article101090",{INT_FD, &Article101090}},
+			{"Article101091",{INT_FD, &Article101091}},
+			{"Article101092",{INT_FD, &Article101092}},
+			{"Article101093",{INT_FD, &Article101093}},
+			{"Article101094",{INT_FD, &Article101094}},
+			{"Article101095",{INT_FD, &Article101095}},
+			{"Article101096",{INT_FD, &Article101096}},
+			{"Article101097",{INT_FD, &Article101097}},
+			{"Article101098",{INT_FD, &Article101098}},
+			{"Article101099",{INT_FD, &Article101099}},
+			{"Article101100",{INT_FD, &Article101100}}
+		};
+	}
+	virtual Weather_RainruleT* create()
+	{
+		return new Weather_RainruleT();
+	}
+	enum
+	{
+	};
+	INT32 ArticleID = 0;            //道具ID
+	INT32 Article101001 = 0;				//云道具1
+对应修正ID
+	INT32 Article101002 = 0;				//云道具2
+对应修正ID
+	INT32 Article101003 = 0;				//云道具3
+对应修正ID
+	INT32 Article101004 = 0;				//云道具4
+对应修正ID
+	INT32 Article101005 = 0;				//云道具5
+对应修正ID
+	INT32 Article101006 = 0;				//云道具6
+对应修正ID
+	INT32 Article101007 = 0;				//云道具7
+对应修正ID
+	INT32 Article101008 = 0;				//云道具8
+对应修正ID
+	INT32 Article101009 = 0;				//云道具9
+对应修正ID
+	INT32 Article101010 = 0;				//云道具10
+对应修正ID
+	INT32 Article101011 = 0;				//云道具11
+对应修正ID
+	INT32 Article101012 = 0;				//云道具12
+对应修正ID
+	INT32 Article101013 = 0;				//云道具13
+对应修正ID
+	INT32 Article101014 = 0;				//云道具14
+对应修正ID
+	INT32 Article101015 = 0;				//云道具15
+对应修正ID
+	INT32 Article101016 = 0;				//云道具16
+对应修正ID
+	INT32 Article101017 = 0;				//云道具17
+对应修正ID
+	INT32 Article101018 = 0;				//云道具18
+对应修正ID
+	INT32 Article101019 = 0;				//云道具19
+对应修正ID
+	INT32 Article101020 = 0;				//云道具20
+对应修正ID
+	INT32 Article101021 = 0;				//云道具21
+对应修正ID
+	INT32 Article101022 = 0;				//云道具22
+对应修正ID
+	INT32 Article101023 = 0;				//云道具23
+对应修正ID
+	INT32 Article101024 = 0;				//云道具24
+对应修正ID
+	INT32 Article101025 = 0;				//云道具25
+对应修正ID
+	INT32 Article101026 = 0;				//云道具26
+对应修正ID
+	INT32 Article101027 = 0;				//云道具27
+对应修正ID
+	INT32 Article101028 = 0;				//云道具28
+对应修正ID
+	INT32 Article101029 = 0;				//云道具29
+对应修正ID
+	INT32 Article101030 = 0;				//云道具30
+对应修正ID
+	INT32 Article101031 = 0;				//云道具31
+对应修正ID
+	INT32 Article101032 = 0;				//云道具32
+对应修正ID
+	INT32 Article101033 = 0;				//云道具33
+对应修正ID
+	INT32 Article101034 = 0;				//云道具34
+对应修正ID
+	INT32 Article101035 = 0;				//云道具35
+对应修正ID
+	INT32 Article101036 = 0;				//云道具36
+对应修正ID
+	INT32 Article101037 = 0;				//云道具37
+对应修正ID
+	INT32 Article101038 = 0;				//云道具38
+对应修正ID
+	INT32 Article101039 = 0;				//云道具39
+对应修正ID
+	INT32 Article101040 = 0;				//云道具40
+对应修正ID
+	INT32 Article101041 = 0;				//云道具41
+对应修正ID
+	INT32 Article101042 = 0;				//云道具42
+对应修正ID
+	INT32 Article101043 = 0;				//云道具43
+对应修正ID
+	INT32 Article101044 = 0;				//云道具44
+对应修正ID
+	INT32 Article101045 = 0;				//云道具45
+对应修正ID
+	INT32 Article101046 = 0;				//云道具46
+对应修正ID
+	INT32 Article101047 = 0;				//云道具47
+对应修正ID
+	INT32 Article101048 = 0;				//云道具48
+对应修正ID
+	INT32 Article101049 = 0;				//云道具49
+对应修正ID
+	INT32 Article101050 = 0;				//云道具50
+对应修正ID
+	INT32 Article101051 = 0;				//云道具51
+对应修正ID
+	INT32 Article101052 = 0;				//云道具52
+对应修正ID
+	INT32 Article101053 = 0;				//云道具53
+对应修正ID
+	INT32 Article101054 = 0;				//云道具54
+对应修正ID
+	INT32 Article101055 = 0;				//云道具55
+对应修正ID
+	INT32 Article101056 = 0;				//云道具56
+对应修正ID
+	INT32 Article101057 = 0;				//云道具57
+对应修正ID
+	INT32 Article101058 = 0;				//云道具58
+对应修正ID
+	INT32 Article101059 = 0;				//云道具59
+对应修正ID
+	INT32 Article101060 = 0;				//云道具60
+对应修正ID
+	INT32 Article101061 = 0;				//云道具61
+对应修正ID
+	INT32 Article101062 = 0;				//云道具62
+对应修正ID
+	INT32 Article101063 = 0;				//云道具63
+对应修正ID
+	INT32 Article101064 = 0;				//云道具64
+对应修正ID
+	INT32 Article101065 = 0;				//云道具65
+对应修正ID
+	INT32 Article101066 = 0;				//云道具66
+对应修正ID
+	INT32 Article101067 = 0;				//云道具67
+对应修正ID
+	INT32 Article101068 = 0;				//云道具68
+对应修正ID
+	INT32 Article101069 = 0;				//云道具69
+对应修正ID
+	INT32 Article101070 = 0;				//云道具70
+对应修正ID
+	INT32 Article101071 = 0;				//云道具71
+对应修正ID
+	INT32 Article101072 = 0;				//云道具72
+对应修正ID
+	INT32 Article101073 = 0;				//云道具73
+对应修正ID
+	INT32 Article101074 = 0;				//云道具74
+对应修正ID
+	INT32 Article101075 = 0;				//云道具75
+对应修正ID
+	INT32 Article101076 = 0;				//云道具76
+对应修正ID
+	INT32 Article101077 = 0;				//云道具77
+对应修正ID
+	INT32 Article101078 = 0;				//云道具78
+对应修正ID
+	INT32 Article101079 = 0;				//云道具79
+对应修正ID
+	INT32 Article101080 = 0;				//云道具80
+对应修正ID
+	INT32 Article101081 = 0;				//云道具81
+对应修正ID
+	INT32 Article101082 = 0;				//云道具82
+对应修正ID
+	INT32 Article101083 = 0;				//云道具83
+对应修正ID
+	INT32 Article101084 = 0;				//云道具84
+对应修正ID
+	INT32 Article101085 = 0;				//云道具85
+对应修正ID
+	INT32 Article101086 = 0;				//云道具86
+对应修正ID
+	INT32 Article101087 = 0;				//云道具87
+对应修正ID
+	INT32 Article101088 = 0;				//云道具88
+对应修正ID
+	INT32 Article101089 = 0;				//云道具89
+对应修正ID
+	INT32 Article101090 = 0;				//云道具90
+对应修正ID
+	INT32 Article101091 = 0;				//云道具91
+对应修正ID
+	INT32 Article101092 = 0;				//云道具92
+对应修正ID
+	INT32 Article101093 = 0;				//云道具93
+对应修正ID
+	INT32 Article101094 = 0;				//云道具94
+对应修正ID
+	INT32 Article101095 = 0;				//云道具95
+对应修正ID
+	INT32 Article101096 = 0;				//云道具96
+对应修正ID
+	INT32 Article101097 = 0;				//云道具97
+对应修正ID
+	INT32 Article101098 = 0;				//云道具98
+对应修正ID
+	INT32 Article101099 = 0;				//云道具99
+对应修正ID
+	INT32 Article101100 = 0;				//云道具100
+对应修正ID
+};
+CreateCsvClass(Weather_Rainrule);
+
+struct Weather_ThunderT : ConfigBaseT
+{
+	virtual ~Weather_ThunderT()
+	{
+	}
+	Weather_ThunderT()
+	{
+		FileName = "Weather_Thunder.csv";
+		_kf =
+		{
+			{"ThunderID",{INT_FD, &ThunderID}},
+			{"Name",{TSTR_FD, &Name}},
+			{"Describe",{TSTR_FD, &Describe}},
+			{"SurvivalTime",{FLOAT_FD, &SurvivalTime}},
+			{"Range",{INT_FD, &Range}},
+			{"ActivateTime",{FLOAT_FD, &ActivateTime}},
+			{"PeriodTime",{FLOAT_FD, &PeriodTime}},
+			{"AIConfig",{TSTR_FD, &AIConfig}},
+			{"CommonImage",{TSTR_FD, &CommonImage}},
+			{"PreviewImage",{TSTR_FD, &PreviewImage}},
+			{"PreviewEffect",{TSTR_FD, &PreviewEffect}},
+			{"ActivateEffect",{TSTR_FD, &ActivateEffect}},
+			{"ActivateSound",{TSTR_FD, &ActivateSound}}
+		};
+	}
+	virtual Weather_ThunderT* create()
+	{
+		return new Weather_ThunderT();
+	}
+	enum
+	{
+	};
+	INT32 ThunderID = 0;            //雷ID
+	TStr Name = "";				//名称
+	TStr Describe = "";				//描述
+	float SurvivalTime = 0.0f;				//生存时间
+	INT32 Range = 0;				//吸附范围
+	float ActivateTime = 0.0f;				//激活时间
+	float PeriodTime = 0.0f;				//间隔时间
+	TStr AIConfig = "";				//AI
+	TStr CommonImage = "";				//图片
+美术资源
+	TStr PreviewImage = "";				//激活效果
+	TStr PreviewEffect = "";				//预览特效
+	TStr ActivateEffect = "";				//激活特效
+	TStr ActivateSound = "";				//激活中
+音效
+};
+CreateCsvClass(Weather_Thunder);
+
+struct WorldmapT : ConfigBaseT
+{
+	virtual ~WorldmapT()
+	{
+	}
+	WorldmapT()
+	{
+		FileName = "Worldmap.csv";
+		_kf =
+		{
+			{"WorldMapID",{INT_FD, &WorldMapID}},
+			{"OutpostID",{INT_FD, &OutpostID}},
+			{"OutpostResource",{TSTR_FD, &OutpostResource}},
+			{"Rewards1",{TSTR_FD, &Rewards1}},
+			{"Rewards2",{TSTR_FD, &Rewards2}},
+			{"Rewards3",{TSTR_FD, &Rewards3}},
+			{"Backgroundmusic",{TSTR_FD, &Backgroundmusic}}
+		};
+	}
+	virtual WorldmapT* create()
+	{
+		return new WorldmapT();
+	}
+	enum
+	{
+	};
+	INT32 WorldMapID = 0;            //区间序号
+	INT32 OutpostID = 0;				//进入前哨ID
+	TStr OutpostResource = "";				//前哨使用资源
+	TStr Rewards1 = "";				//奖励1
+图标
+	TStr Rewards2 = "";				//奖励2
+图标
+	TStr Rewards3 = "";				//奖励3
+图标
+	TStr Backgroundmusic = "";				//哨站背景音乐
+};
+CreateCsvClass(Worldmap);
+
+#endif
