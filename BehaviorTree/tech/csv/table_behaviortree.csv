@@ -1,2 +1,4 @@
 ﻿ID,EnName,CnName,Type,FloatValue,IntValue,BoolValue,StringValue
 1,DoFunction,功能/执行功能,2,0,0,0,
+2,InHooking,家园宠物/是否在挂机中,5,0,0,0,
+3,InHookPlace,家园宠物/在挂机建筑位置,5,0,0,0,

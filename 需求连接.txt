@@ -20,16 +20,9 @@ https://docs.qq.com/sheet/DT3JIUGxRTURqc2FG?tab=BB08J2
 参考视频
 https://www.bilibili.com/video/BV1qY411L7A1/?spm_id_from=333.788
 
-挂机建筑
-https://docs.qq.com/doc/DWWd4TmdCdVpjQkxS
+UI调整
+https://docs.qq.com/sheet/DV25XTHpXZnJydE9C?tab=BB08J2
 
-
-宠物在家园随机行走AI，到挂机建筑
-
-宠物界面
-
-回家园，人放在一个位置，播放动画 config表 roleHomeAni
-
-
-
+文本连接
+https://docs.qq.com/sheet/DWU9pdFZVdVVPbWhw?tab=BB08JA
 

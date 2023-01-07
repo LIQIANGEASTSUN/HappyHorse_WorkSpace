@@ -2,3 +2,12 @@ http://zentao.bettagames.com/pro/bug-browse-3-0-all.html
 
 
 ’À∫≈£∫13716919654
+
+
+DFA:
+http://192.168.1.77:9000/zentao/bug-browse-58-0-all.html
+
+Cleaner£∫
+http://192.168.1.77:9000/zentao/bug-browse-61.html
+
+√‹¬Î:Test01
