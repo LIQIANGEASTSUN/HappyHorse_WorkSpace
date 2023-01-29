@@ -1,0 +1,37 @@
+
+项目进度
+https://docs.qq.com/sheet/DVUt0SWJodWhQTmJ4?tab=wbcvn6
+
+
+
+彩票活动
+https://docs.qq.com/doc/DYkFvcXFJVHhGS0ZP
+
+多语言连接
+https://docs.qq.com/sheet/DV1BLcmtHWkZ3bU1Y?tab=4166zt
+
+添加一个，存数据、逻辑
+Manager
+
+
+选项
+OnGrag
+
+
+购买
+ProductManager
+
+价格获取
+local id =  ActivityServices.GoldPass.GetProductId()
+local productId = AppServices.ProductManager:GetProductId(id)
+local priceData = AppServices.ProductManager:GetProductPrice(productId)
+self.txt_price.text = priceData.currencyPrice
+
+
+网络
+Transponder
+
+
+
+界面
+ActivityLotteryPanel
