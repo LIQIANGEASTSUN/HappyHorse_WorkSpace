@@ -11,9 +11,10 @@ return array(
 9=>["ID"=>9,"EnName"=>"ValidSkill","CnName"=>"攻击/技能有效","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
 10=>["ID"=>10,"EnName"=>"TargetInAttackDistance","CnName"=>"攻击/目标在攻击范围内","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
 11=>["ID"=>11,"EnName"=>"SkillEntry","CnName"=>"技能/入口","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
-12=>["ID"=>12,"EnName"=>"SkillInitEnd","CnName"=>"技能/初始阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
-13=>["ID"=>13,"EnName"=>"SkillStandbyEnd","CnName"=>"技能/待机阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
-14=>["ID"=>14,"EnName"=>"SkillFireEnd","CnName"=>"技能/待机阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
-15=>["ID"=>15,"EnName"=>"SkillToState","CnName"=>"技能/转换到状态","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
+12=>["ID"=>12,"EnName"=>"SkillInitFinish","CnName"=>"技能/初始阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
+13=>["ID"=>13,"EnName"=>"SkillStandbyFinish","CnName"=>"技能/待机阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
+14=>["ID"=>14,"EnName"=>"SkillFireFinish","CnName"=>"技能/释放阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
+15=>["ID"=>15,"EnName"=>"SkillEndFinish","CnName"=>"技能/收尾阶段结束","Type"=>5,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
+16=>["ID"=>16,"EnName"=>"SkillToState","CnName"=>"技能/转换到状态","Type"=>2,"FloatValue"=>0,"IntValue"=>0,"BoolValue"=>0,"StringValue"=>""],
 );
 ?>
