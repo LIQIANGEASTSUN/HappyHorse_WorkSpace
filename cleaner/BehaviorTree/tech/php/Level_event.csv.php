@@ -1,9 +1,0 @@
-<?php
-return array(
-101=>["EventType"=>101,"ShowType"=>1,"EventImage"=>"sc_obj_yotsunoha_level02","EventStandbyLocation"=>"","EventStandbyEffect"=>"","EventEffectLocation"=>"center","EventEffect"=>"floating_click","Remark"=>"生命之花种子","EventName"=>"灵花种子","EventDescribe"=>"点击它可以获得【灵花种子】还在等什么！","EventClickSound"=>"sound_catchcurrency","EventNameKey"=>"毛毛名称101","EventDescribeKey"=>"毛毛描述101"],
-102=>["EventType"=>102,"ShowType"=>1,"EventImage"=>"sc_obj_leaf_level02","EventStandbyLocation"=>"","EventStandbyEffect"=>"","EventEffectLocation"=>"center","EventEffect"=>"floating_click","Remark"=>"水果树叶","EventName"=>"苍耳","EventDescribe"=>"点击它可以获得【灌木种子】还在等什么！","EventClickSound"=>"sound_catch_02","EventNameKey"=>"毛毛名称102","EventDescribeKey"=>"毛毛描述102"],
-103=>["EventType"=>103,"ShowType"=>2,"EventImage"=>"sc_obj_snowflakes_level02","EventStandbyLocation"=>"","EventStandbyEffect"=>"","EventEffectLocation"=>"center","EventEffect"=>"floating_click","Remark"=>"神秘种子","EventName"=>"七彩雪花","EventDescribe"=>"点击它可以获得【七彩雪花】还在等什么！","EventClickSound"=>"sound_catch_01","EventNameKey"=>"毛毛名称103","EventDescribeKey"=>"毛毛描述103"],
-104=>["EventType"=>104,"ShowType"=>2,"EventImage"=>"sc_obj_magictorch_level02","EventStandbyLocation"=>"mid","EventStandbyEffect"=>"sc_obj_magictorch_level02_01","EventEffectLocation"=>"center","EventEffect"=>"floating_click","Remark"=>"龙树叶子","EventName"=>"魔法火种","EventDescribe"=>"点击它可以获得【魔法火种】还在等什么！","EventClickSound"=>"sound_catch_02","EventNameKey"=>"毛毛名称104","EventDescribeKey"=>"毛毛描述104"],
-105=>["EventType"=>105,"ShowType"=>1,"EventImage"=>"sc_obj_flycloud","EventStandbyLocation"=>"","EventStandbyEffect"=>"","EventEffectLocation"=>"center","EventEffect"=>"floating_click","Remark"=>"云","EventName"=>"祥云","EventDescribe"=>"点击它可以获得【祥云】还在等什么！","EventClickSound"=>"sound_catch_03","EventNameKey"=>"毛毛名称105","EventDescribeKey"=>"毛毛描述105"],
-);
-?>

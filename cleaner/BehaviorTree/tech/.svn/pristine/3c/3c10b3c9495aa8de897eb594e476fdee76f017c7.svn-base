@@ -1,9 +1,0 @@
-<?php
-return array(
-11201=>["EventType"=>11201,"ShowType"=>1,"EventImage"=>"sc_obj_dandelion_level01","Remark"=>"生命之花种子","EventEffectLocation"=>3,"EventEffect"=>"floating_click","EventName"=>"生命之花种子毛毛","EventDescribe"=>"我是描述文字","EventClickSound"=>"sound_catchcurrency"],
-11601=>["EventType"=>11601,"ShowType"=>1,"EventImage"=>"sc_obj_leaf_level01","Remark"=>"水果树叶","EventEffectLocation"=>3,"EventEffect"=>"floating_click","EventName"=>"水果树叶毛毛","EventDescribe"=>"我是描述文字","EventClickSound"=>"sound_catch_02"],
-11708=>["EventType"=>11708,"ShowType"=>2,"EventImage"=>"sc_obj_moss_level01","Remark"=>"神秘种子","EventEffectLocation"=>3,"EventEffect"=>"floating_click","EventName"=>"神秘种子毛毛","EventDescribe"=>"我是描述文字","EventClickSound"=>"sound_catch_01"],
-12601=>["EventType"=>12601,"ShowType"=>2,"EventImage"=>"sc_obj_rainbow_level01","Remark"=>"龙树叶子","EventEffectLocation"=>3,"EventEffect"=>"floating_click","EventName"=>"龙树叶子毛毛","EventDescribe"=>"我是描述文字","EventClickSound"=>"sound_catch_02"],
-11501=>["EventType"=>11501,"ShowType"=>1,"EventImage"=>"sc_obj_whitecloud","Remark"=>"云","EventEffectLocation"=>3,"EventEffect"=>"floating_click","EventName"=>"云毛毛","EventDescribe"=>"我是描述文字","EventClickSound"=>"sound_catch_03"],
-);
-?>

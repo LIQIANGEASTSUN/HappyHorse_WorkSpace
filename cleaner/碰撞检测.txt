@@ -1,0 +1,10 @@
+function ShipEntity:RegiseterListeners()
+    local colliders = self.gameObject:GetComponent(BoxCollider)
+    colliders.isTrigger = true
+    local detector = self.gameObject:GetOrAddComponent(typeof(CS.ColliderDetector))
+    detector:SetTriggerListener(
+        function(collider)
+            self:TriggerEnter(collider.gameObject)
+        end
+    )
+end
