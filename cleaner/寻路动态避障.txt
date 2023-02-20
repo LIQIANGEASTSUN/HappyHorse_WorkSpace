@@ -1,0 +1,14 @@
+
+
+VO   Velocity Obstacle
+RVO  Reciprocal Velocity Obstacle
+RVO2 = Optimal Reciprocal Collision Avoidance，简称ORCA
+
+k-d树
+用k-d树查找邻近的agents，agents都在动，维护k-d树也是一个很大的开销呀
+
+
+
+https://zhuanlan.zhihu.com/p/109556568
+
+https://zhuanlan.zhihu.com/p/522537525
