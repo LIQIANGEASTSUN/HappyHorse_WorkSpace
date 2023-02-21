@@ -1,4 +1,9 @@
 
+¹Ù·½ÎÄµµ
+http://gamma.cs.unc.edu/RVO/
+
+RVO ¿â
+https://gamma.cs.unc.edu/RVO2/documentation/1.1/
 
 VO   Velocity Obstacle
 RVO  Reciprocal Velocity Obstacle
