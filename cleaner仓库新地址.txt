@@ -1,0 +1,5 @@
+
+http://10.0.252.4/client/cleaner/client
+
+
+http://10.0.252.10/help/user/project/repository/reducing_the_repo_size_using_git.md  这里有个文档，感兴趣的可以看下
