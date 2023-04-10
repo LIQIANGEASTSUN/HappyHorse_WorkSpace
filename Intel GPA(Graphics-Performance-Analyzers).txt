@@ -6,3 +6,8 @@ Memory Profiler
 
 
 https://www.bilibili.com/read/cv16116126/
+
+
+
+美术孙文东，导出模型没uv 的问题
+https://blog.csdn.net/linjf520/article/details/127066726

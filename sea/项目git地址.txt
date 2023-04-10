@@ -1,12 +1,6 @@
 
 
-GitLab µØÖ·
-https://gitlab.ftsview.com/LuckyStar-Client/sea/project_members
-
-²Ö¿âµØÖ·
-git@gitlab.ftsview.com:LuckyStar-Client/sea.git
-
 
 LDAPÕËºÅ
 ÕËºÅ:liqiang
-ÃÜÂë:Lq+022369qL
+ÃÜÂë:Í¨ÓÃÃÜÂë
