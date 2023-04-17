@@ -1,0 +1,7 @@
+
+
+http://192.168.1.77:9000/zentao/product-index-no.html
+
+
+账号：liqiang
+密码: Test01
