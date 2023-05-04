@@ -1,4 +1,0 @@
-MailDetailPanelNotificationEnum =
-{
-    OnOkButtonClick = 'MailDetailPanelNotificationEnum.OnOnButtonClick'
-}

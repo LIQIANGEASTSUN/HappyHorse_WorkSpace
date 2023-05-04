@@ -1,6 +1,0 @@
-
-
-https://w3.impa.br/~diego/software/luasocket/socket.html#select
-
-
-https://w3.impa.br/~diego/software/luasocket/tcp.html

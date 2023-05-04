@@ -1,3 +1,0 @@
-return{["1010001"]={["sn"]=1010001,["nextSn"]=1010002,["taskIcon"]="item_animal_01",["taskType"]=1,["taskEnum"]=101,["args"]={},["needNum"]=1,["reward"]={{1,30},{2,2000},{3,1000}},["taskRegion"]=1},
-["1010002"]={["sn"]=1010002,["nextSn"]=1010003,["taskIcon"]="item_animal_02",["taskType"]=1,["taskEnum"]=102,["args"]={},["needNum"]=5,["reward"]={{1,30},{2,2000},{3,1000}},["taskRegion"]=101},
-["1010003"]={["sn"]=1010003,["nextSn"]=0.0,["taskIcon"]="item_animal_03",["taskType"]=1,["taskEnum"]=104,["args"]={2},["needNum"]=1,["reward"]={{1,30},{2,2000},{3,1000}},["taskRegion"]=102}}

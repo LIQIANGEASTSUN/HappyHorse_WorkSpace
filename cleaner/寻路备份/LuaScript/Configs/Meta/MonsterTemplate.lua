@@ -1,3 +1,0 @@
-return{["6050101"]={["sn"]=6050101,["name"]="考拉",["desc"]="考拉",["model"]="animal_koala",["icon"]="icon_animal_koala",["attribute"]=1,["isBoss"]=0,["hp"]=300,["speed"]=1,["skillId"]=6050101,["patrol"]=3,["track"]=5,["search"]=3,["buffId"]={}},
-["6050102"]={["sn"]=6050102,["name"]="鸭嘴兽",["desc"]="鸭嘴兽",["model"]="animal_platypus",["icon"]="icon_animal_platypus",["attribute"]=3,["isBoss"]=0,["hp"]=300,["speed"]=1.1,["skillId"]=6050102,["patrol"]=3,["track"]=5,["search"]=3,["buffId"]={}},
-["6050103"]={["sn"]=6050103,["name"]="鸸鹋",["desc"]="鸸鹋",["model"]="animal_emu",["icon"]="icon_animal_emu",["attribute"]=2,["isBoss"]=1,["hp"]=300,["speed"]=1.2,["skillId"]=6050103,["patrol"]=3,["track"]=5,["search"]=3,["buffId"]={}}}
