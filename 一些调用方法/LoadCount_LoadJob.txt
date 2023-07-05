@@ -1,0 +1,35 @@
+
+-- 创建一个需要执行的任务管理器，所有添加的任务顺次执行(无需等待前一个完成)
+-- 任务执行完成需要调用回调，当所有任务都调用完成的回调
+-- 判定所有任务执行完成，结束任务
+
+-- 创建一个 LoadJob
+local sequence = LoadCount:GetJob("FetchServerDate")
+
+local doCallBack = function(callback)
+    -- 执行逻辑
+
+	-- 逻辑执行结束，必须调用 callBack
+	Runtime.InvokeCbk(callback)
+end
+-- 添加一个执行任务，AddJob 的参数为:function(callback)
+sequence:AddJob(doCallBack)
+
+-- 添加一个执行任务
+sequence:AddJob(
+	function(finishCallback)
+		AppServices.Task:CheckTaskOnChangeScene(finishCallback)
+	end
+)
+
+-- 添加所有任务执行结束的回调
+-- AppendFinish 的参数为:function()
+sequence:AppendFinish(
+	function()
+		
+	end
+)
+
+-- 任务和执行结束回调都添加后开始执行
+sequence:DoJob()
+

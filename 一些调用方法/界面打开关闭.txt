@@ -1,0 +1,27 @@
+
+    
+	-- 创建界面回调实例
+	-- Create 的参数为一个函数，界面关闭回调的函数
+	local pcb = PanelCallbacks:Create(function()
+		Runtime.InvokeCbk(finishCallback)
+	end)
+	
+	local onAfterShow = function()
+	    print("界面打开了")
+	end
+	-- 添加 界面打开后的回调
+	pcb:onAfterShowPanel(onAfterShow) 
+	
+	lcoal onAfterHide = function()
+	    print("界面关闭了")
+    end
+	-- 添加界面关闭后的回调
+	pcb:onAfterHidePanel(onAfterHide)
+	
+
+	local arguments = {activityId = ActivityServices.LotteryManager:GetActivityId()}
+	-- 打开界面，并将界面关闭回调函数传递过去
+	PanelManager.showPanel(GlobalPanelEnum.ActivityLotteryPanel, arguments, pcb)
+	
+	-- 关闭界面
+	PanelManager.closePanel(GlobalPanelEnum.ActivityLotteryPanel)

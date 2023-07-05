@@ -1,0 +1,10 @@
+
+
+弹窗界面之类的调用，如一些事件回调、网络消息回调等触发需要打开界面
+
+使用 PopupManager:CallWhenIdle，用意是等待没有新手、没有其他界面打开、等等的时候才打开需要打开的界面
+避免跟新手、打开的界面等冲突
+
+PopupManager:CallWhenIdle(function()
+	PanelManager.showPanel(GlobalPanelEnum.MapEventsPanel, {config = cfg})
+end)
