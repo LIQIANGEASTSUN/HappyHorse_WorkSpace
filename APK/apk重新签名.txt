@@ -1,0 +1,109 @@
+
+google
+https://techblogs.42gears.com/how-to-change-package-name-of-any-apk-file-using-apktool/
+
+
+https://it.cha138.com/php/show-25585.html
+
+android apk重新[签名]
+https://it.cha138.com/android/show-19537.html
+
+android 签名原理
+https://zhuanlan.zhihu.com/p/108034286
+
+安卓apk反编译修改重新打包签名全过程
+https://it.cha138.com/tech/show-1313122.html
+
+Android中APK签名工具之jarsigner和apksigner详解
+https://it.cha138.com/shida/show-4838745.html
+
+Android 反编译Apk，修改资源，重新打包，签名发布
+https://it.cha138.com/java/show-117723.html
+
+Android中APK签名工具之jarsigner和apksigner详解
+https://it.cha138.com/shida/show-4838745.html
+
+
+(1)apktool 下载地址 https://apktool.org/ ,包含 Windows、Mac、Unix 三个系统的版本
+   (1.1)以 Windows 为例下载版本，我下载了最新版本
+        两个文件：apktool.bat、apktool_xxx.xx.xx.jar   xxx.xxx.xxx表示版本号
+        将 apktool_xxx.xx.xx.jar 重命名为 apktool.jar
+        然后将 这两个文件所在的目录配置到环境变量 Path 中
+   (1.2)验证是否可用,打开cmd命令，输入 apktool
+        输出apktool 版本等信息就说明配置成功了
+		
+(2)打包apk时使用 keystore 文件对 apk 进行签名
+   (2.1)使用 keytool 工具 生成 keystore 文件
+	JDK 安装目录 bin 文件夹中有 keytool.exe
+	我使用Unity安装版本自己的 JDK，目录如下
+	H:\Software\Unity\2023.1.5f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin
+	命令：keytool -genkey -alias unity -keyalg RSA -validity 40000 -keystore unity.keystore
+    genkey   表示生成密钥 
+    alias    指定别名,这里是test
+    validity 指定证书有效期，这里是40000天 
+    keyalg   指定算法，这里是RSA 
+    keystore 指定存储位置
+	
+    (2.2)使用Unity生成 keystore
+	File->Player Settings -> Publishing Settings -> Keystore Manager...
+	弹窗左上角选择 Create new
+	在窗口中输入 密码、别名 等信息生成 keystore 即可
+	keystore 和 别名密码 设置为一个就行了，密码多了使用时麻烦
+	
+   (2.3)打包apk选择使用上面生成的 keystore 文件
+
+(3)使用 apktool 工具反编译 apk
+   (3.2)命令：apktool d Test.apk        
+        在 Test.apk 同级目录生成一个 Test 的文件夹，存放反编译出来的文件
+   (3.2)命令：apktool d -o output_dir Test.apk
+        -o output_dir 表示将反编译出来的文件，存放到 output_dir 目录
+	
+   (3.3)修改反编译出来的 AndroidManifest.xml 文件
+	
+(4)使用 apktool 工具重新将 反编译出来的文件夹，编译为 apk
+   (4.1)命令：apktool b Test 
+        生成的 apk 存放在 Test\dist\Test.apk
+   (4.2)命令：apktool b -o output_dir\new.apk Test
+        -o output_dir\new.apk 表示将编译出来的apk存放到目录 output_dir 中且 重新编译的 apk命名为 new.apk
+
+(5)此时 new.apk 还没有签名，此时无法正常安装 new.apk
+   需要使用 apksigner 对 new.apk 重新签名
+   SDK 安装目录 build-tools\版本号\apksigner.bat
+   我使用Unity版本自己安装的 SDK
+   H:\Software\Unity\2023.1.5f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\build-tools\32.0.0
+   
+   (5.1)重新签名
+   命令：H:\Software\Unity\2023.1.5f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\build-tools\32.0.0\apksigner sign --ks H:\APK\unity.keystore --ks-key-alias unity H:\APK\new.apk
+   核心命令如下
+   apksigner sign --ks H:\APK\unity.keystore --ks-key-alias unity H:\APK\new.apk
+   (5.1.1) apksigner sign 为 apk 签名
+   (5.1.2) --ks H:\APK\unity.keystore    使用的 keystore 文件
+   (5.1.3) --ks-key-alias unity          unity.keystore 文件的别名 unity
+   (5.1.4) H:\APK\new.apk                给这个apk使用 unity.keystore 文件重新签名
+   输入命令回车，提示需要输入密码，就是生成 keystore 时设置的密码
+   
+   // H:\Software\Unity\2023.1.5f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\build-tools\32.0.0\zipalign -c -v 4 H:\APK\new.apk
+   
+(6)待研究问题
+   jarsigner 和 apksigner 都可以对 apk 重新签名
+   jarsigner是JDK提供的针对jar包签名的通用工具,位于JDK/bin/jarsigner.exe
+
+   apksigner是Google官方提供的针对android apk签名及验证的专用工具,位于Android SDK/build-tools/SDK版本/apksigner.bat
+   
+   apk 签名有两种标签  V1(Jar Signature) V2(Full APK Signature),
+   从Android 7.0开始, 谷歌增加新签名方案 V2 Scheme (APK Signature);
+   但Android 7.0以下版本, 只能用旧签名方案 V1 scheme (JAR signing)
+   V1签名:
+   V2签名:
+   V2签名优点很明显:
+   注意: apksigner工具默认同时使用V1和V2签名,以兼容Android 7.0以下版本
+   
+   对于 Unity 2023.1.5f1c1 打出的 apk 包，使用 jarsigner 重新签名，虽然可以正常安装，但是启动就闪退
+   
+(7)zipalign和V2签名
+   位于Android SDK/build-tools/SDK版本/zipalign.exe
+   zipalign 是对zip包对齐的工具,使APK包内未压缩的数据有序排列对齐,从而减少APP运行时内存消耗
+   zipalign -v 4 in.apk out.apk //4字节对齐优化
+   zipalign -c -v 4 in.apk //检查APK是否对齐
+   zipalign可以在V1签名后执行
+   但zipalign不能在V2签名后执行,只能在V2签名之前执行！！！
