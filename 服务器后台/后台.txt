@@ -1,4 +1,4 @@
-﻿https://webnav.gameyici.com/#
+﻿http://192.168.1.142:8000/
 
 
 http://dtest.gameyici.com/BI/login.html#modules/bi/bieditplayerdata.html
