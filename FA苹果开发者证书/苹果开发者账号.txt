@@ -1,0 +1,10 @@
+
+
+FA
+
+AppleID
+账号：liqiang@bettagames.com
+密码：Lq+13716919654
+
+
+开发者证书安装后再钥匙串中 名字是 BETAGAMES PTE.LTD. 相关字样显示
