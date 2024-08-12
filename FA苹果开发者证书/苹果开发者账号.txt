@@ -6,10 +6,26 @@ AppleID
 账号：liqiang@bettagames.com
 密码：Lq+13716919654
 
-密钥：cdap-lbpy-xica-qexx
 
-开发者证书安装后再钥匙串中 名字是 BETAGAMES PTE.LTD. 相关字样显示
+App专用密钥申请
+https://appleid.apple.com/account/manage
+
+朱凯：
+APP_SEC
+hyzq-tyit-fexi-vmyz
 
 
-iqny-ptcx-uzhr-pfze
+邹家根：
+X_APPLE_USERNAME
 zoujiagen@bettagames.com
+
+APP_SEC
+iqny-ptcx-uzhr-pfze
+
+
+李强：
+X_APPLE_USERNAME
+liqiang@bettagames.com
+
+APP_SEC
+ybct-bhhk-kxph-arqq
