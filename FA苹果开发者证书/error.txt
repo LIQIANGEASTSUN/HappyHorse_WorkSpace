@@ -1,0 +1,35 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+16:38:58 <plist version="1.0">
+16:38:58 <dict>
+16:38:58 	<key>os-version</key>
+16:38:58 	<string>14.3.1</string>
+16:38:58 	<key>product-errors</key>
+16:38:58 	<array>
+16:38:58 		<dict>
+16:38:58 			<key>code</key>
+16:38:58 			<integer>-19000</integer>
+16:38:58 			<key>code-string</key>
+16:38:58 			<string>ITunesSoftwareServiceApplicationMustEndWithProperExtension</string>
+16:38:58 			<key>message</key>
+16:38:58 			<string>No suitable application records were found. Verify your bundle identifier “com.games.fairyadventure” is correct and that you are signed in with an Apple ID that has access to the app in App Store Connect.</string>
+16:38:58 			<key>userInfo</key>
+16:38:58 			<dict>
+16:38:58 				<key>NSLocalizedDescription</key>
+16:38:58 				<string>No suitable application records were found. Verify your bundle identifier “com.games.fairyadventure” is correct and that you are signed in with an Apple ID that has access to the app in App Store Connect.</string>
+16:38:58 				<key>NSLocalizedFailureReason</key>
+16:38:58 				<string>App Store operation failed.</string>
+16:38:58 				<key>NSLocalizedRecoverySuggestion</key>
+16:38:58 				<string>No suitable application records were found. Verify your bundle identifier “com.games.fairyadventure” is correct and that you are signed in with an Apple ID that has access to the app in App Store Connect.</string>
+16:38:58 			</dict>
+16:38:58 		</dict>
+16:38:58 	</array>
+16:38:58 	<key>tool-path</key>
+16:38:58 	<string>/Applications/Xcode.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Versions/A/Frameworks/AppStoreService.framework</string>
+16:38:58 	<key>tool-version</key>
+16:38:58 	<string>7.006.15006</string>
+16:38:58 </dict>
+16:38:58 </plist>
+16:38:58 
+16:38:58 
+16:38:58 Build step 'Execute shell' marked build as failure
+16:38:58 [lockable-resources] released lock on [NFA_IOS_TAGS]

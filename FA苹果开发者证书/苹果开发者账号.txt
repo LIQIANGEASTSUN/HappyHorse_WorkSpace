@@ -10,11 +10,6 @@ AppleID
 App专用密钥申请
 https://appleid.apple.com/account/manage
 
-朱凯：
-APP_SEC
-hyzq-tyit-fexi-vmyz
-
-
 邹家根：
 X_APPLE_USERNAME
 zoujiagen@bettagames.com
