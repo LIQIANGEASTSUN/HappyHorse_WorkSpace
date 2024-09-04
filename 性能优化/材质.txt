@@ -1,5 +1,0 @@
-
-
-对于多个模型使用共享材质，应用Renderer.shareMaterial 来保证修改的是和其他物体共享的材质，
-
-Renderer.shareMaterial 和 Renderer.material 的区别

@@ -1,0 +1,6 @@
+
+前后端代码都在这里
+
+用户名：liqiang
+密码：ljahQoOa
+SVN地址：svn://10.0.40.5/dreamtown/dreamtown/trunk/develop
