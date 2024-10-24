@@ -1,0 +1,25 @@
+
+
+
+机器人名字：NFA安装包通知
+添加到群组：NFA安装包
+
+自定义关键词 Notify
+
+
+ 
+#!/bin/bash
+
+# 钉钉机器人 Webhook URL
+DINGTALK_URL="https://oapi.dingtalk.com/robot/send?access_token=32e71fca63ed4f67ad8ba9748e0435fa5ed285e589d13f94c0d8628e23f61355"
+
+# 钉钉通知内容，带自定义关键词
+MESSAGE="Notify : Test"
+
+# 调用 curl 发送消息
+curl "$DINGTALK_URL" \
+-H 'Content-Type: application/json' \
+-d "{\"msgtype\": \"text\", \"text\": {\"content\": \"$MESSAGE\"}}"
+
+echo "钉钉通知已发送"
+
