@@ -1,0 +1,28 @@
+https://1upnote.me/post/2018/06/updating-cocoapods-latest-version/
+
+
+https://blog.csdn.net/iningwei/article/details/106769933
+
+
+
+sudo gem uninstall cocoapods
+
+sudo rm -fr ~/Library/Caches/CocoaPods/
+sudo rm -fr ~/.cocoapods/repos/master/
+sudo rm -fr Pods/
+
+sudo gem clean cocoapods
+
+sudo gem install cocoapods
+
+pod setup
+
+
+
+
+
+在 xcode工程目录
+pod deintegrate
+pod setup
+pod install
+pod update
