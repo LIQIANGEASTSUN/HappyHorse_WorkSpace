@@ -4,25 +4,84 @@ https://1upnote.me/post/2018/06/updating-cocoapods-latest-version/
 https://blog.csdn.net/iningwei/article/details/106769933
 
 
+查看 cocoapods 安装版本
+pod --version
 
+在前往中输入  ~/.cocoapods 查找安装目录
+
+卸载
 sudo gem uninstall cocoapods
 
+清理缓存和安装目录
 sudo rm -fr ~/Library/Caches/CocoaPods/
 sudo rm -fr ~/.cocoapods/repos/master/
+sudo rm -rf ~/.cocoapods/repos
 sudo rm -fr Pods/
 
 sudo gem clean cocoapods
 
+安装 cocoapods
 sudo gem install cocoapods
 
 pod setup
 
 
-
-
-
-在 xcode工程目录
+在 xcode工程目录，这个目录需要有 Podfile 文件
 pod deintegrate
 pod setup
-pod install
+pod install   -- pod install --verbose 后边加上 --verbose 可以输出详细的信息
 pod update
+
+上面的命令执行会下载 Podfile 中配置的第三方库
+如果不报错会在 xcode 工程目录顺利生成 .workSpace 文件
+
+上面执行下载的文件存放在 ~/.cocoapods/repos 目录下
+如果报错有 https://github.com/CocoaPods/Specs.git 相关的
+
+执行命令看是否能够访问git仓库地址
+curl https://github.com/CocoaPods/Specs
+
+可以手动通过 git 命令下载
+git clone https://github.com/CocoaPods/Specs.git ~/.cocoapods/repos/cocoapods
+
+
+-- pod repo update --verbose
+
+
+
+执行 pod install 或者 pod update 遇到下面报错
+
+可能是因为 git 缓存空间不足导致失败，通过命令修改 git 缓存空间
+git config --global http.postBuffer 524288000    --- 500M 或者设置为 1000M
+git config --global http.lowSpeedLimit 0
+git config --global http.lowSpeedTime 999999
+
+可以先不用理会，尝试多执行几次，
+大部分情况是因为网络或者 git 问题
+[!] CocoaPods could not find compatible versions for pod "Firebase/Messaging":
+  In Podfile:
+    Firebase/Messaging (= 11.4.2)
+
+Specs satisfying the `Firebase/Messaging (= 11.4.2)` dependency were found, but they required a higher minimum deployment target.
+
+
+[!] Error installing FirebaseCore
+[!] /usr/local/bin/git clone https://github.com/firebase/firebase-ios-sdk.git /var/folders/09/x25mf3zn5cs0d6_zgdd2v7dr0000gn/T/d20241125-76095-96l2t1 --template= --single-branch --depth 1 --branch CocoaPods-11.4.2
+
+正克隆到 '/var/folders/09/x25mf3zn5cs0d6_zgdd2v7dr0000gn/T/d20241125-76095-96l2t1'...
+错误：RPC 失败。curl 18 transfer closed with outstanding read data remaining
+错误：预期仍然需要 6033 个字节的正文
+fetch-pack: unexpected disconnect while reading sideband packet
+致命错误：过早的文件结束符（EOF）
+致命错误：fetch-pack：无效的 index-pack 输出
+
+
+[!] Error installing FirebaseCoreInternal
+[!] /usr/local/bin/git clone https://github.com/firebase/firebase-ios-sdk.git /var/folders/09/x25mf3zn5cs0d6_zgdd2v7dr0000gn/T/d20241125-77329-vqzzwz --template= --single-branch --depth 1 --branch CocoaPods-11.5.0
+
+正克隆到 '/var/folders/09/x25mf3zn5cs0d6_zgdd2v7dr0000gn/T/d20241125-77329-vqzzwz'...
+错误：RPC 失败。curl 18 transfer closed with outstanding read data remaining
+错误：预期仍然需要 1280 个字节的正文
+fetch-pack: unexpected disconnect while reading sideband packet
+致命错误：过早的文件结束符（EOF）
+致命错误：fetch-pack：无效的 index-pack 输出
