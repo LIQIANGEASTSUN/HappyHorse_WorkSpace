@@ -1,0 +1,41 @@
+
+
+Uncaught exception: FBFinalClassViolationException: FBAdConfigManager is a final class and cannot be subclassed. FBAdConfigManager
+(
+	0   CoreFoundation                      0x00000001ad9db768 4FBDF167-161A-324C-A233-D516922C67E5 + 1218408
+	1   libobjc.A.dylib                     0x00000001c24a27a8 objc_exception_throw + 60
+	2   UnityFramework                      0x000000010a601d08 -[FBAdConfigManager init] + 0
+	3   libobjc.A.dylib                     0x00000001c247bc40 266E9238-111C-3F2D-A0D2-604474E3CDC4 + 7232
+	4   libobjc.A.dylib                     0x00000001c24824bc 266E9238-111C-3F2D-A0D2-604474E3CDC4 + 33980
+	5   libobjc.A.dylib                     0x00000001c2483a9c 266E9238-111C-3F2D-A0D2-604474E3CDC4 + 39580
+	6   libobjc.A.dylib                     0x00000001c2492b74 266E9238-111C-3F2D-A0D2-604474E3CDC4 + 101236
+	7   libobjc.A.dylib                     0x00000001c247c644 266E9238-111C-3F2D-A0D2-604474E3CDC4 + 9796
+	8   fairyscapesadventure                0x0000000100fbd4c4 +[FBAdUtility(FBAdDeviceInfoUtility) shouldPreventIDFAAccessInOffsiteApps] + 60
+	9   fairyscapesadventure                0x0000000100fbd6d0 +[FBAdUtility(FBAdDeviceInfoUtility) advertisingIdentifier] + 52
+	10  fairyscapesadventure                0x0000000100fbcccc __40+[FBAdUtility initializeAudienceNetwork]_block_invoke + 76
+	11  libdispatch.dylib                   0x00000001ad5c881c DAF30062-4C85-3B92-B159-50602A0C9D97 + 18460
+	12  libdispatch.dylib                   0x00000001ad5ca0b4 DAF30062-4C85-3B92-B159-50602A0C9D97 + 24756
+	13  fairyscapesadventure                0x0000000100f0ddb4 fb_dispatch_once_on_main_thread + 104
+	14  fairyscapesadventure                0x0000000100fbcc74 +[FBAdUtility initializeAudienceNetwork] + 76
+	15  fairyscapesadventure                0x0000000100f3694c +[FBAudienceNetworkAds initializeWithSettings:completionHandler:] + 72
+	16  fairyscapesadventure                0x0000000100dab6f4 -[ALFacebookMediationAdapter initializeWithParameters:completionHandler:] + 416
+	17  AppLovinSDK                         0x000000010307b590 __93-[ALMediationAdapterWrapper initializeWithAdapterInitializationParameters:completionHandler:]_block_invoke + 144
+	18  AppLovinSDK                         0x000000010307e118 __67-[ALMediationAdapterWrapper runOperationWithTag:forAdFormat:block:]_block_invoke + 152
+	19  Foundation                          0x00000001aed65fa8 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 1253288
+	20  Foundation                          0x00000001aec53878 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 129144
+	21  Foundation                          0x00000001aed683d0 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 1262544
+	22  Foundation                          0x00000001aec53500 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 128256
+	23  Foundation                          0x00000001aed68e74 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 1265268
+	24  Foundation                          0x00000001aed68900 0D9893A4-5804-3F0D-BB3F-73989EA36AD3 + 1263872
+	25  libdispatch.dylib                   0x00000001ad5d7484 DAF30062-4C85-3B92-B159-50602A0C9D97 + 78980
+	26  libdispatch.dylib                   0x00000001ad5c881c DAF30062-4C85-3B92-B159-50602A0C9D97 + 18460
+	27  libdispatch.dylib                   0x00000001ad5d6c70 _dispatch_main_queue_callback_4CF + 884
+	28  CoreFoundation                      0x00000001ad955398 4FBDF167-161A-324C-A233-D516922C67E5 + 668568
+	29  CoreFoundation                      0x00000001ad94f270 4FBDF167-161A-324C-A233-D516922C67E5 + 643696
+	30  CoreFoundation                      0x00000001ad94e360 CFRunLoopRunSpecific + 600
+	31  GraphicsServices                    0x00000001c4f8c734 GSEventRunModal + 164
+	32  UIKitCore                           0x00000001b03c9584 33B02AB5-5DAF-3249-8DC6-5872DF830EC5 + 12363140
+	33  UIKitCore                           0x00000001b03cedf4 UIApplicationMain + 168
+	34  UnityFramework                      0x000000010a394e5c -[UnityFramework runUIApplicationMainWithArgc:argv:] + 92
+	35  fairyscapesadventure                0x0000000100da812c main + 60
+	36  libdyld.dylib                       0x00000001ad60acf8 E574A365-9878-348A-8E84-91E163CFC128 + 7416Dragon.Logic (1): "FBAdConfigManager is a final class and cannot be subclassed. FBAdConfigManager"Dragon.Logic (1): "FBAdConfigManager is a final class and cannot be subclassed. FBAdConfigManager"
