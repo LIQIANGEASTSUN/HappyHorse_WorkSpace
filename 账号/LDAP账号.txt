@@ -1,0 +1,35 @@
+
+https://confluence.ftsview.com/pages/viewpage.action?pageId=17104983
+
+姓名：liqiang
+邮箱：liqiang@fotoable.com
+
+https://ark.bettagames.com/
+Lq123321
+
+
+公司云服务堡垒机
+http://jumpserver.ftsview.com/core/auth/login/
+账号:liqiang
+密码 同 https://ark.bettagames.com/
+
+连接堡垒机命令：ssh -o HostKeyAlgorithms=+ssh-rsa -p 2222 liqiang@192.168.1.78
+先连接  Betta-WIFI 密码 betta@1024
+当前电脑登录过 http://jumpserver.ftsview.com/core/auth/login/ 
+命令行执行：ssh -o HostKeyAlgorithms=+ssh-rsa -p 2222 liqiang@192.168.1.78
+liqiang@192.168.1.78's password:提示输入密码 密码同 https://ark.bettagames.com/
+
+
+登录进来如下
+C:\Users\Administrator>ssh -o HostKeyAlgorithms=+ssh-rsa -p 2222 liqiang@192.168.1.78
+liqiang@192.168.1.78's password:
+                李强,  欢迎使用Jumpserver开源堡垒机系统
+
+        1) 输入 部分IP、主机名、备注 进行搜索登录(如果唯一).
+        2) 输入 / + IP，主机名 or 备注 进行搜索，如：/192.168.
+        3) 输入 p 进行显示您有权限的主机.
+        4) 输入 g 进行显示您有权限的节点.
+        5) 输入 d 进行显示您有权限的数据库.
+        6) 输入 r 进行刷新最新的机器和节点信息.
+        7) 输入 h 进行显示帮助.
+        8) 输入 q 进行退出.

@@ -1,5 +1,4 @@
 
-
 FA
 
 AppleID
@@ -9,14 +8,6 @@ AppleID
 
 App专用密钥申请
 https://appleid.apple.com/account/manage
-
-邹家根：
-X_APPLE_USERNAME
-zoujiagen@bettagames.com
-
-APP_SEC
-iqny-ptcx-uzhr-pfze
-
 
 李强：
 X_APPLE_USERNAME

@@ -1,0 +1,15 @@
+
+
+
+新gitLab 地址
+http://10.240.92.9/dragon/client
+
+liqiang
+Lq022369qL
+
+
+
+
+
+旧gitLab 地址
+http://10.0.252.10/dragon/client/-/commits/master
