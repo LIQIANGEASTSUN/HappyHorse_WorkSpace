@@ -1,0 +1,48 @@
+
+
+
+
+下面 Unity 命令中 -buildTarget android 的作用是什么，会将Unity 项目切换到 android 分支吗
+
+$UNITY_PATH -projectPath $PROJECT_PATH
+-buildTarget android
+-executeMethod PojectExport.Export
+-logfile -
+-batchMode -quit
+-GMMode
+
+20:37
+
+在 Unity 命令中，-buildTarget android 的作用是指定构建的目标平台为 Android。这意味着在你执行这个命令时，Unity 会将项目设置为针对 Android 平台进行构建，而不是切换到 Android 分支。
+
+具体来说，这个命令会设置构建过程中所需的一些配置，使得生成的应用程序可以在 Android 设备上运行。但是，这个命令不会改变项目的分支或版本控制状态。它仅仅是告诉 Unity 使用 Android 作为构建目标。
+
+其他命令行参数的作用包括：
+
+-projectPath $PROJECT_PATH：指定 Unity 项目的路径。
+-executeMethod PojectExport.Export：执行指定的静态方法（这里是 PojectExport.Export）来进行构建或其他操作。
+-logfile -：将日志输出到标准输出。
+-batchMode：以批处理模式运行 Unity，不显示用户界面。
+-quit：在完成执行后自动退出 Unity。
+-GMMode：通常是表示在游戏模式下运行（具体用法和效果可能根据 Unity 的版本有所不同）。
+如果还有其他问题或需要进一步的解释，请随时问我！
+
+20:37
+
+如果Unity 项目当前激活的平台式 iOS，我通过 -buildTarget android 能打出来正确的 安卓资源吗
+
+11:29
+
+是的，使用 -buildTarget android 参数可以让你在 Unity 项目当前激活的平台是 iOS 时，正确地构建出 Android 的资源。
+
+当你执行带有 -buildTarget android 的命令时，Unity 会将项目设置为 Android 构建目标，并生成适用于 Android 平台的资源，而不管当前的激活平台是什么。构建过程中的所有设置和资源都会根据 Android 的需求进行处理，最终生成可以在 Android 设备上运行的 APK 文件。
+
+请注意，有一些事项需要考虑：
+
+平台特定的设置：确保你的项目在 Android 平台的设置（如 Player Settings）是正确的。如果你之前只针对 iOS 进行过设置，你可能需要检查并调整某些 Android 特有的设置，如图形API、应用图标、包名等。
+
+第三方插件或SDK：如果你的项目包含一些仅支持 iOS 的第三方插件或 SDK，这些可能会导致构建失败或运行时错误。在构建之前，确保检查或隔离这些特定于 iOS 的内容。
+
+资源管理：尽管 Unity 会在构建过程中处理资源，但确保在你的项目中没有针对特定平台的资源管理问题。
+
+总结来说，使用 -buildTarget android 命令是构建 Android 应用的标准方式，可以在任何当前激活平台上成功执行，前提是相关的设置和资源可以正常支持 Android 平台。

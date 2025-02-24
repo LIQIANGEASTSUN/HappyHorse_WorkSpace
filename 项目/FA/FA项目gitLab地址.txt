@@ -1,0 +1,14 @@
+
+
+
+新地址：
+http://10.240.92.10/dashboard/projects
+http://10.240.92.10/fairyfarmadverture/client
+
+liqiang
+Lq022369qL
+
+
+旧地址
+http://10.0.252.4/dashboard/projects
+http://10.0.252.4/fairyfarmadverture/client/commits/master
