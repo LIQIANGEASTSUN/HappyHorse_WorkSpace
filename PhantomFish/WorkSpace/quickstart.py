@@ -1,6 +1,6 @@
 
 import os.path
-import readDocument
+import readExcel
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -9,12 +9,17 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # If modifying these scopes, delete the file token.json.
-# 读取 documents 文档
-SCOPES = ["https://www.googleapis.com/auth/documents.readonly"]
+# 同时请求 Drive 和 Sheets 的权限
+SCOPES = [
+    "https://www.googleapis.com/auth/drive.readonly",
+    "https://www.googleapis.com/auth/spreadsheets.readonly"
+]
 
-tokenJson = "credentials/token.json"
+# credentials.json 凭证文件，如果项目重新生成凭证，需要重新下载更新
 credentialsJson = "credentials/credentials.json"
 
+# 每次修改 SCOPES 需要删除 token.json，重新运行时会重新生成
+tokenJson = "credentials/token.json"
 
 def main():
   """Shows basic usage of the Docs API.
@@ -40,9 +45,11 @@ def main():
       token.write(creds.to_json())
 
   try:
-    service = build("docs", "v1", credentials=creds)
+    # 初始化两个服务的客户端
+    drive_service = build("drive", "v3", credentials=creds)  # Drive API
+    sheets_service = build("sheets", "v4", credentials=creds)  # Sheets API
     print("文档内容:")
-    readDocument.print_document_content(service)
+    readExcel.read_sheet_content(sheets_service)
 
   except HttpError as err:
     print(err)
