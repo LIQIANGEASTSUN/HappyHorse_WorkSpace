@@ -3,28 +3,22 @@
 import os.path
 from googleapiclient.errors import HttpError
 
-# If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/documents.readonly"]
-
-tokenJson = "credentials/token.json"
-credentialsJson = "credentials/credentials.json"
-
 # The ID of a sample document.
 DOCUMENT_ID = "1Zobv9DrEkxnaEirzoMtr5Zx1gCOzGHSvC5m_WQPq9Ao"
 
 # 替换 readDocument 的逻辑，直接读取 Sheets 数据
-def read_sheet_content(service):
+def read_sheet_content(sheets_service):
     """读取第一个 Sheet 的所有非空数据"""
     try:
         # 1. 获取第一个 Sheet 的名称
-        spreadsheet = service.spreadsheets().get(
+        spreadsheet = sheets_service.spreadsheets().get(
             spreadsheetId=DOCUMENT_ID
         ).execute()
         sheet_name = spreadsheet['sheets'][0]['properties']['title']  # 第一个 Sheet 的名称
 
         # 2. 读取整个 Sheet 的数据（不指定 range）
         result = (
-            service.spreadsheets()
+            sheets_service.spreadsheets()
             .values()
             .get(spreadsheetId=DOCUMENT_ID, range=sheet_name)
             .execute()

@@ -1,5 +1,6 @@
 
 import os.path
+import FolderList
 import readExcel
 
 from google.auth.transport.requests import Request
@@ -48,6 +49,8 @@ def main():
     # 初始化两个服务的客户端
     drive_service = build("drive", "v3", credentials=creds)  # Drive API
     sheets_service = build("sheets", "v4", credentials=creds)  # Sheets API
+    print("获取所有Excel")
+    FolderList.list_files_in_folder(drive_service)
     print("文档内容:")
     readExcel.read_sheet_content(sheets_service)
 
