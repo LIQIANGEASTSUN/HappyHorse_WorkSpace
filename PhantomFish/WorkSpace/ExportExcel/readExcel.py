@@ -1,26 +1,31 @@
 
-
 import os.path
 from googleapiclient.errors import HttpError
 
-# The ID of a sample document.
-DOCUMENT_ID = "1Zobv9DrEkxnaEirzoMtr5Zx1gCOzGHSvC5m_WQPq9Ao"
-
-# 替换 readDocument 的逻辑，直接读取 Sheets 数据
-def read_sheet_content(sheets_service):
+def read_sheet_content(sheets_service, file):
     """读取第一个 Sheet 的所有非空数据"""
+    sheet_id = file['id']
+    sheet_data = {
+        "file" : file,
+        "excel_name" : file['name'], 
+        "sheet_id" : file['id'],
+        "sheet_name" : "",
+        "data" : None
+    }
+        
     try:
         # 1. 获取第一个 Sheet 的名称
         spreadsheet = sheets_service.spreadsheets().get(
-            spreadsheetId=DOCUMENT_ID
+            spreadsheetId=sheet_id
         ).execute()
         sheet_name = spreadsheet['sheets'][0]['properties']['title']  # 第一个 Sheet 的名称
+        sheet_data["sheet_name"] = sheet_name
 
         # 2. 读取整个 Sheet 的数据（不指定 range）
         result = (
             sheets_service.spreadsheets()
             .values()
-            .get(spreadsheetId=DOCUMENT_ID, range=sheet_name)
+            .get(spreadsheetId=sheet_id, range=sheet_name)
             .execute()
         )
         values = result.get("values", [])
@@ -31,14 +36,13 @@ def read_sheet_content(sheets_service):
         if not data:
             print("没有找到非空数据。")
         else:
-            print(f"共读取 {len(data)} 行非空数据：")
-            for row in data:
-                print(row)        
+            #print(f"共读取 {len(data)} 行非空数据：")
+            sheet_data["data"] = data       
 
+        return sheet_data
     except HttpError as err:
         print(f"Google Sheets API 错误: {err}")
-        return []
-
-           
-           
-# https://docs.google.com/spreadsheets/d/1Zobv9DrEkxnaEirzoMtr5Zx1gCOzGHSvC5m_WQPq9Ao/edit?gid=0#gid=0
+        return sheet_data
+    except Exception as e:
+        print(f"意外错误: {e}")
+        return sheet_data

@@ -1,7 +1,8 @@
 
 import os.path
 import FolderList
-import readExcel
+
+from ExportExcel import ExportExcelCenter
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -50,9 +51,9 @@ def main():
     drive_service = build("drive", "v3", credentials=creds)  # Drive API
     sheets_service = build("sheets", "v4", credentials=creds)  # Sheets API
     print("获取所有Excel")
-    FolderList.list_files_in_folder(drive_service)
-    print("文档内容:")
-    readExcel.read_sheet_content(sheets_service)
+    sheet_datas = FolderList.list_files_in_folder(drive_service, sheets_service)
+    print("开始导出 Excel")
+    ExportExcelCenter.exportAllExcel(sheets_service, sheet_datas)
 
   except HttpError as err:
     print(err)
