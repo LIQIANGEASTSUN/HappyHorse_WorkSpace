@@ -20,8 +20,8 @@ public class JsonCsAnalysis {
 
     private async Task LoadAllJson()
     {
-       await LoadJson<UiPanelCfg>("UiPanelCfg.json");
        await LoadJson<XassetCfg_Sheet>("XassetCfg.json");
+       await LoadJson<UiPanelCfg>("UiPanelCfg.json");
        await LoadJson<SpriteGraphicCfg>("SpriteGraphicCfg.json");
        await LoadJson<UiBubbleCfg>("UiBubbleCfg.json");
        await LoadJson<TextLocalizationCfg>("TextLocalizationCfg.json");

@@ -90,4 +90,22 @@ public class XassetCfg_Sheet : IJsonConfigBase {
         private set;
     }
 
+    ///<summary>
+    /// 测试
+    ///<summary>
+    public int[] Test
+    {
+        get;
+        private set;
+    }
+
+    ///<summary>
+    /// 测试2
+    ///<summary>
+    public float[][] Test2
+    {
+        get;
+        private set;
+    }
+
 }
