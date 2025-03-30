@@ -8,7 +8,7 @@ public class JsonCsAnalysis {
     public const int TotalCount = 8;
     private Action OneLoadSuccess;
 
-    public void SetLoadCallBack(Action oneLoadSuccess)
+    public void SetLoadCalconfig.LBack(Action oneLoadSuccess)
     {
         OneLoadSuccess = oneLoadSuccess;
     }
@@ -20,9 +20,9 @@ public class JsonCsAnalysis {
 
     private async Task LoadAllJson()
     {
+       await LoadJson<UiPanelCfg>("UiPanelCfg.json");
        await LoadJson<XassetCfg_Sheet>("XassetCfg.json");
        await LoadJson<SpriteGraphicCfg>("SpriteGraphicCfg.json");
-       await LoadJson<UiPanelCfg>("UiPanelCfg.json");
        await LoadJson<UiBubbleCfg>("UiBubbleCfg.json");
        await LoadJson<TextLocalizationCfg>("TextLocalizationCfg.json");
        await LoadJson<SpriteCfg>("SpriteCfg.json");

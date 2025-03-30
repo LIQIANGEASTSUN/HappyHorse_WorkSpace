@@ -1,9 +1,8 @@
 
-
 import os.path
-
 from googleapiclient.errors import HttpError
 
+# 文件夹id
 folder_id = "1LZi_KeDMpdgfAHbR-REqV7__JNpVR-sL"
 
 def list_files_in_folder(drive_service, sheets_service):

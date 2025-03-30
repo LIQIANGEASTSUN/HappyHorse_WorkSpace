@@ -4,28 +4,10 @@ import config
 
 from . import writeFile  # 使用相对导入
 
-
-# sheet_data = {
-#     "file" : file,
-#     "excel_name" : file['name'], 
-#     "sheet_id" : file['id'],
-#     "sheet_name" : "",
-#     "data" : None
-# }
-
 def IsValidCol(cs):
     return cs in {"C", "S", "CS"}  # 可简化为这样
 
 def SaveToCS(sheet_data):
-    """
-    将字符串写入文件，如果文件存在则先删除
-    
-    :param file_path: 文件路径（包括文件名）
-    :param content: 要写入的字符串内容
-    :param encoding: 文件编码（默认utf-8）
-    :return: True表示成功，False表示失败
-    """
-    
     print("SaveToCS")
     try:
         data = sheet_data["data"]
@@ -36,14 +18,11 @@ def SaveToCS(sheet_data):
         property_row_data = data[config.PROPERTY_ROW]
         clientServerRowData = data[config.CS_ROW]
 
-        lb = "{"
-        rb = "}"
-
         className = sheet_data["sheet_name"]
         lines = []
         lines.append("using BettaSDK;")
         lines.append("")
-        lines.append(f"public class {className} : IJsonConfigBase {lb}")
+        lines.append(f"public class {className} : IJsonConfigBase {config.LB}")
         lines.append("")
 
         for col in range(len(property_name_row_data)):
@@ -62,13 +41,13 @@ def SaveToCS(sheet_data):
                 lines.append(f"    /// {line}")
             lines.append("    ///<summary>")
             lines.append(f"    public {type_} {property_name}")
-            lines.append(f"    {lb}")
+            lines.append(f"    {config.LB}")
             lines.append("        get;")
             lines.append("        private set;")
-            lines.append(f"    {rb}")
+            lines.append(f"    {config.RB}")
             lines.append("")
 
-        lines.append(rb)
+        lines.append(config.RB)
 
         cs_string = "\n".join(lines)
         excel_name = sheet_data["excel_name"]

@@ -5,27 +5,10 @@ import config
 
 from . import writeFile  # 使用相对导入
 
-# sheet_data = {
-#     "file" : file,
-#     "excel_name" : file['name'], 
-#     "sheet_id" : file['id'],
-#     "sheet_name" : "",
-#     "data" : None
-# }
-
 def IsValidCol(cs):
     return cs in {"C", "S", "CS"}  # 可简化为这样
 
 def SaveToJson(sheet_data):
-    """
-    将字符串写入文件，如果文件存在则先删除
-    
-    :param file_path: 文件路径（包括文件名）
-    :param content: 要写入的字符串内容
-    :param encoding: 文件编码（默认utf-8）
-    :return: True表示成功，False表示失败
-    """
-    
     print("SaveToJson")
     try:
         data = sheet_data["data"]

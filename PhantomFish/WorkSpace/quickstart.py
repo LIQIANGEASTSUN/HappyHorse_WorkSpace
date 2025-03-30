@@ -3,7 +3,6 @@ import os.path
 import FolderList
 
 from ExportExcel import ExportExcelCenter
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -24,9 +23,6 @@ credentialsJson = "credentials/credentials.json"
 tokenJson = "credentials/token.json"
 
 def main():
-  """Shows basic usage of the Docs API.
-  Prints the title of a sample document.
-  """
   creds = None
   # The file token.json stores the user's access and refresh tokens, and is
   # created automatically when the authorization flow completes for the first

@@ -26,7 +26,7 @@ public class UiPanelCfg : IJsonConfigBase {
     ///  2:二级弹窗界面
     ///  3:小弹窗界面
     ///<summary>
-    public string UIPriority
+    public int UIPriority
     {
         get;
         private set;
