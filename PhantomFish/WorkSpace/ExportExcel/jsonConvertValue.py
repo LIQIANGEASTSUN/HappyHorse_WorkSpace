@@ -74,7 +74,7 @@ def convert_value_json(value):
 
 # 转化为 一唯数组, # 一维数组处理（类型标记以 [] 结尾）
 def convert_value_one_array(value, type_str):
-    print("convert_value_one_array:" + value)
+    print("convert_value_one_array:" + value + "  type_str:" + type_str)
     base_type = type_str[:-2]
     
     if isinstance(value, str):

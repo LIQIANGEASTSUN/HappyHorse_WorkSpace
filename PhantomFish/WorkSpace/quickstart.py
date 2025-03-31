@@ -17,10 +17,10 @@ SCOPES = [
 ]
 
 # credentials.json 凭证文件，如果项目重新生成凭证，需要重新下载更新
-credentialsJson = "credentials/credentials.json"
+credentialsJson = "E:/credentials/credentials.json"
 
 # 每次修改 SCOPES 需要删除 token.json，重新运行时会重新生成
-tokenJson = "credentials/token.json"
+tokenJson = "E:/credentials/token.json"
 
 def main():
   creds = None
