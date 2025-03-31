@@ -100,9 +100,45 @@ public class XassetCfg_Sheet : IJsonConfigBase {
     }
 
     ///<summary>
+    /// 
+    ///<summary>
+    public float[] Test_1
+    {
+        get;
+        private set;
+    }
+
+    ///<summary>
     /// 测试2
     ///<summary>
     public float[][] Test2
+    {
+        get;
+        private set;
+    }
+
+    ///<summary>
+    /// 测试3
+    ///<summary>
+    public string[] Test3
+    {
+        get;
+        private set;
+    }
+
+    ///<summary>
+    /// 测试4
+    ///<summary>
+    public string Test4
+    {
+        get;
+        private set;
+    }
+
+    ///<summary>
+    /// 测试5
+    ///<summary>
+    public json Test5
     {
         get;
         private set;

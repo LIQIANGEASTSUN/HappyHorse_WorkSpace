@@ -12,14 +12,26 @@
             1,
             2
         ],
+        "Test_1": [
+            5.1,
+            6.0
+        ],
         "Test2": [
             [
-                null,
-                null,
-                null,
-                null
+                1.0,
+                2.0
+            ],
+            [
+                3.0,
+                4.0
             ]
-        ]
+        ],
+        "Test3": [
+            "123,D3",
+            "ABC"
+        ],
+        "Test4": "a",
+        "Test5": "{\"a\": 1, \"b\":\"abc\"}"
     },
     {
         "ID": 2,
@@ -29,11 +41,18 @@
         "DeliveryMode": 0,
         "Directory": "SubAssets/HotUpdateDLL",
         "BundleMode": 0,
-        "AddressMode": 1,
+        "AddressMode": 0,
         "Test": [
             1,
             2
-        ]
+        ],
+        "Test_1": [
+            8.1,
+            9.0
+        ],
+        "Test2": null,
+        "Test3": null,
+        "Test4": "abc"
     },
     {
         "ID": 3,
@@ -45,14 +64,23 @@
         "BundleMode": 4,
         "AddressMode": 1,
         "Test": null,
+        "Test_1": null,
         "Test2": [
             [
-                null,
-                null,
-                null,
-                null
+                5.0,
+                6.0
+            ],
+            [
+                7.0,
+                8.0
             ]
-        ]
+        ],
+        "Test3": [
+            "1ab,D3",
+            "def,d"
+        ],
+        "Test4": "\"def\"",
+        "Test5": "{\"a\": 1, \"b\":\"abc\"}"
     },
     {
         "ID": 4,
@@ -64,8 +92,12 @@
         "BundleMode": 0,
         "AddressMode": 1,
         "Test": [
-            1,
+            5,
             2
+        ],
+        "Test_1": [
+            8.0,
+            9.6
         ]
     },
     {

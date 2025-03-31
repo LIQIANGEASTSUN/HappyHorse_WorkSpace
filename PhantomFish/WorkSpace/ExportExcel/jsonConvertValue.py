@@ -19,9 +19,9 @@ def convert_value(value, type_str):
     try:
         # 二维数组处理（类型标记以 [][] 结尾）
         if type_str.endswith("[][]"):
-            return convert_value_two_array(value)
+            return convert_value_two_array(value, type_str)
         elif type_str.endswith("[]"):
-            return convert_value_one_array(value)
+            return convert_value_one_array(value, type_str)
         # 基本类型处理
         elif type_str == "int":
             return convert_value_int(value)  # 先转float避免 "3.0" 报错
@@ -42,26 +42,44 @@ def convert_value(value, type_str):
 
 # 转化为 int
 def convert_value_int(value):
-    return int(float(value))  # 先转float避免 "3.0" 报错
+    try:
+        return int(float(value))  # 先转float避免 "3.0" 报错
+    except ValueError as e:
+        print("捕获异常:", e)
+    return 0
 
 # 转化为 float
 def convert_value_float(value):
-    return float(value)
+    try:
+        return float(value)
+    except ValueError as e:
+        print("捕获异常:", e)
+    return 0
 
 def convert_value_long(value):
     return convert_value_int(value)  # Python 3 中 int 即长整型
 
 # 转化为 float
 def convert_value_string(value):
-    return str(value) if str(value).strip() != "" else None
+    try:
+        return str(value) if str(value).strip() != "" else None
+    except ValueError as e:
+        print("捕获异常:", e)
+    return None
+    
 
 # 转化为 json
 def convert_value_json(value):
     return convert_value_string(value)
 
 # 转化为 一唯数组, # 一维数组处理（类型标记以 [] 结尾）
-def convert_value_one_array(value):
+def convert_value_one_array(value, type_str):
+    print("convert_value_one_array:" + value)
     base_type = type_str[:-2]
+    
+    if isinstance(value, str):
+        value = value.strip(' ')
+        value = value.strip('"')
     
     # 处理已经是列表格式的输入（如 "[1,2]"）
     if isinstance(value, str) and value.startswith("[") and value.endswith("]"):
@@ -72,22 +90,21 @@ def convert_value_one_array(value):
                 parsed_list = [parsed_list]
         except json.JSONDecodeError:
             parsed_list = [value[1:-1]]  # 如果解析失败，去掉方括号
-        
+
         return [convert_value(item, base_type) for item in parsed_list] or None
-    
-    # 常规字符串处理（如 "1,2"）
-    if not isinstance(value, str):
-        value = str(value)
-    
-    # 处理空字符串情况
-    if not value.strip():
-        return None
-    return [convert_value(item.strip(), base_type) for item in value.split(",") if item.strip()] or None
+
+    return None
+        
 
 # 转化为 二唯数组, # 二维数组处理（类型标记以 [][] 结尾）
-def convert_value_two_array(value):
+def convert_value_two_array(value, type_str):
+    print("convert_value_two_array:" + value)
     base_type = type_str[:-4]
     
+    if isinstance(value, str):
+        value = value.strip(' ')
+        value = value.strip('"')
+
     # 处理已经是列表格式的输入（如 "[[1,2],[3,4]]"）
     if isinstance(value, str) and value.startswith("[[") and value.endswith("]]"):
         try:
@@ -101,22 +118,11 @@ def convert_value_two_array(value):
             # 如果解析失败，尝试手动处理
             value = value[2:-2]  # 去掉最外层方括号
             parsed_list = [[item.strip() for item in row.split(",")] 
-                          for row in value.split("],[")]
+            for row in value.split("],[")]
         
         return [
             [convert_value(item, base_type) for item in row]
-            for row in parsed_list
+                for row in parsed_list
         ] or None
-    
-    # 处理字符串格式的二维数组（如 "1,2;3,4"）
-    if not isinstance(value, str):
-        value = str(value)
-    
-    # 处理空字符串情况
-    if not value.strip():
-        return None
         
-    return [
-        [convert_value(item.strip(), base_type) for item in row.split(",") if item.strip()]
-        for row in value.split(";") if row.strip()
-    ] or None
+    return None
