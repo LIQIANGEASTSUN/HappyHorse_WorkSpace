@@ -1,0 +1,3 @@
+
+
+配置表改成 ConfigManager

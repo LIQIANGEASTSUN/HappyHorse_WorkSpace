@@ -1,0 +1,45 @@
+首先是当时，在某教育网站上学习了《万能游戏框架》视频教程，笔者从头到尾跟着手敲了一遍。教程里的一个基于模块的消息框架实现得很有意思。这里简单说一下。 QFramework 之前收录的 MsgDispatcher 就是一个全局的字典，字典的 key 是事件名字，而 value 则是 委托 List，所以不管怎么定义消息，它们都是全局的。当消息的规模变大之后，会有很大的性能压力。如图所示：
+
+全局消息与单例模式一样都是用起来很方便，但是风险很大的设计。
+
+而 《万能游戏框架》里的消息则是以模块为单位的。比如 UI 模块则只负责 UI 界面相关的消息收发和注册，Audio 模块同理也是。 而跨模块之间则用一个简单的 switch 进行转发。比较出彩的是其中的关于频段的设计。我们都知道 C# 里的 ushort 的最大值是 65536，视频中每个模块的频段长度设为 3000，这样最多可以有 21 个 模块，足够使用了。每个模块可以注册 3000 个消息。如何实现,这里看下代码就明白了。
+
+public enum MgrId
+{
+	UI = 0 * 3000,
+	Audio = 1 * 3000,
+	...
+}
+
+public enum UIXXEvent
+{
+	Start = (ushort)MgrId.UI,
+	XX,
+	YY,
+	End,
+}
+
+public enum UIYYEvent
+{
+	Start = (ushort)UIXXEvent.End,
+	ZZ,
+	End,
+}
+笔者当时看到这里才觉得自己对语言的了解真的是很浅，一个简单的 ushort + 枚举就可以很巧妙地设计出基于模块的消息框架，这种思想非常值得借鉴。笔者马上在 QFramework 中实现了一套类似的消息框架。很简单，一个 QMsgCenter 充当跨模块之间的消息转发。一个 QMgrBehaviour 作为模块的基类，负责收发和注册模块内的消息，一个 QMonoBehaviour 只要一个脚本继承它，就可以发送消息和注册处理消息。而事实上，有了这套消息框架，QFramework 才算是一个真正的 Manager Of Managers 框架。
+
+
+
+
+
+在做第一个项目的时候，来了一位大牛，带着一套 MMO 框架。框架好用的工具真的很多。
+
+其中的 EventSystem（消息系统）和 ResSystem（资源系统）是两大亮点。EventSystem 的 EventId 是用泛型进行注册的。把一个泛型转换为 int 。这个解决了之前笔者注册事件时需要把枚举强转成 ushort 的问题，这样的代码写起来很不愉快，于是笔者把原来 MgrBehaviour 和 QMonoBehaviour 里关于消息注册和转发的代码杀掉，直接换成了 EventSystem 就 OK 了，QMonoBehaviour 和 MgrBehaviour 里的代码变得非常精简。而 ResSystem 使用非常简单和强大。ResSystem 是在 AssetBundleManager 的功能基础之上有抽象出来了 ResLoader。这样做有什么好处呢？
+
+
+
+
+
+
+
+
+
