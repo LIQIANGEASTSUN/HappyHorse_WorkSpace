@@ -1,0 +1,46 @@
+
+Unity6的DOTS框架
+
+
+基于行为树的MOBA技能系统：总目录
+https://www.lfzxb.top/nkgmoba-totaltabs/
+
+
+MVP：Model-View-Presenter 
+MVP 是从 MVC 演变而来
+
+MVVM是Model-View-ViewModel
+
+PureMVC
+
+简介
+Crazy Car是一款联机赛车游戏，她的整体架构为：QFramework & Addressable & HybridCLR(游戏端) + Spring Boot & Mybatis(服务端) + KCP / WebSocket (网络) + Vue & Element(后台)，借助于此架构，开发者只要稍作修改就可完成一款定制化的网络联机游戏。
+
+https://github.com/TastSong/CrazyCar
+
+
+ECS 框架
+Entitas - The Entity Component System Framework for C# and Unity
+https://github.com/sschmid/Entitas
+
+
+学习分享
+https://blog.csdn.net/m0_65009805/article/details/134366352
+
+
+GameFramework 框架+YooAsset 资源管理+HybridCLR 热更新
+
+
+下面的是已读
+
+四篇关于 GameFrame框架的讲解
+https://gameframework.cn/
+
+官方模块讲解
+https://gameframework.cn/document/
+
+GameFramework API
+https://gameframework.cn/api/class_unity_game_framework_1_1_runtime_1_1_log.html
+
+
+

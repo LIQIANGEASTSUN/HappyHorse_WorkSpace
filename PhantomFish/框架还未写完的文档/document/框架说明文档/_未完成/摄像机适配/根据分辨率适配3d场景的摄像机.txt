@@ -1,0 +1,65 @@
+
+
+
+-- 世界相机设置为透视，希望摄像机视野内的物体显示在屏幕内
+--根据分辨率适配3d场景的摄像机
+function Match3DCity:Adapter()
+    目标宽高比，例如 16:9
+    local targetAspect = 9.0 / 16.0
+	-- targetAspect = 720 / 1280
+
+    当前屏幕的宽高比
+    local windowAspect = Screen.width / Screen.height
+    local scaleHeight = windowAspect / targetAspect
+
+    获取主摄像机
+    local camera = Camera.main
+
+    if scaleHeight < 1.0 then
+        设置摄像机的 Rect 属性以适应宽高比
+        camera.rect = CS.UnityEngine.Rect(0, (1.0 - scaleHeight) / 2.0, 1.0, scaleHeight)
+    else
+        local scaleWidth = 1.0 / scaleHeight
+        camera.rect = CS.UnityEngine.Rect((1.0 - scaleWidth) / 2.0, 0, scaleWidth, 1.0)
+    end
+end
+
+
+
+
+
+
+
+
+    public class CameraAdapter : MonoBehaviour
+    {
+        public float targetWidth = 720;  // 设计的宽度
+        public float targetHeight = 1280; // 设计的高度
+
+        void Start()
+        {
+            AdjustCamera();
+        }
+
+        private void Update()
+        {
+            
+        }
+
+        void AdjustCamera()
+        {
+            // 获取当前屏幕的宽高比
+            float screenAspect = (float)Screen.width / Screen.height;
+
+            // 目标宽高比
+            float targetAspect = targetWidth / targetHeight;
+
+            // 根据目标比例动态调整 Orthographic Size
+            Camera.main.orthographicSize = (targetHeight / 2f) / 100f; // 假设设计单位为 100 像素 = 1 单位
+            if (screenAspect < targetAspect)
+            {
+                // 如果屏幕更窄，增加 Orthographic Size
+                Camera.main.orthographicSize *= targetAspect / screenAspect;
+            }
+        }
+    }
