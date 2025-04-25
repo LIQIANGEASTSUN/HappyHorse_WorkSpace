@@ -1,0 +1,37 @@
+
+
+
+1.
+对于加载后的 对象放入内存池  AssetHandle 释放问题
+目前的问题
+比如加载一个 GameObject 类型的对象
+实例化后，放入内存池， AssetHandle 的关联没有保存，所以内存池释放的时候
+AssetHandle 没有释放
+
+考虑使用 GetInstanceID() 来关联 AssetHandle
+UnityEngine.Object.GetInstanceID()
+内存池释放时，查找有没有关联的 AssetHandle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
